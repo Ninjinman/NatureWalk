@@ -3,8 +3,8 @@ import 'dart:typed_data';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 
-/// 和風の落ち着いたBGM。音源ファイルは使わず、琴のような撥弦音を端末内で合成して流す。
-/// 音階は都節（D E♭ G A B♭）。ブラウザの制限で、最初のタップのあとに鳴り始める。
+/// 和のチルピアノ風のBGM。音源ファイルは使わず、ピアノ風の音を端末内で合成して流す。
+/// 進行は Am9 → Fmaj7 → Cadd9 → G6、旋律はペンタトニック。ブラウザの制限で、最初のタップのあとに鳴り始める。
 class Bgm {
   Bgm._();
 
@@ -49,75 +49,70 @@ class Bgm {
   static const _sr = 22050;
   static const _seconds = 64;
 
-  /// 都節（根音 D4 = 293.66Hz）。度数→周波数
-  static double _freq(int degree) {
-    const steps = [0, 1, 5, 7, 8]; // D, E♭, G, A, B♭（半音）
-    final oct = (degree / 5).floor();
-    final semis = steps[degree - oct * 5] + 12 * oct;
-    return 293.66 * pow(2, semis / 12);
-  }
+  static double _hz(int midi) => 440.0 * pow(2, (midi - 69) / 12);
 
   static Uint8List _synthesize() {
     final n = _sr * _seconds;
     final mix = Float64List(n);
-    final rng = Random(7);
 
-    // 撥弦（Karplus–Strong）を足し込む
-    void pluck(double start, double f, double gain, {double decay = 0.9965}) {
+    // ピアノ風の音：倍音を重ね、ハンマーの立ち上がり→高い音ほど速く減衰
+    void piano(double start, int midi, double gain) {
       final i0 = (start * _sr).round();
-      final len = max(2, (_sr / f).round());
-      final buf = Float64List(len);
-      for (var i = 0; i < len; i++) {
-        buf[i] = rng.nextDouble() * 2 - 1;
-      }
-      var prev = 0.0;
-      final dur = min(n - i0, (_sr * 5.0).round());
+      if (i0 >= n) return;
+      final f = _hz(midi);
+      final dur = min(n - i0, (_sr * 3.2).round());
+      final decay = exp(-(0.9 + (midi - 40) * 0.02) / _sr);
+      const amps = [1.0, 0.45, 0.22, 0.1];
+      final w = 2 * pi_ * f / _sr;
+      var env = 1.0;
+      // 高次倍音ほど早く消える（やわらかい音色）。減衰率は先に求めておく
+      final dk = [for (var k = 0; k < amps.length; k++) pow(decay, k * 0.5).toDouble()];
+      final ek = List<double>.filled(amps.length, 1.0);
       for (var i = 0; i < dur; i++) {
-        final k = i % len;
-        final cur = buf[k];
-        final v = decay * 0.5 * (cur + prev);
-        buf[k] = v;
-        prev = cur;
-        final env = i < 80 ? i / 80.0 : 1.0;
-        mix[i0 + i] += v * gain * env;
+        var v = 0.0;
+        for (var k = 0; k < amps.length; k++) {
+          v += amps[k] * ek[k] * sin(w * (k + 1) * i * (1 + 0.0004 * k * k));
+          ek[k] *= dk[k];
+        }
+        final atk = i < 110 ? i / 110.0 : 1.0;
+        mix[i0 + i] += v * env * atk * gain;
+        env *= decay;
       }
     }
 
-    // 旋律：度数（5で1オクターブ上）と拍の位置。ゆっくり、間を多めに
-    const phrases = <List<(double, int)>>[
-      [(0, 5), (1.5, 7), (3, 8), (5, 7), (6.5, 5)],
-      [(0, 8), (2, 7), (3.5, 5), (5, 3), (7, 2)],
-      [(0, 3), (1.5, 5), (3, 7), (4.5, 8), (6, 10)],
-      [(0, 10), (2, 8), (3.5, 7), (5, 5), (7.5, 3)],
-      [(0, 5), (2, 3), (3, 2), (5, 0), (7, 2)],
-      [(0, 2), (1.5, 3), (3, 5), (5, 3), (6.5, 0)],
+    // 8小節（1小節=8秒）。Am9 → Fmaj7 → Cadd9 → G6 を2周
+    const chords = <List<int>>[
+      [45, 52, 60, 64, 67],
+      [41, 48, 57, 60, 64],
+      [48, 55, 60, 64, 67],
+      [43, 50, 59, 62, 64],
     ];
-    const beat = 1.0; // 1拍 = 1秒
-    var t = 1.0;
-    var pi = 0;
-    while (t < _seconds - 8) {
-      final ph = phrases[pi % phrases.length];
-      for (final (off, deg) in ph) {
-        pluck(t + off * beat, _freq(deg), 0.30);
+    const arp = [0, 1, 2, 3, 4, 3, 2, 1];
+    // 右手の旋律（拍の位置, MIDI）。ペンタトニックで、音数は少なく間を多めに
+    const melody = <List<(double, int)>>[
+      [(1, 76), (3, 79), (5.5, 76)],
+      [(1, 77), (3, 76), (5, 72)],
+      [(0.5, 79), (2.5, 76), (4, 74), (6, 72)],
+      [(1, 74), (3, 71), (5, 74), (6.5, 76)],
+      [(0, 81), (2, 79), (4, 76)],
+      [(1, 77), (2.5, 76), (4, 72), (6, 69)],
+      [(0, 76), (1.5, 79), (3, 84), (5, 79)],
+      [(1, 79), (3, 76), (4.5, 74), (6, 71)],
+    ];
+    for (var bar = 0; bar < 8; bar++) {
+      final t0 = bar * 8.0;
+      final ch = chords[bar % 4];
+      for (var b = 0; b < 8; b++) {
+        piano(t0 + b, ch[arp[b]], b == 0 ? 0.30 : 0.17);
       }
-      // 低い根音を、フレーズの頭にゆっくり添える
-      pluck(t, _freq(-5) , 0.28, decay: 0.9985);
-      if (pi % 2 == 1) pluck(t + 4 * beat, _freq(-2), 0.2, decay: 0.998);
-      t += 9.5 * beat;
-      pi++;
-    }
-
-    // 尺八のようなやわらかい持続音（根音と5度）を、ごく小さく
-    for (var i = 0; i < n; i++) {
-      final s = i / _sr;
-      final swell = 0.5 + 0.5 * sin(2 * pi_ * s / 16.0);
-      final breath = sin(2 * pi_ * 146.83 * s) + 0.5 * sin(2 * pi_ * 220.0 * s);
-      mix[i] += breath * 0.035 * swell;
+      for (final (off, m) in melody[bar]) {
+        piano(t0 + off, m, 0.26);
+      }
     }
 
     // 残響（簡単なコムフィルタ）
     final out = Float64List(n);
-    const taps = [(0.23, 0.32), (0.37, 0.24), (0.61, 0.16)];
+    const taps = [(0.19, 0.30), (0.41, 0.24), (0.73, 0.18), (1.1, 0.10)];
     for (var i = 0; i < n; i++) {
       var v = mix[i];
       for (final (d, g) in taps) {

@@ -1438,12 +1438,36 @@ class IsoIslandPainter extends CustomPainter {
   /// 拡大表示では、モデルを大きく描いて特徴が見えるようにする
   static const double focusBoost = 1.2;
 
-  /// このエリアに生息している（個体数>0 で最も適する）種の一覧
+  /// 1エリアに一度に出す数の上限（種類ごと）。種が多くても画面がごちゃつかないように
+  static const Map<CreatureType, int> _showLimit = {
+    CreatureType.plant: 5,
+    CreatureType.bird: 3,
+    CreatureType.fish: 3,
+    CreatureType.animal: 3,
+  };
+
+  /// このエリアに生息している（個体数>0）種のうち、いまの環境に最も適するものを種類ごとに上限まで
   static List<Creature> habitatSpecies(Habitat h, ConservationState state,
-          ConservationNotifier notifier, List<Creature> creatures) =>
-      creatures
-          .where((c) => notifier.lives(c, h, s: state))
-          .toList();
+      ConservationNotifier notifier, List<Creature> creatures) {
+    final scored = <(Creature, double)>[
+      for (final c in creatures)
+        if (notifier.lives(c, h, s: state)) (c, notifier.suitability(c, h, s: state)),
+    ];
+    // 適合度が高い順。同点は id で固定して、再描画のたびに入れ替わらないようにする
+    scored.sort((a, b) {
+      final d = b.$2.compareTo(a.$2);
+      return d != 0 ? d : a.$1.id.compareTo(b.$1.id);
+    });
+    final count = <CreatureType, int>{};
+    final out = <Creature>[];
+    for (final (c, _) in scored) {
+      final n = count[c.type] ?? 0;
+      if (n >= (_showLimit[c.type] ?? 3)) continue;
+      count[c.type] = n + 1;
+      out.add(c);
+    }
+    return out;
+  }
 
   /// 絶滅危惧種のしるし：金色のオーラと、またたく星
   void _rareAura(Offset ground, double lift) {

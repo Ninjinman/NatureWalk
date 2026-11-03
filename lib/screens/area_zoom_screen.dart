@@ -247,9 +247,15 @@ class _SpeciesGrid extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final s = ref.watch(conservationProvider);
     final n = ref.read(conservationProvider.notifier);
-    final species = ref
-        .watch(allCreaturesProvider)
-        .where((c) => c.habitats.contains(habitat))
+    final all = ref.watch(allCreaturesProvider);
+    // 3D表示と同じ数だけ出す。加えて、絶滅した発見済みの種は再導入できるように残す
+    final shown = IsoIslandPainter.habitatSpecies(habitat, s, n, all).map((c) => c.id).toSet();
+    final species = all
+        .where((c) =>
+            shown.contains(c.id) ||
+            (c.habitats.contains(habitat) &&
+                s.discovered.contains(c.id) &&
+                (s.population[c.id] ?? 0) <= 0))
         .toList()
       ..sort((a, b) => a.type.index.compareTo(b.type.index));
 
