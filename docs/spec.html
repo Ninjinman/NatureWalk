@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NatureWalk 現行仕様（箱庭シミュレーション）</title>
+<style>
+  :root { --bg:#0b0a08; --panel:#14110c; --line:#3a3226; --gold:#e8b96a; --text:#e8e4da; --mute:#9a9486; --warn:#e08a5a; --ok:#7fd6a0; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif; line-height:1.75; }
+  header { padding:48px 24px 28px; text-align:center; border-bottom:1px solid var(--line);
+           background:radial-gradient(ellipse at 50% 0%, rgba(232,185,106,.18), transparent 60%); }
+  header h1 { margin:0; font-size:34px; letter-spacing:.2em; font-weight:500; text-shadow:0 0 18px rgba(232,185,106,.6); }
+  header p { margin:10px 0 0; color:var(--mute); letter-spacing:.15em; font-size:14px; }
+  nav { position:sticky; top:0; z-index:5; background:rgba(11,10,8,.94); border-bottom:1px solid var(--line);
+        display:flex; flex-wrap:wrap; gap:4px 16px; justify-content:center; padding:10px 12px; font-size:13px; }
+  nav a { color:var(--gold); text-decoration:none; }
+  main { max-width:980px; margin:0 auto; padding:8px 24px 80px; }
+  section { margin-top:44px; }
+  h2 { font-size:22px; font-weight:500; letter-spacing:.12em; color:var(--gold); border-left:3px solid var(--gold); padding-left:12px; margin:0 0 16px; }
+  h3 { font-size:16px; font-weight:600; margin:26px 0 8px; color:#f2dcae; letter-spacing:.06em; }
+  p, li { font-size:15px; }
+  ul { padding-left:1.3em; } li { margin:3px 0; }
+  table { width:100%; border-collapse:collapse; margin:10px 0 16px; font-size:14px; background:var(--panel); }
+  th, td { border:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top; }
+  th { background:#1c1710; color:var(--gold); font-weight:600; white-space:nowrap; }
+  code { background:#1c1710; border:1px solid var(--line); border-radius:3px; padding:0 5px; font-size:.9em; color:#f2dcae; font-family:Consolas,monospace; }
+  .note { border:1px solid var(--line); border-left:3px solid var(--warn); background:#1a140e; padding:10px 14px; margin:12px 0; font-size:14px; }
+  .plan { border:1px dashed #6a5a3a; background:#16120b; padding:10px 14px; margin:12px 0; }
+  .tag { display:inline-block; font-size:11px; border:1px solid var(--line); border-radius:10px; padding:0 8px; margin-right:6px; color:var(--mute); }
+  .tag.ok { color:var(--ok); border-color:#2f5a44; } .tag.todo { color:var(--warn); border-color:#6a4a30; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+  .card { background:var(--panel); border:1px solid var(--line); padding:12px 14px; }
+  .card b { color:var(--gold); }
+  footer { text-align:center; color:var(--mute); font-size:12px; padding:30px 0 50px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>NatureWalk</h1>
+  <p>小さな自然を育てる箱庭 ／ 現行仕様まとめ</p>
+</header>
+<nav>
+  <a href="#overview">概要</a><a href="#flow">画面の流れ</a><a href="#sim">シミュレーション</a><a href="#params">パラメータ</a>
+  <a href="#events">出来事</a><a href="#species">生き物</a><a href="#visual">見た目</a><a href="#tech">技術構成</a><a href="#plan">検討中</a><a href="#issues">既知の課題</a>
+</nav>
+<main>
+
+<section id="overview">
+  <h2>1. 概要</h2>
+  <p>森・池・川・海の4つの環境を1つの「箱庭（鉢）」に収め、環境（土壌・水質・気候など）を調整して、動植物を絶滅させずに育てるシミュレーションゲーム。Flutter 製で、Web（Chrome）と Android で動く。</p>
+  <table>
+    <tr><th>目的</th><td>24季節（6年）の間、できるだけ多くの種を生き残らせる</td></tr>
+    <tr><th>種の数</th><td><b>76種</b>（植物26・鳥26・魚24）。すべて実在の日本の生き物</td></tr>
+    <tr><th>エリア</th><td>森／池／川／海（エリアごとに調整できる項目が異なる）</td></tr>
+    <tr><th>予算</th><td>開始時 80。季節ごとに <code>10 ＋ 生き残った種の数 ÷ 2</code> 増える（76種なら約48）</td></tr>
+    <tr><th>評価</th><td>最後に生き残った種の割合：90%以上＝S（楽園）、70%以上＝A、50%以上＝B、それ未満＝C</td></tr>
+    <tr><th>難易度</th><td>何もしないと24季節でほぼ全滅。保護区・浄化・pH調整などを続ければ72〜76種が残る（自動プレイで確認済み）</td></tr>
+  </table>
+</section>
+
+<section id="flow">
+  <h2>2. 画面の流れ</h2>
+  <div class="grid">
+    <div class="card"><b>ホーム</b><br>黒背景に金色に光る樹（DEEMO 風）。「箱庭をはじめる」「図鑑」。画面が短くてもスクロールで届く。</div>
+    <div class="card"><b>箱庭（全体図）</b><br>斜め上から見下ろす擬似3D。ドラッグで回転、エリアをタップで拡大画面へ。上部に季節・生きもの数・予算・「トップ」ボタン、次の季節の「予報」バナー。</div>
+    <div class="card"><b>エリア拡大画面</b><br>選んだ1エリアを大きく表示。「3D表示」（初期）と「一覧」（写真カード）を切替。＋−・ピンチ・ホイールで拡大縮小（0.5〜3倍、初期0.75）。</div>
+    <div class="card"><b>種の詳細カード</b><br>写真・和名/英名/学名・解説・見分けるポイント・育つ環境・写真クレジット。</div>
+  </div>
+  <h3>箱庭（全体図）の操作</h3>
+  <ul>
+    <li>ドラッグ：島を回転</li>
+    <li>エリアをタップ：拡大画面へ</li>
+    <li>「季節をすすめる」：1季節進める（イベント発生・環境変動・個体数更新）</li>
+    <li>24季節終了で評価ダイアログ →「もう一度はじめる」</li>
+  </ul>
+  <h3>エリア拡大画面の下半分（調整パネル）</h3>
+  <ul>
+    <li>そのエリアで調整できるパラメータの一覧（−／＋ボタン、現在値のバー）</li>
+    <li>障害物の撤去（10）、保護区に指定（40）</li>
+    <li>そのエリアの種の一覧（写真・個体数・適合度。絶滅した種は「再導入」）</li>
+  </ul>
+</section>
+
+<section id="sim">
+  <h2>3. シミュレーションの仕組み</h2>
+  <h3>3.1 1季節の処理順</h3>
+  <ol>
+    <li>前の季節に出ていた「予報」の出来事が発生（効果を適用）</li>
+    <li>環境の自然変動（汚染の流入・酸性化・富栄養化・流れ・酸素など）</li>
+    <li>種ごとに適合度を計算し、個体数を増減</li>
+    <li>予算を加算し、次の季節の予報を抽選</li>
+  </ol>
+  <h3>3.2 適合度（0〜1）</h3>
+  <ul>
+    <li>種ごとに、各パラメータの「適した範囲」を持つ（例：ヤマメは水温4〜20℃・酸素70〜100%・流速35〜85%）。</li>
+    <li>範囲内なら1。範囲外は、離れるほど下がり、パラメータの幅の20%離れると0。</li>
+    <li>種の適合度＝<code>0.5 × 平均 ＋ 0.5 × 最小</code>（1つでも大きく外れると厳しい）。複数エリアに住む種は、最も適したエリアで評価。</li>
+    <li>気温には季節補正（春秋±0／夏＋8／冬−8。水域は半分）。猛暑＋6、寒波−6。</li>
+    <li>鳥は、同じエリアの動植物（餌）の生存割合に応じて <code>×(0.5〜1.0)</code>。</li>
+    <li>ブルーギルが30匹以上いる池・川では、在来魚の適合度が <code>×0.8</code>。</li>
+  </ul>
+  <h3>3.3 個体数の更新</h3>
+  <table>
+    <tr><th>適合度</th><th>変化</th></tr>
+    <tr><td>0.8以上</td><td>増える：<code>＋20% ＋1</code>（上限100）</td></tr>
+    <tr><td>0.5〜0.8</td><td>変化なし</td></tr>
+    <tr><td>0.25〜0.5</td><td>減る：<code>−15%</code></td></tr>
+    <tr><td>0.25未満</td><td>大きく減る：<code>−30%</code>（0になると絶滅）</td></tr>
+  </table>
+  <p>初期個体数は全種10。絶滅した種は、適合度0.6以上のエリアがあれば、予算を払って再導入できる（費用 <code>30 ＋ 珍しさ×10</code>、個体数5で復活）。</p>
+  <h3>3.4 環境の自然変動（毎季節）</h3>
+  <table>
+    <tr><th>項目</th><th>変化</th></tr>
+    <tr><td>汚染</td><td><code>(4〜10 ＋ 障害物の数×1.5) ×（保護区なら0.4）</code> 増える。調整パネルの「浄化」で −15</td></tr>
+    <tr><td>pH</td><td>毎季節 −0.05（汚染が50%超ならさらに −0.1）</td></tr>
+    <tr><td>栄養</td><td>汚染が40%超なら +3（富栄養化）</td></tr>
+    <tr><td>土壌水分（森）</td><td>±3 でゆらぐ</td></tr>
+    <tr><td>流れ（池・川・海）</td><td>自然な水準へ戻ろうとする（川は <code>60 − 障害物×8</code>、池は5、海は40）</td></tr>
+    <tr><td>溶存酸素（池・川）</td><td><code>＋2 ＋（流れ40超で＋3）−（栄養60超で5）−（水温24℃超で3）− 汚染×0.04</code></td></tr>
+  </table>
+  <h3>3.5 プレイヤーの操作と費用</h3>
+  <table>
+    <tr><th>操作</th><th>費用</th><th>効果</th></tr>
+    <tr><td>パラメータ調整（−／＋）</td><td>8〜15</td><td>1ステップ変更（下の表）</td></tr>
+    <tr><td>障害物の撤去</td><td>10</td><td>障害物 −1（汚染の流入が 1.5 減る）</td></tr>
+    <tr><td>保護区に指定</td><td>40</td><td>汚染の流入が 0.4 倍に（台風の被害も軽減）</td></tr>
+    <tr><td>再導入</td><td>30＋珍しさ×10</td><td>絶滅した種を個体数5で復活（適合度0.6以上が条件）</td></tr>
+  </table>
+</section>
+
+<section id="params">
+  <h2>4. パラメータ（エリアごとに調整できる項目が違う）</h2>
+  <table>
+    <tr><th>エリア</th><th>調整できる項目</th><th>固定値（調整不可）</th></tr>
+    <tr><td>森</td><td>pH／土壌水分／栄養／気温／日照／汚染</td><td>塩分0・酸素90・流速0</td></tr>
+    <tr><td>池</td><td>pH／溶存酸素／栄養／気温／日照／汚染</td><td>水分95・塩分0・流速5</td></tr>
+    <tr><td>川</td><td>pH／流速／溶存酸素／気温／日照／汚染</td><td>水分95・塩分0</td></tr>
+    <tr><td>海</td><td>pH／塩分／潮流／気温／栄養／汚染</td><td>水分100・日照70・酸素90</td></tr>
+  </table>
+  <table>
+    <tr><th>項目</th><th>範囲</th><th>1ステップ</th><th>費用</th><th>＋の操作名</th><th>−の操作名</th></tr>
+    <tr><td>pH</td><td>4〜9</td><td>0.5</td><td>10</td><td>石灰を撒く</td><td>酸性化させる</td></tr>
+    <tr><td>土壌水分・水位</td><td>0〜100%</td><td>10</td><td>10</td><td>灌漑する</td><td>排水する</td></tr>
+    <tr><td>栄養塩</td><td>0〜100%</td><td>10</td><td>8</td><td>施肥する</td><td>栄養を除去</td></tr>
+    <tr><td>気温・水温</td><td>0〜35℃</td><td>2</td><td>8</td><td>温める</td><td>冷やす（日陰）</td></tr>
+    <tr><td>日照</td><td>0〜100%</td><td>10</td><td>8</td><td>間伐する</td><td>遮光する</td></tr>
+    <tr><td>塩分</td><td>0〜100%</td><td>10</td><td>12</td><td>海水を導入</td><td>淡水を導入</td></tr>
+    <tr><td>溶存酸素</td><td>0〜100%</td><td>10</td><td>10</td><td>曝気する</td><td>曝気をやめる</td></tr>
+    <tr><td>流速・潮流</td><td>0〜100%</td><td>10</td><td>10</td><td>水路を広げる</td><td>堰を設ける</td></tr>
+    <tr><td>汚染度</td><td>0〜100%</td><td>−15</td><td>15</td><td>（増やせない）</td><td>浄化する</td></tr>
+  </table>
+  <h3>初期値</h3>
+  <table>
+    <tr><th>エリア</th><th>初期値</th></tr>
+    <tr><td>森</td><td>pH6.0／水分55／栄養50／気温15℃／日照55／汚染20</td></tr>
+    <tr><td>池</td><td>pH7.0／酸素70／栄養55／水温18℃／日照60／流速5／汚染25</td></tr>
+    <tr><td>川</td><td>pH7.0／流速55／酸素85／水温13℃／日照50／汚染20</td></tr>
+    <tr><td>海</td><td>pH8.1／塩分90／潮流40／水温22℃／栄養30／汚染25</td></tr>
+  </table>
+  <p>各エリアに「障害物」（倒木・岩・漂着ゴミなど）が初期3個ある。多いほど汚染が溜まる。</p>
+</section>
+
+<section id="events">
+  <h2>5. 出来事（予報 → 発生）</h2>
+  <p>各季節の終わりに、次の季節の出来事を抽選する（約55%で何か起こる）。画面上部に「予報」として表示され、1季節かけて備えられる。発生するとダイアログで知らせる。条件つきの出来事は、環境の状態を満たすときだけ起こる。</p>
+  <table>
+    <tr><th>出来事</th><th>季節</th><th>条件</th><th>主な効果</th></tr>
+    <tr><td>台風</td><td>夏・秋</td><td>—</td><td>森：水分+25・日照+15・障害物+1・植物−15%（保護区外）／川：流速+40・汚染+10・障害物+1／池：汚染+10・栄養+10／海：潮流+35・汚染+10・塩分−10</td></tr>
+    <tr><td>大雨・洪水</td><td>春・夏</td><td>—</td><td>川：流速+30・汚染+12／池：汚染+12・酸素−10／森：水分+15</td></tr>
+    <tr><td>猛暑</td><td>夏</td><td>—</td><td>その季節だけ気温+6（全エリア）</td></tr>
+    <tr><td>干ばつ</td><td>夏・秋</td><td>—</td><td>森：水分−25／川：流速−25／池：酸素−10</td></tr>
+    <tr><td>寒波</td><td>冬</td><td>—</td><td>その季節だけ気温−6</td></tr>
+    <tr><td>山火事</td><td>秋・冬</td><td>森の水分が45%未満</td><td>森：日照+20・栄養+15・汚染+15・植物−25%</td></tr>
+    <tr><td>アオコ</td><td>夏</td><td>池の栄養55以上かつ水温20℃以上</td><td>池：酸素−35・汚染+10</td></tr>
+    <tr><td>赤潮</td><td>夏・秋</td><td>海の栄養45以上かつ水温20℃以上</td><td>海：汚染+20・海の魚−30%</td></tr>
+    <tr><td>渡り鳥の飛来</td><td>春・秋</td><td>—</td><td>鳥4種の個体数+8。環境が合えば絶滅した鳥が戻る</td></tr>
+    <tr><td>外来種の侵入</td><td>通年</td><td>—</td><td>ブルーギル +20（いなければ8で出現）</td></tr>
+    <tr><td>不法投棄</td><td>通年</td><td>—</td><td>ランダムな1エリアに汚染+10・障害物+2</td></tr>
+    <tr><td>保全への寄付</td><td>通年</td><td>—</td><td>予算 +30</td></tr>
+  </table>
+</section>
+
+<section id="species">
+  <h2>6. 生き物（76種）</h2>
+  <table>
+    <tr><th>種別</th><th>数</th><th>例</th></tr>
+    <tr><td>植物</td><td>26</td><td>ソメイヨシノ、コナラ、スギ、アジサイ、タンポポ、ワラビ、スイレン、ハス、ヤエヤマヒルギ、ウメ、ヤブツバキ、ヒガンバナ、イチョウ、クロマツ、ガマ、アマモ ほか</td></tr>
+    <tr><td>鳥</td><td>26</td><td>スズメ、シジュウカラ、カワセミ、コサギ、ツバメ、アオサギ、ウグイス、メジロ、カワウ、オシドリ、マガモ、トビ、ミサゴ ほか</td></tr>
+    <tr><td>魚</td><td>24</td><td>コイ、メダカ、ヤマメ、ドジョウ、ニホンウナギ、ブルーギル、カクレクマノミ、アユ、ナマズ、クロダイ、カサゴ、スズキ、ニジマス ほか</td></tr>
+  </table>
+  <h3>種ごとのデータ</h3>
+  <ul>
+    <li><code>assets/data/{plants,birds,fish}.json</code>：和名・英名・学名・生息地（複数可）・解説・見分けるポイント・珍しさ（1〜5）</li>
+    <li><code>lib/data/species_traits.dart</code>：育つ環境の範囲（pH・水分・栄養・気温・日照・塩分・酸素・流速・汚染）</li>
+    <li><code>assets/images/creatures/{id}.jpg</code>：写真（Wikimedia Commons。CC BY／CC BY-SA／CC0／パブリックドメインのみ）。作者・ライセンスは <code>assets/data/image_credits.json</code> に記録し、詳細カードに表示</li>
+  </ul>
+  <h3>珍しさに応じた「姿の見え方」</h3>
+  <p>環境に合っていても、動物がいつもその場にいるわけではない。3Dの表示では、珍しさに応じてときどきだけ姿を見せる。</p>
+  <table>
+    <tr><th>珍しさ</th><td>★1</td><td>★2</td><td>★3</td><td>★4</td><td>★5</td></tr>
+    <tr><th>基本の出現率</th><td>90%</td><td>70%</td><td>45%</td><td>25%</td><td>12%</td></tr>
+  </table>
+  <ul>
+    <li>個体数が少ないほど出にくい（<code>× (0.6 ＋ 0.4 × 個体数/60)</code>）。約20秒ごとに抽選し直し、出入りは短くフェード。</li>
+    <li>出ていない動物はタップできない。植物は動かないので常に表示。一覧では全種を確認できる。</li>
+  </ul>
+</section>
+
+<section id="visual">
+  <h2>7. 見た目（演出）</h2>
+  <ul>
+    <li><b>配色・文字</b>：黒背景＋金色（DEEMO 風）。明朝系フォント（Zen Old Mincho）。</li>
+    <li><b>箱庭</b>：斜め上から見下ろす擬似3D（アイソメ）。森=奥・池=右・川=左・海=手前の4タイルを、苔むした石積みの鉢に載せる。森の縁から川・池へ小さな滝（全体図のみ）。</li>
+    <li><b>地面・水</b>：苔の房と草の穂／透きとおった水（縁は明るく中央は深い、底の小石、さざ波、きらめき、浮かぶ花びら）。</li>
+    <li><b>小物</b>：苔むした岩（障害物と飾り）、倒木、スミレ・プリムラ・ヒナギク・スズランの小さな群れ、葦、サンゴ、貝、ヒトデ、漂う蛍の光。人工物は置かない。</li>
+    <li><b>生き物のモデル</b>：写真ではなく、形・色・質感で特徴を描く（<code>species_models.dart</code>）。葉は明・中・暗の房を重ね、鳥は覆羽を段にして風切羽を伸ばし、魚はうろこ・光沢・ひれの筋を描く。サクラ＝ピンクの花の雲、スギ＝円錐、カワセミ＝青い背とオレンジの腹、カクレクマノミ＝黒縁の白い帯、など。</li>
+    <li><b>種の写真</b>：一覧のカードと詳細カードで使用（3D表示では使わない）。</li>
+  </ul>
+</section>
+
+<section id="tech">
+  <h2>8. 技術構成</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>フレームワーク</td><td>Flutter（Dart 3）。状態管理は Riverpod（<code>NotifierProvider</code>）</td></tr>
+    <tr><td>描画</td><td><code>CustomPainter</code> による自前の擬似3D（Flame は依存に残るが未使用）</td></tr>
+    <tr><td>フォント</td><td>google_fonts（Zen Old Mincho）</td></tr>
+    <tr><td>対応</td><td>Web（Chrome）／Android</td></tr>
+    <tr><td>保存</td><td>未実装（ゲームの進行は保存しない）</td></tr>
+  </table>
+  <h3>主なファイル</h3>
+  <table>
+    <tr><th>ファイル</th><th>役割</th></tr>
+    <tr><td><code>lib/providers/conservation_provider.dart</code></td><td>シミュレーション本体（状態・適合度・季節処理・出来事・操作）</td></tr>
+    <tr><td><code>lib/data/season_events.dart</code></td><td>出来事の定義（季節・重み・文言）</td></tr>
+    <tr><td><code>lib/data/species_traits.dart</code></td><td>種ごとの適正範囲（76種）</td></tr>
+    <tr><td><code>lib/models/env_param.dart</code></td><td>パラメータの定義（範囲・費用・操作名）</td></tr>
+    <tr><td><code>lib/screens/home_screen.dart</code></td><td>ホーム</td></tr>
+    <tr><td><code>lib/screens/hakoniwa_screen.dart</code></td><td>箱庭（全体図）、調整パネル、予報バナー、種の一覧行</td></tr>
+    <tr><td><code>lib/screens/area_zoom_screen.dart</code></td><td>エリア拡大画面（3D／一覧、拡大操作）</td></tr>
+    <tr><td><code>lib/widgets/iso_island.dart</code></td><td>擬似3Dの島・鉢・地面・水・岩・花・滝の描画、姿の出入り</td></tr>
+    <tr><td><code>lib/widgets/species_models.dart</code></td><td>76種の立体モデル</td></tr>
+    <tr><td><code>lib/widgets/creature_photo.dart</code></td><td>写真サムネイル、種の詳細カード</td></tr>
+    <tr><td><code>lib/widgets/glow_tree.dart</code></td><td>ホームの金色の樹</td></tr>
+  </table>
+  <h3>起動</h3>
+  <ul>
+    <li>Chrome：<code>flutter run -d chrome</code></li>
+    <li>Webサーバー：<code>flutter run -d web-server --web-port 8080</code>（<code>http://localhost:8080</code>）</li>
+    <li>Android 実機：<code>flutter run</code>（USBデバッグを有効に）。APK：<code>flutter build apk --release</code></li>
+  </ul>
+  <h3>種を追加する手順</h3>
+  <ol>
+    <li>JSON（plants／birds／fish）に1件追加</li>
+    <li><code>species_traits.dart</code> に適正範囲を追加</li>
+    <li><code>species_models.dart</code> にモデルを追加（鳥：<code>_birdSpecs</code>＋<code>_birdMarks</code>、魚：<code>_fishSpecs</code>＋<code>_fishPattern</code>、植物：<code>_plant</code>／<code>_plantExtra</code>）</li>
+    <li>写真を Wikimedia Commons（CC のみ）から取得して <code>assets/images/creatures/</code> に置き、<code>image_credits.json</code> に作者・ライセンスを記録</li>
+  </ol>
+  <div class="note">外部サイトからの取得は、Python の urllib が社内の証明書で失敗するため、<code>curl</code> を使う。</div>
+</section>
+
+<section id="plan">
+  <h2>9. 検討中（未実装）</h2>
+  <div class="plan">
+    <p><span class="tag todo">計画</span><b>パラメータの抽象化</b></p>
+    <ul>
+      <li>数値のスライダー操作をやめ、「石灰を撒く」「水草を刈る」のような<b>1操作1ボタン</b>にする。</li>
+      <li>「診断」を出す：弱っている種が多い原因を集計し（例：「土が酸性に傾き、3種が弱っています」）、対応するボタンをおすすめ表示する。</li>
+      <li>数値は「くわしい数値」に畳む。</li>
+    </ul>
+    <p><span class="tag todo">計画</span><b>発見と駆除</b></p>
+    <ul>
+      <li>3Dで姿を見かけた種が「発見済み」になる（未発見は「？？？」）。図鑑もこれに連動させる。</li>
+      <li>発見済みの種だけ「駆除」ボタンで個体数を減らせる。個体数は内部のパラメータで持つ（いまの <code>population</code> を利用）。</li>
+    </ul>
+    <p><span class="tag todo">計画</span><b>外来種と生態系のバランス</b></p>
+    <ul>
+      <li>外来種（現状はブルーギル・ニジマス。セイタカアワダチソウ、ホテイアオイ、ガビチョウ、カダヤシ、オオクチバスなどを追加予定）を、放置すると増えて在来種を圧迫するようにする。</li>
+      <li>外来種をこまめに駆除して生態系を保つ。<b>在来種を駆除すると、そのエリアが荒れる</b>（適合度が下がる）ようにシミュレーションする。</li>
+      <li>評価は在来種の生き残りを中心にし、外来種が残ると減点する。</li>
+    </ul>
+  </div>
+</section>
+
+<section id="issues">
+  <h2>10. 既知の課題</h2>
+  <ul>
+    <li><b>図鑑画面</b>が旧デザイン（緑系）のままで、箱庭と連動しておらず、全種が「???」のまま。</li>
+    <li>森は種が多く、3D表示で重なりやすい（拡大すると見やすい）。</li>
+    <li>アユの写真は解像度が低い。スイレン・タンポポの写真は属レベルのもの。</li>
+    <li>観察カード・クイズの画面部品（<code>observation_overlay</code>、<code>quiz_overlay</code>）は未接続のまま残置。</li>
+    <li>台風などの発生時に、島の見た目（雨・荒れた波など）が変わる演出はない。</li>
+    <li>ゲームの進行を保存しない。</li>
+    <li>開発用サーバーは、メモリ不足で自動停止されることがある（他のアプリを閉じて起動すると安定）。</li>
+  </ul>
+</section>
+
+</main>
+<footer>NatureWalk 現行仕様 ／ 76種・4エリア・24季節 ／ 2026-11-03 時点</footer>
+</body>
+</html>
