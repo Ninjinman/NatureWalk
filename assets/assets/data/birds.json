@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "suzume",
+    "nameJa": "スズメ",
+    "nameEn": "Eurasian Tree Sparrow",
+    "nameScientific": "Passer montanus",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日本で最もよく見かける小鳥。人家の周辺で通年見られる留鳥。稲の害鳥とされる一方、稲作文化と共存してきた身近な野鳥。近年は個体数が減少傾向にある。",
+    "tips": [
+      {
+        "part": "頭部",
+        "detail": "栗色の頭頂と後頭部。白い頬に黒い斑点（頬斑）が1つある。喉は黒い。これがスズメを見分ける最大のポイント"
+      },
+      {
+        "part": "体の色・模様",
+        "detail": "背面は茶褐色に黒い縦縞模様。腹面は汚白色。翼に白い翼帯が2本ある。体長は約14cm"
+      },
+      {
+        "part": "くちばし",
+        "detail": "短くて太い円錐形のくちばし。種子を割って食べるのに適した形。色は黒（繁殖期）〜黄灰色（冬）"
+      },
+      {
+        "part": "行動",
+        "detail": "群れで行動することが多い。地上でぴょんぴょんと両足でホッピング移動する。チュンチュン・ジュジュと鳴く"
+      }
+    ],
+    "imagePath": "assets/images/creatures/suzume.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "shijukara",
+    "nameJa": "シジュウカラ",
+    "nameEn": "Japanese Tit",
+    "nameScientific": "Parus minor",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日本の森林や公園でよく見られる小鳥。白黒の明確な模様が特徴で、ツツピー・ツツピーという澄んだ声でさえずる。樹洞や巣箱に営巣する。道具を使うなど高い知能を持つ。",
+    "tips": [
+      {
+        "part": "頭部",
+        "detail": "頭部は光沢のある黒色で、頬は白い。この白い頬が明確な識別ポイント。のどから腹部中央にかけて黒いネクタイ模様（ネクタイが太い方がオス）"
+      },
+      {
+        "part": "体の色・模様",
+        "detail": "背面は灰緑色〜黄緑色。腹面は白〜淡黄色。翼に白い翼帯が1本ある。体長は約14cm"
+      },
+      {
+        "part": "くちばし",
+        "detail": "細くて短い、やや尖ったくちばし。昆虫を捕食するのに適している。黒色"
+      },
+      {
+        "part": "鳴き声・行動",
+        "detail": "ツツピー・ツツピーと繰り返すさえずり。ツーピーとかシジュウカラとも聞こえる。逆さになって採食することも多い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shijukara.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "hiyodori",
+    "nameJa": "ヒヨドリ",
+    "nameEn": "Brown-eared Bulbul",
+    "nameScientific": "Hypsipetes amaurotis",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "ピーヨ・ピーヨという大きな声でなく中型の鳥。日本全国に生息し、花の蜜や果実を好む。かつては渡り鳥だったが現在は多くが留鳥化している。",
+    "tips": [
+      {
+        "part": "頭部",
+        "detail": "頭部は灰色で、耳羽（耳のあたり）が茶褐色（これが名前の由来）。頭頂の羽が少し立つ（冠羽）"
+      },
+      {
+        "part": "体の色・模様",
+        "detail": "全体的に灰褐色。のど〜胸は白に灰色の縦縞が入る。体長は約27cm。尾が長め"
+      },
+      {
+        "part": "くちばし",
+        "detail": "やや長くて細く先端がわずかに曲がる。花の蜜を吸うのにも適している。黒色"
+      },
+      {
+        "part": "行動",
+        "detail": "木の実や花を食べる。枝から枝へと波状飛行する。ピーヨと大声で鳴きながら飛ぶ。人家の庭のサザンカやツバキの花の蜜を吸う"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hiyodori.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "kawasemi",
+    "nameJa": "カワセミ",
+    "nameEn": "Common Kingfisher",
+    "nameScientific": "Alcedo atthis",
+    "type": "bird",
+    "habitats": [
+      "river",
+      "pond"
+    ],
+    "description": "宝石のように美しい色を持つ「水辺の宝石」。透き通った川や池の岸辺に生息し、水中に飛び込んで魚を捕る。街中の公園の池でも見られることがある。",
+    "tips": [
+      {
+        "part": "体の色・模様",
+        "detail": "背面（頭から尾まで）は鮮やかなエメラルドブルー〜コバルトブルー。腹面はオレンジ褐色（コゲ茶）。頬に白い斑点。体長は約17cm"
+      },
+      {
+        "part": "くちばし",
+        "detail": "頭に不釣り合いなほど長くて太い直線的なくちばし（体長の約1/3）。オスのくちばしは黒色、メスは下くちばしの基部がオレンジ色"
+      },
+      {
+        "part": "飛び方・行動",
+        "detail": "水面すれすれを直線的に高速で飛ぶ。木の枝や石の上で静止して水中の魚を見張る。発見すると頭から水中に飛び込んで魚を捕る"
+      },
+      {
+        "part": "尾・足",
+        "detail": "尾は非常に短い。足も短く赤い。止まっているとずんぐりした体形に見える"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawasemi.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kosagi",
+    "nameJa": "コサギ",
+    "nameEn": "Little Egret",
+    "nameScientific": "Egretta garzetta",
+    "type": "bird",
+    "habitats": [
+      "river",
+      "pond",
+      "ocean"
+    ],
+    "description": "全身真っ白なサギ。水田・河川・干潟などに生息し、魚やカエルを捕食する。繁殖期には頭に2本の長い飾り羽が生える。かつて飾り羽が乱獲されて激減したが現在は回復している。",
+    "tips": [
+      {
+        "part": "体の色・模様",
+        "detail": "全身真っ白。体長は約60cm。繁殖期（春〜夏）には頭に2本の長い白い飾り羽（冠羽）と背・胸に蓑羽（みのけ）が生える"
+      },
+      {
+        "part": "くちばし・足",
+        "detail": "くちばしは黒く細長い。足は黒いが指（趾）だけが黄色いのが最大の識別ポイント（大サギ・チュウサギは指も黒い）"
+      },
+      {
+        "part": "飛び方",
+        "detail": "首をS字に曲げて飛ぶ（コウノトリ・ツルは首を伸ばして飛ぶので区別できる）。翼は大きく白い"
+      },
+      {
+        "part": "採食行動",
+        "detail": "水中を歩きながら魚・カエル・エビを素早くくちばしで突く。片足で水を掻いて獲物を驚かせる行動（フットスターリング）も見られる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kosagi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kaitsuburi",
+    "nameJa": "カイツブリ",
+    "nameEn": "Little Grebe",
+    "nameScientific": "Tachybaptus ruficollis",
+    "type": "bird",
+    "habitats": [
+      "pond"
+    ],
+    "description": "日本最小のカモ目の鳥。池や沼に生息し、潜水して魚や水生昆虫を捕る。浮き巣を作る。尾が短くほぼ見えないため丸いフォルムが特徴。ビービービーと賑やかに鳴く。",
+    "tips": [
+      {
+        "part": "体の色・模様",
+        "detail": "繁殖期（夏）は頭・首が赤褐色、背が暗褐色、頬が栗色。冬は頭・背が暗褐色で腹は白っぽい。体長は約26cm。尾がほとんどない"
+      },
+      {
+        "part": "くちばし",
+        "detail": "短くて先端が尖ったくちばし。黒く基部に黄白色の斑がある。魚をつかまえるのに適している"
+      },
+      {
+        "part": "潜水行動",
+        "detail": "素早く水中に潜る。潜水時間は10〜30秒程度。足は体の後方についており水中推進に特化。陸上はほとんど歩けない"
+      },
+      {
+        "part": "巣",
+        "detail": "葦などの水生植物を積み上げた浮き巣を作る。親鳥は卵・雛を背中に乗せて運ぶ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kaitsuburi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "tsubame",
+    "nameJa": "ツバメ",
+    "nameEn": "Barn Swallow",
+    "nameScientific": "Hirundo rustica",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "river"
+    ],
+    "description": "春に東南アジアから渡来する夏鳥。人家の軒下に泥で巣を作る。飛びながら虫を捕食し、人間の農耕と共存してきた。「ツバメが低く飛ぶと雨」は俗説だが、湿度が上がると虫が低く飛ぶため一定の根拠がある。",
+    "tips": [
+      {
+        "part": "尾",
+        "detail": "尾が深く二股に割れる長い燕尾（えんび）形が最大の特徴。オスの方が尾が長い。飛行中に開いたり閉じたりして方向を調整"
+      },
+      {
+        "part": "体の色・模様",
+        "detail": "背面は光沢のある青黒色。腹面は白〜クリーム色。額・のどが赤褐色。体長は約17cm（尾羽含む）"
+      },
+      {
+        "part": "飛び方",
+        "detail": "素早く方向転換しながら飛ぶ。羽ばたきと滑空を繰り返す。飛びながら口を開けて虫を捕食する"
+      },
+      {
+        "part": "巣",
+        "detail": "人家・橋の下などに泥・枯れ草・唾液を混ぜた椀形の巣を作る。同じ巣を毎年使うことが多い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tsubame.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "aosagi",
+    "nameJa": "アオサギ",
+    "nameEn": "Grey Heron",
+    "nameScientific": "Ardea cinerea",
+    "type": "bird",
+    "habitats": [
+      "river",
+      "pond"
+    ],
+    "description": "日本最大のサギ。川・池・水田で静止して魚を待ち伏せる姿がよく見られる。飛ぶと大きな翼が目立つ。首を縮めてS字にして飛ぶ。「アオ」の名があるが実際は灰色。",
+    "tips": [
+      {
+        "part": "頭部",
+        "detail": "頭が白く、目の後ろから後頭部にかけて黒い模様が帯状に伸びる。繁殖期には後頭部に黒い飾り羽が数本生える。くちばしは黄橙色で長く太い"
+      },
+      {
+        "part": "体の色・模様",
+        "detail": "背面が灰色（青みがかって見えることから「アオ」）。のど〜胸に黒い縦縞。翼の先が黒い。体長約93cmで日本のサギ類最大"
+      },
+      {
+        "part": "飛び方",
+        "detail": "首をS字に縮めて飛ぶ。翼幅は180cmに達する。翼の灰色と翼先の黒が目立つ。比較的低空をゆっくり飛ぶ"
+      },
+      {
+        "part": "採食行動",
+        "detail": "水辺で長時間じっと立って魚を待ち伏せる。獲物を発見すると素早くくちばしを突き込む。カエル・ヘビ・ネズミも食べる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/aosagi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "onaga",
+    "nameJa": "オナガ",
+    "nameEn": "Azure-winged Magpie",
+    "nameScientific": "Cyanopica cyanus",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日本では関東・東北に分布が限られる珍しい鳥。青みがかった翼と長い尾が特徴で、群れで行動することが多い。カラス科の仲間。ギュルギュルという独特の鳴き声。",
+    "tips": [
+      {
+        "part": "体の色・模様",
+        "detail": "頭が黒い。背・翼・尾が青みがかった灰青色（コバルトブルー系）。腹は白〜淡灰色。体長は約37cmで尾が全体の半分以上を占める"
+      },
+      {
+        "part": "尾",
+        "detail": "非常に長い尾（25cm程度）が最大の特徴。段階的に長くなる階梯状尾で、飛ぶと旗のように広がる"
+      },
+      {
+        "part": "くちばし",
+        "detail": "黒色で短めのくちばし。カラス科らしい太さがある"
+      },
+      {
+        "part": "群れ行動",
+        "detail": "通常5〜20羽の群れで行動する。ギュルギュルル・ギュルルと賑やかに鳴きながら木から木へ移動する"
+      }
+    ],
+    "imagePath": "assets/images/creatures/onaga.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kijibato",
+    "nameJa": "キジバト",
+    "nameEn": "Oriental Turtle Dove",
+    "nameScientific": "Streptopelia orientalis",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "日本全国に生息する留鳥。公園や雑木林でよく見られる。デデッポッポーという独特の鳴き声。ドバト（カワラバト）と並んでよく見られるハトの一種。",
+    "tips": [
+      {
+        "part": "体の色・模様",
+        "detail": "全体的に赤褐色〜茶褐色。翼に鱗のような模様（羽縁が赤褐色で中心が暗色）。首の横に青灰色と黒の縞模様（頸斑）がある。体長は約33cm"
+      },
+      {
+        "part": "首の模様",
+        "detail": "首の両側に青灰色・黒・白の縞模様（頸斑）があるのが識別ポイント。ドバト（カワラバト）にはこの模様がない"
+      },
+      {
+        "part": "くちばし・目",
+        "detail": "くちばしは暗灰色。目は赤みがかったオレンジ色"
+      },
+      {
+        "part": "鳴き声・行動",
+        "detail": "デデッポッポーと繰り返す特徴的なさえずり。地上で種子を拾って食べる。ペアで行動することが多い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kijibato.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "karugamo",
+    "nameJa": "カルガモ",
+    "nameEn": "Eastern Spot-billed Duck",
+    "nameScientific": "Anas zonorhyncha",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "日本に一年中見られる留鳥のカモ。都市の公園の池でも繁殖する。くちばしの先端が黄色いのが特徴。子連れの母ガモが道路を渡る「カルガモ行進」がニュースになることもある。",
+    "tips": [
+      {
+        "part": "くちばし",
+        "detail": "くちばしが黒く先端だけが黄色いのが最大の識別ポイント。マガモなどのカモはくちばし全体が黄緑色や橙色"
+      },
+      {
+        "part": "体の色・模様",
+        "detail": "全体的に茶褐色で黒褐色の鱗状模様。頭は暗色（黒に近い）で目の上に白い線（眉斑）がある。オスとメスが似ており区別しにくい。体長は約61cm"
+      },
+      {
+        "part": "翼鏡",
+        "detail": "翼の一部に光沢のある青紫色の翼鏡がある。飛ぶと白い翼帯とともに目立つ"
+      },
+      {
+        "part": "行動",
+        "detail": "水面でさかさまになって水草を食べる（逆立ち採食）。ガアガアと大きく鳴く。群れで行動するが繁殖期はペア"
+      }
+    ],
+    "imagePath": "assets/images/creatures/karugamo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "kawarabato",
+    "nameJa": "ドバト（カワラバト）",
+    "nameEn": "Rock Pigeon",
+    "nameScientific": "Columba livia",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "街中で最もよく見かけるハト。もともと岩場に巣を作る野生のカワラバトを伝書鳩として家禽化したものが野生化したもの（フェラル・ピジョン）。羽の色は白・灰・茶・黒など個体差が大きい。",
+    "tips": [
+      {
+        "part": "体の色・模様",
+        "detail": "典型的な個体は頭・首が光沢のある緑〜紫色、体が灰色、翼に2本の黒い横縞。ただし白・茶・黒などさまざまな色の個体がいる。体長は約33cm"
+      },
+      {
+        "part": "首",
+        "detail": "首が光沢のある緑や紫に輝く（タマムシ色）のが特徴。首を前後に振りながら歩く"
+      },
+      {
+        "part": "くちばし・鼻",
+        "detail": "くちばし基部に白いロウ膜（蝋様の組織）がある。これはハト科共通の特徴"
+      },
+      {
+        "part": "行動",
+        "detail": "地上を歩いて食べ物を探す。ブーブーと低い声で鳴く。群れで行動し人を恐れない"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawarabato.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "uguisu",
+    "nameJa": "ウグイス",
+    "nameEn": "Japanese Bush Warbler",
+    "nameScientific": "Horornis diphone",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "春に「ホーホケキョ」と鳴く。藪の中にひそみ、姿を見るのはむずかしい。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "全体が地味なオリーブ褐色。腹は淡く白っぽい"
+      },
+      {
+        "part": "顔",
+        "detail": "目の上に淡い眉のような線（眉斑）がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/uguisu.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "mejiro",
+    "nameJa": "メジロ",
+    "nameEn": "Japanese White-eye",
+    "nameScientific": "Zosterops japonicus",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "花のみつを好む小鳥。梅やサクラ、ツバキの花によく訪れる。",
+    "tips": [
+      {
+        "part": "目",
+        "detail": "目のまわりが白くふちどられている"
+      },
+      {
+        "part": "体色",
+        "detail": "背は黄緑色、のどは黄色みがある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/mejiro.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "joubitaki",
+    "nameJa": "ジョウビタキ",
+    "nameEn": "Daurian Redstart",
+    "nameScientific": "Phoenicurus auroreus",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "冬に日本へ渡ってくる小鳥。縄張りをもち、杭などの上で尾を震わせる。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "オスは頭が灰白色で、胸から腹がオレンジ色"
+      },
+      {
+        "part": "翼",
+        "detail": "翼に白い斑（紋）がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/joubitaki.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kisekirei",
+    "nameJa": "キセキレイ",
+    "nameEn": "Grey Wagtail",
+    "nameScientific": "Motacilla cinerea",
+    "type": "bird",
+    "habitats": [
+      "river"
+    ],
+    "description": "山地の渓流や川に住む。長い尾を上下に振りながら、水辺を歩いて虫を捕る。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "背は灰色、腹は鮮やかな黄色"
+      },
+      {
+        "part": "尾",
+        "detail": "非常に長く、上下によく振る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kisekirei.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "hakusekirei",
+    "nameJa": "ハクセキレイ",
+    "nameEn": "White Wagtail",
+    "nameScientific": "Motacilla alba",
+    "type": "bird",
+    "habitats": [
+      "river",
+      "pond"
+    ],
+    "description": "川原や街中で見られる、白黒の小鳥。尾を上下に振って歩く。",
+    "tips": [
+      {
+        "part": "顔",
+        "detail": "白い顔に黒い過眼線。のどから胸が黒い"
+      },
+      {
+        "part": "尾",
+        "detail": "長い尾を上下に振る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hakusekirei.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "kawau",
+    "nameJa": "カワウ",
+    "nameEn": "Great Cormorant",
+    "nameScientific": "Phalacrocorax carbo",
+    "type": "bird",
+    "habitats": [
+      "river",
+      "pond",
+      "ocean"
+    ],
+    "description": "水に潜って魚を捕る黒い大型の水鳥。岩の上で翼を広げて乾かす姿がよく見られる。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "全身が黒く、青緑色の光沢がある"
+      },
+      {
+        "part": "嘴",
+        "detail": "先が鉤のように曲がった細長い嘴。顔に黄色っぽい皮膚が出る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawau.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "goisagi",
+    "nameJa": "ゴイサギ",
+    "nameEn": "Black-crowned Night Heron",
+    "nameScientific": "Nycticorax nycticorax",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "夕方から夜に活動するサギ。昼は木陰でじっとしていることが多い。",
+    "tips": [
+      {
+        "part": "頭",
+        "detail": "成鳥は頭から背が黒緑色で、後頭部に白い長い飾り羽がある"
+      },
+      {
+        "part": "目",
+        "detail": "目が赤く、体は丸くずんぐりしている"
+      }
+    ],
+    "imagePath": "assets/images/creatures/goisagi.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "daisagi",
+    "nameJa": "ダイサギ",
+    "nameEn": "Great Egret",
+    "nameScientific": "Ardea alba",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river",
+      "ocean"
+    ],
+    "description": "全身が白い大型のサギ。首を「く」の字に曲げて、浅瀬で魚をねらう。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "全身が真っ白。コサギより大きい"
+      },
+      {
+        "part": "首",
+        "detail": "首が長く、S字に曲がる。口角が目の後ろまで裂ける"
+      }
+    ],
+    "imagePath": "assets/images/creatures/daisagi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "oshidori",
+    "nameJa": "オシドリ",
+    "nameEn": "Mandarin Duck",
+    "nameScientific": "Aix galericulata",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "森の池や渓流にすむカモ。オスは非常に華やかな羽をもつ。",
+    "tips": [
+      {
+        "part": "オス",
+        "detail": "頭に冠羽があり、オレンジ色の「銀杏羽」と呼ばれる帆のような羽が立つ"
+      },
+      {
+        "part": "メス",
+        "detail": "地味な灰褐色で、目のまわりが白い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/oshidori.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "magamo",
+    "nameJa": "マガモ",
+    "nameEn": "Mallard",
+    "nameScientific": "Anas platyrhynchos",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "最もよく知られたカモ。多くの家禽のアヒルの原種。",
+    "tips": [
+      {
+        "part": "オス",
+        "detail": "頭が光沢のある緑色で、首に白い輪がある。嘴は黄色"
+      },
+      {
+        "part": "メス",
+        "detail": "全体に茶色いまだら模様。嘴はオレンジ色がかる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/magamo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "tobi",
+    "nameJa": "トビ",
+    "nameEn": "Black Kite",
+    "nameScientific": "Milvus migrans",
+    "type": "bird",
+    "habitats": [
+      "ocean",
+      "river",
+      "forest",
+      "mountainMid"
+    ],
+    "description": "「ピーヒョロロ」と鳴いて空高く輪を描く猛禽。海辺や川辺で魚の死骸なども食べる。",
+    "tips": [
+      {
+        "part": "尾",
+        "detail": "尾の先が浅く二股に切れ込んでいる（バチ形）"
+      },
+      {
+        "part": "飛び方",
+        "detail": "羽ばたかずに、上昇気流に乗って輪を描く"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tobi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "umineko",
+    "nameJa": "ウミネコ",
+    "nameEn": "Black-tailed Gull",
+    "nameScientific": "Larus crassirostris",
+    "type": "bird",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "ネコのような声で鳴くカモメ。港や海岸で見られる。",
+    "tips": [
+      {
+        "part": "尾",
+        "detail": "尾の先に黒い帯がある"
+      },
+      {
+        "part": "嘴",
+        "detail": "黄色い嘴の先に、赤と黒の斑がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/umineko.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "yamagara",
+    "nameJa": "ヤマガラ",
+    "nameEn": "Varied Tit",
+    "nameScientific": "Sittiparus varius",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "森にすむ小鳥。木の実をくわえて、足でおさえてつつく。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "頭が黒く、頬と額はクリーム色。胸から腹はオレンジ色"
+      },
+      {
+        "part": "食べ方",
+        "detail": "種子を足でおさえて割る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamagara.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "misago",
+    "nameJa": "ミサゴ",
+    "nameEn": "Osprey",
+    "nameScientific": "Pandion haliaetus",
+    "type": "bird",
+    "habitats": [
+      "ocean",
+      "river"
+    ],
+    "description": "水面近くの魚を急降下して足でつかむ猛禽。海岸や大きな川で見られる。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "背は濃い茶色、腹は白い。目を通る黒い線がある"
+      },
+      {
+        "part": "狩り",
+        "detail": "空中で停止（ホバリング）し、魚をみつけると頭から飛び込む"
+      }
+    ],
+    "imagePath": "assets/images/creatures/misago.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "raicho",
+    "nameJa": "ライチョウ",
+    "nameEn": "Rock Ptarmigan",
+    "nameScientific": "Lagopus muta",
+    "type": "bird",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "高山のハイマツ帯にすむ、氷河期の生き残りの鳥。夏は褐色、冬は真っ白に羽の色を変える。",
+    "tips": [
+      {
+        "part": "羽色",
+        "detail": "夏羽は褐色のまだら、冬羽は純白に変わる"
+      },
+      {
+        "part": "足",
+        "detail": "足の指まで羽毛で覆われている"
+      }
+    ],
+    "imagePath": "assets/images/creatures/raicho.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "hoshigarasu",
+    "nameJa": "ホシガラス",
+    "nameEn": "Spotted Nutcracker",
+    "nameScientific": "Nucifraga caryocatactes",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "亜高山帯の針葉樹林にすむカラスの仲間。ハイマツの種子を地面にたくわえる。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "濃い茶色の体に、白い斑点が散らばる"
+      },
+      {
+        "part": "嘴",
+        "detail": "長くて黒い嘴で、松かさから種子を取り出す"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hoshigarasu.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "iwahibari",
+    "nameJa": "イワヒバリ",
+    "nameEn": "Alpine Accentor",
+    "nameScientific": "Prunella collaris",
+    "type": "bird",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "高山の岩場にすむ小鳥。地味な姿だが、美しい声でさえずる。",
+    "tips": [
+      {
+        "part": "体色",
+        "detail": "頭は灰色で、体は茶色の縦斑がある"
+      },
+      {
+        "part": "脇",
+        "detail": "脇腹に赤茶色の斑がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/iwahibari.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "rurubitaki",
+    "nameJa": "ルリビタキ",
+    "nameEn": "Red-flanked Bluetail",
+    "nameScientific": "Tarsiger cyanurus",
+    "type": "bird",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "亜高山の林にすむ小鳥。夏は高山、冬は低地に降りる。オスは鮮やかな青色。",
+    "tips": [
+      {
+        "part": "オス",
+        "detail": "背が青く、脇腹がオレンジ色。白い眉斑がある"
+      },
+      {
+        "part": "メス",
+        "detail": "茶褐色で、尾だけが青みを帯びる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/rurubitaki.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "enaga",
+    "nameJa": "エナガ",
+    "nameEn": "Long-tailed Tit",
+    "nameScientific": "Aegithalos caudatus",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "丸い体に長い尾の小鳥。群れで枝を渡り歩く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体より長い尾"
+      },
+      {
+        "part": "ポイント",
+        "detail": "全体が白っぽく、黒い眉斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/enaga.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "ooruri",
+    "nameJa": "オオルリ",
+    "nameEn": "Blue-and-white Flycatcher",
+    "nameScientific": "Cyanoptila cyanomelana",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainLow"
+    ],
+    "description": "夏、渓流沿いの林で美しい声で鳴く。雄は鮮やかな青。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄は背が深い瑠璃色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "腹は白く、のどは黒い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ooruri.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "kibitaki",
+    "nameJa": "キビタキ",
+    "nameEn": "Narcissus Flycatcher",
+    "nameScientific": "Ficedula narcissina",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainLow"
+    ],
+    "description": "夏鳥。雄は黒い背に鮮やかな黄色の胸とまゆ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "胸と眉が黄色い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "羽に白い斑がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kibitaki.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "shimaenaga",
+    "nameJa": "シマエナガ",
+    "nameEn": "Snow Tit",
+    "nameScientific": "Aegithalos caudatus japonicus",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "北海道だけにすむ、雪の妖精のような真っ白なエナガ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "顔が真っ白でまるい"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長い尾を持つ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shimaenaga.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "hoojiro",
+    "nameJa": "ホオジロ",
+    "nameEn": "Meadow Bunting",
+    "nameScientific": "Emberiza cioides",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "草地や林縁で「一筆啓上」と鳴く。顔の白黒模様が目印。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "顔に白と黒の縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背は茶色い縦斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hoojiro.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "shime",
+    "nameJa": "シメ",
+    "nameEn": "Hawfinch",
+    "nameScientific": "Coccothraustes coccothraustes",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "冬鳥。太いくちばしで硬い種を割る。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "くちばしが太く丈夫"
+      },
+      {
+        "part": "ポイント",
+        "detail": "首の後ろが灰色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shime.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kawarahiwa",
+    "nameJa": "カワラヒワ",
+    "nameEn": "Oriental Greenfinch",
+    "nameScientific": "Chloris sinica",
+    "type": "bird",
+    "habitats": [
+      "river"
+    ],
+    "description": "河原や草地にすむ小鳥。羽に黄色い帯がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽に鮮やかな黄色い帯"
+      },
+      {
+        "part": "ポイント",
+        "detail": "太い淡い色のくちばし"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawarahiwa.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "tsugumi",
+    "nameJa": "ツグミ",
+    "nameEn": "Dusky Thrush",
+    "nameScientific": "Turdus eunomus",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "冬鳥。地面を歩いては立ち止まり、胸を張る独特の姿。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白いまゆ、胸に黒い斑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "立ち止まって胸を張る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tsugumi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "shirohara",
+    "nameJa": "シロハラ",
+    "nameEn": "Pale Thrush",
+    "nameScientific": "Turdus pallidus",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "冬、暗い林の地面で落ち葉をはねのけて餌を探す。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹が白く、体は灰褐色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "地面で落ち葉をはね上げる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shirohara.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "akahara",
+    "nameJa": "アカハラ",
+    "nameEn": "Brown-headed Thrush",
+    "nameScientific": "Turdus chrysolaus",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainLow"
+    ],
+    "description": "夏の山地の林にすむツグミの仲間。腹が橙色。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹からわきが橙赤色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "雄はのどが灰色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akahara.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kakesu",
+    "nameJa": "カケス",
+    "nameEn": "Eurasian Jay",
+    "nameScientific": "Garrulus glandarius",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainMid"
+    ],
+    "description": "森にすむカラスの仲間。羽に鮮やかな青い斑がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽に青・白・黒の縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "ドングリを蓄える"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kakesu.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "ooakagera",
+    "nameJa": "オオアカゲラ",
+    "nameEn": "White-backed Woodpecker",
+    "nameScientific": "Dendrocopos leucotos",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "大きな枯れ木のある林にすむキツツキ。個体数が少ない。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背に白と黒の縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "腹に黒い縦斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ooakagera.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "akagera",
+    "nameJa": "アカゲラ",
+    "nameEn": "Great Spotted Woodpecker",
+    "nameScientific": "Dendrocopos major",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "木の幹をたたいて虫をとる。腹の下が赤い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背は黒、肩に白い斑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "下腹と後頭部が赤い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akagera.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kogera",
+    "nameJa": "コゲラ",
+    "nameEn": "Japanese Pygmy Woodpecker",
+    "nameScientific": "Yungipicus kizuki",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日本最小のキツツキ。街の公園にもいる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "スズメ大でまだら模様"
+      },
+      {
+        "part": "ポイント",
+        "detail": "木の幹をらせん状に登る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kogera.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "fukurou",
+    "nameJa": "フクロウ",
+    "nameEn": "Ural Owl",
+    "nameScientific": "Strix uralensis",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainMid"
+    ],
+    "description": "夜の森の主。丸い顔と大きな目。「ゴロスケホッホ」と鳴く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "丸い顔に黒い目"
+      },
+      {
+        "part": "ポイント",
+        "detail": "音を立てずに飛ぶ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/fukurou.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "ooshima_fukurou",
+    "nameJa": "シマフクロウ",
+    "nameEn": "Blakiston's Fish Owl",
+    "nameScientific": "Bubo blakistoni",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "北海道の大きな川にすむ世界最大級のフクロウ。絶滅の危機にある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "耳のような羽角"
+      },
+      {
+        "part": "ポイント",
+        "detail": "魚をとる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ooshima_fukurou.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "ootaka",
+    "nameJa": "オオタカ",
+    "nameEn": "Northern Goshawk",
+    "nameScientific": "Accipiter gentilis",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "森の猛禽。白いまゆと横縞の胸が特徴。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白いまゆ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "胸に細かい横縞"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ootaka.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "inuwashi",
+    "nameJa": "イヌワシ",
+    "nameEn": "Golden Eagle",
+    "nameScientific": "Aquila chrysaetos",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "険しい山にすむ大型の猛禽。翼を広げると2m以上。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "後頭部が金色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "力強い黄色い足"
+      }
+    ],
+    "imagePath": "assets/images/creatures/inuwashi.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "hayabusa",
+    "nameJa": "ハヤブサ",
+    "nameEn": "Peregrine Falcon",
+    "nameScientific": "Falco peregrinus",
+    "type": "bird",
+    "habitats": [
+      "mountainHigh",
+      "ocean"
+    ],
+    "description": "急降下で獲物をとる世界最速級の鳥。断崖や海岸にすむ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "ほおに黒いひげ状の斑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "尖った翼"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hayabusa.jpg",
+    "rarity": 4,
+    "redList": "VU"
+  },
+  {
+    "id": "kumataka",
+    "nameJa": "クマタカ",
+    "nameEn": "Mountain Hawk-Eagle",
+    "nameScientific": "Nisaetus nipalensis",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainLow"
+    ],
+    "description": "深い山にすむ大型の猛禽。頭に冠羽がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "頭に短い冠羽"
+      },
+      {
+        "part": "ポイント",
+        "detail": "胸に太い縦斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kumataka.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "yamadori",
+    "nameJa": "ヤマドリ",
+    "nameEn": "Copper Pheasant",
+    "nameScientific": "Syrmaticus soemmerringii",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainLow"
+    ],
+    "description": "山林にすむ日本固有のキジの仲間。雄は長い尾をもつ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄は銅色で長い尾"
+      },
+      {
+        "part": "ポイント",
+        "detail": "地面を歩いて餌をとる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamadori.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kiji",
+    "nameJa": "キジ",
+    "nameEn": "Green Pheasant",
+    "nameScientific": "Phasianus versicolor",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日本の国鳥。雄は緑と赤紫のあざやかな体。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄の顔は赤い肉垂"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長い尾が目立つ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kiji.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "hototogisu",
+    "nameJa": "ホトトギス",
+    "nameEn": "Lesser Cuckoo",
+    "nameScientific": "Cuculus poliocephalus",
+    "type": "bird",
+    "habitats": [
+      "forest",
+      "mountainMid"
+    ],
+    "description": "夏鳥。「テッペンカケタカ」と鳴く。他の鳥の巣に卵を産む。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹に細い横縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長めの尾"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hototogisu.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kakkou",
+    "nameJa": "カッコウ",
+    "nameEn": "Common Cuckoo",
+    "nameScientific": "Cuculus canorus",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "高原で「カッコウ」と鳴く。他の鳥に子育てをさせる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹に黒い横縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "黄色い目のふち"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kakkou.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "ooyoshikiri",
+    "nameJa": "オオヨシキリ",
+    "nameEn": "Oriental Reed Warbler",
+    "nameScientific": "Acrocephalus orientalis",
+    "type": "bird",
+    "habitats": [
+      "river",
+      "pond"
+    ],
+    "description": "夏、ヨシ原で大声で鳴く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きく開く口の中は赤い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "眉が淡い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ooyoshikiri.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kogamo",
+    "nameJa": "コガモ",
+    "nameEn": "Eurasian Teal",
+    "nameScientific": "Anas crecca",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "日本で見られる最小のカモ。冬鳥。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄は頭が栗色で緑のしま"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体が小さい"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kogamo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "hidorigamo",
+    "nameJa": "ヒドリガモ",
+    "nameEn": "Eurasian Wigeon",
+    "nameScientific": "Mareca penelope",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "ocean"
+    ],
+    "description": "冬鳥。水草や海藻を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄は頭が赤茶でひたいが黄色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "嘴が短く青灰色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hidorigamo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "kinkurohajiro",
+    "nameJa": "キンクロハジロ",
+    "nameEn": "Tufted Duck",
+    "nameScientific": "Aythya fuligula",
+    "type": "bird",
+    "habitats": [
+      "pond"
+    ],
+    "description": "冬鳥。黒い体と白いわき、金色の目。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "頭に冠羽"
+      },
+      {
+        "part": "ポイント",
+        "detail": "目が金色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kinkurohajiro.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "oomizunagidori",
+    "nameJa": "ミズナギドリ",
+    "nameEn": "Streaked Shearwater",
+    "nameScientific": "Calonectris leucomelas",
+    "type": "bird",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "海上を低く滑るように飛ぶ海鳥。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白い顔にまだら"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長い細い翼"
+      }
+    ],
+    "imagePath": "assets/images/creatures/oomizunagidori.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kamome",
+    "nameJa": "ユリカモメ",
+    "nameEn": "Black-headed Gull",
+    "nameScientific": "Chroicocephalus ridibundus",
+    "type": "bird",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "冬の海や港で見られる小型のカモメ。足とくちばしが赤い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "足と嘴が赤い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "冬は頭が白く耳に黒い斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kamome.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "ooseguro",
+    "nameJa": "オオセグロカモメ",
+    "nameEn": "Slaty-backed Gull",
+    "nameScientific": "Larus schistisagus",
+    "type": "bird",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "大型のカモメ。背が黒灰色。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄色い嘴に赤い点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "足がピンク色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ooseguro.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "ibisu",
+    "nameJa": "トキ",
+    "nameEn": "Crested Ibis",
+    "nameScientific": "Nipponia nippon",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "野生絶滅から復活した、淡い桃色がかった白い鳥。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "赤い顔と長い嘴"
+      },
+      {
+        "part": "ポイント",
+        "detail": "羽が淡い桃色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ibisu.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "kounotori",
+    "nameJa": "コウノトリ",
+    "nameEn": "Oriental Stork",
+    "nameScientific": "Ciconia boyciana",
+    "type": "bird",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "大型の白い鳥。一度日本から姿を消し、放鳥で復活しつつある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黒い翼の先と赤い足"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長い黒い嘴"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kounotori.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "tancho",
+    "nameJa": "タンチョウ",
+    "nameEn": "Red-crowned Crane",
+    "nameScientific": "Grus japonensis",
+    "type": "bird",
+    "habitats": [
+      "pond"
+    ],
+    "description": "頭の赤い大きな鶴。釧路湿原にすむ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "頭のてっぺんが赤い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "黒い首と尾羽"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tancho.jpg",
+    "rarity": 5,
+    "redList": "VU"
+  },
+  {
+    "id": "shigi",
+    "nameJa": "タシギ",
+    "nameEn": "Common Snipe",
+    "nameScientific": "Gallinago gallinago",
+    "type": "bird",
+    "habitats": [
+      "pond"
+    ],
+    "description": "田や湿地にすむ。長い嘴を泥に差して餌をとる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "非常に長い嘴"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背に黄色の縦線"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shigi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "ban",
+    "nameJa": "バン",
+    "nameEn": "Common Moorhen",
+    "nameScientific": "Gallinula chloropus",
+    "type": "bird",
+    "habitats": [
+      "pond"
+    ],
+    "description": "水辺をひょこひょこ歩く。額が赤い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "額が赤く、嘴の先が黄色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長い足の指"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ban.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "yamasemi",
+    "nameJa": "ヤマセミ",
+    "nameEn": "Crested Kingfisher",
+    "nameScientific": "Megaceryle lugubris",
+    "type": "bird",
+    "habitats": [
+      "river"
+    ],
+    "description": "渓流にすむ大型のカワセミ。白黒の模様と冠羽。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白黒のまだら模様"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大きな冠羽"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamasemi.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "akashoubin",
+    "nameJa": "アカショウビン",
+    "nameEn": "Ruddy Kingfisher",
+    "nameScientific": "Halcyon coromanda",
+    "type": "bird",
+    "habitats": [
+      "mountainMid",
+      "mountainLow"
+    ],
+    "description": "夏鳥。全身が赤橙色。「キョロロロ」と鳴く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "全身が朱色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大きな赤い嘴"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akashoubin.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "karasu",
+    "nameJa": "ハシブトガラス",
+    "nameEn": "Large-billed Crow",
+    "nameScientific": "Corvus macrorhynchos",
+    "type": "bird",
+    "habitats": [
+      "forest"
+    ],
+    "description": "全身が黒い大型の鳥。賢く、都会にも山にもいる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "額が出っ張り嘴が太い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "「カァカァ」と澄んだ声"
+      }
+    ],
+    "imagePath": "assets/images/creatures/karasu.jpg",
+    "rarity": 1
+  }
+]

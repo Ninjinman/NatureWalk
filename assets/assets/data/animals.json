@@ -1,0 +1,1174 @@
+[
+  {
+    "id": "nihonjika",
+    "nameJa": "ニホンジカ",
+    "nameEn": "Sika Deer",
+    "nameScientific": "Cervus nippon",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "夏は白い斑点の入る茶色い毛をもつシカ。雄は枝分かれした角をもつ。草や木の芽を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "夏毛に白い斑点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "雄だけ枝分かれした角が生える"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nihonjika.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "ezoshika",
+    "nameJa": "エゾシカ",
+    "nameEn": "Ezo Sika Deer",
+    "nameScientific": "Cervus nippon yesoensis",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "北海道にすむ大型のシカ。雪の森でも草や樹皮を食べて冬を越す。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体が大きく、冬毛は灰褐色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "雄の角は大きく広がる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ezoshika.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "inoshishi",
+    "nameJa": "ニホンイノシシ",
+    "nameEn": "Wild Boar",
+    "nameScientific": "Sus scrofa leucomystax",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "牙をもつ頑丈な体の野生のブタ。鼻で土を掘ってミミズや木の根を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "鼻先が長く平たい"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背中の毛が硬くて太い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/inoshishi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "nihonzaru",
+    "nameJa": "ニホンザル",
+    "nameEn": "Japanese Macaque",
+    "nameScientific": "Macaca fuscata",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "群れで暮らす世界最北のサル。顔とお尻が赤い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "顔と尻が赤い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "尾は短い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nihonzaru.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kamoshika",
+    "nameJa": "ニホンカモシカ",
+    "nameEn": "Japanese Serow",
+    "nameScientific": "Capricornis crispus",
+    "type": "animal",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "険しい山の斜面にすむ日本固有種。ウシの仲間で、シカと違い角は生え変わらない。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "短い角が後ろに曲がる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体は灰白〜黒褐色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kamoshika.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "nihonrisu",
+    "nameJa": "ニホンリス",
+    "nameEn": "Japanese Squirrel",
+    "nameScientific": "Sciurus lis",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "木の上で暮らす小さなリス。クルミやマツの実を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きなふさふさの尾"
+      },
+      {
+        "part": "ポイント",
+        "detail": "耳の先に毛の房（冬）"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nihonrisu.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "ezorisu",
+    "nameJa": "エゾリス",
+    "nameEn": "Eurasian Red Squirrel",
+    "nameScientific": "Sciurus vulgaris orientis",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "北海道の森にすむリス。冬毛は灰色で耳の房が目立つ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "耳の先に長い毛の房"
+      },
+      {
+        "part": "ポイント",
+        "detail": "腹は白い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ezorisu.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kitsune",
+    "nameJa": "ホンドギツネ",
+    "nameEn": "Red Fox",
+    "nameScientific": "Vulpes vulpes japonica",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "赤茶色の毛と、先の白いふさふさの尾をもつ。ネズミやウサギをとる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "尾の先が白い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "細くとがった顔"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kitsune.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kitakitsune",
+    "nameJa": "キタキツネ",
+    "nameEn": "Hokkaido Fox",
+    "nameScientific": "Vulpes vulpes schrencki",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "北海道にすむキツネ。冬は厚い毛で丸く見える。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "足の先が黒い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "尾は太く先が白い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kitakitsune.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "tanuki",
+    "nameJa": "ホンドタヌキ",
+    "nameEn": "Raccoon Dog",
+    "nameScientific": "Nyctereutes procyonoides viverrinus",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "目の周りが黒いイヌの仲間。雑食で、里山や街の近くにもすむ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "目の周りに黒いくま"
+      },
+      {
+        "part": "ポイント",
+        "detail": "足が短く、尾は太く短め"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tanuki.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "nousagi",
+    "nameJa": "ニホンノウサギ",
+    "nameEn": "Japanese Hare",
+    "nameScientific": "Lepus brachyurus",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "長い耳と後ろ足をもつ。冬、雪の多い地方では白い毛に変わる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "長い耳"
+      },
+      {
+        "part": "ポイント",
+        "detail": "後ろ足が長くて速く走る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nousagi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "tsukinowaguma",
+    "nameJa": "ツキノワグマ",
+    "nameEn": "Asian Black Bear",
+    "nameScientific": "Ursus thibetanus",
+    "type": "animal",
+    "habitats": [
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "胸に白い三日月の模様がある黒いクマ。木の実や若葉を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "胸に白い月の輪"
+      },
+      {
+        "part": "ポイント",
+        "detail": "耳が丸い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tsukinowaguma.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "higuma",
+    "nameJa": "ヒグマ",
+    "nameEn": "Brown Bear",
+    "nameScientific": "Ursus arctos yesoensis",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainMid"
+    ],
+    "description": "北海道にすむ日本最大の陸上動物。サケをとる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "肩が盛り上がる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大きな爪"
+      }
+    ],
+    "imagePath": "assets/images/creatures/higuma.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "anaguma",
+    "nameJa": "ニホンアナグマ",
+    "nameEn": "Japanese Badger",
+    "nameScientific": "Meles anakuma",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "顔に黒い縞がある。穴を掘って暮らし、夜に活動する。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "顔に黒と白の縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "前足の爪が長い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/anaguma.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "honden",
+    "nameJa": "ホンドテン",
+    "nameEn": "Japanese Marten",
+    "nameScientific": "Martes melampus",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "木の上も地面も走る、のどが黄色い小型の肉食獣。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "のどが黄色い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "尾が長くふさふさ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/honden.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "itachi",
+    "nameJa": "ニホンイタチ",
+    "nameEn": "Japanese Weasel",
+    "nameScientific": "Mustela itatsi",
+    "type": "animal",
+    "habitats": [
+      "river",
+      "forest"
+    ],
+    "description": "細長い体で、川の近くの茂みにすむ。ネズミやカエルをとる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体が細長い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "足が短い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/itachi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "okojo",
+    "nameJa": "オコジョ",
+    "nameEn": "Stoat",
+    "nameScientific": "Mustela erminea",
+    "type": "animal",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "高山にすむ小さな肉食獣。冬は真っ白になる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "冬は全身が白く尾の先だけ黒"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体が細長い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/okojo.jpg",
+    "rarity": 5,
+    "redList": "NT"
+  },
+  {
+    "id": "musasabi",
+    "nameJa": "ムササビ",
+    "nameEn": "Japanese Giant Flying Squirrel",
+    "nameScientific": "Petaurista leucogenys",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "夜に森の木から木へ滑空するリス。社寺林などの大木にすむ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "前後の足の間に飛膜"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大きな目"
+      }
+    ],
+    "imagePath": "assets/images/creatures/musasabi.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "momonga",
+    "nameJa": "ニホンモモンガ",
+    "nameEn": "Japanese Dwarf Flying Squirrel",
+    "nameScientific": "Pteromys momonga",
+    "type": "animal",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "小さな体で夜に滑空する。ムササビより小型で、樹洞に巣をつくる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きな黒い目"
+      },
+      {
+        "part": "ポイント",
+        "detail": "飛膜でふわりと滑空する"
+      }
+    ],
+    "imagePath": "assets/images/creatures/momonga.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "yamane",
+    "nameJa": "ヤマネ",
+    "nameEn": "Japanese Dormouse",
+    "nameScientific": "Glirulus japonicus",
+    "type": "animal",
+    "habitats": [
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "背中に黒い線がある小さな日本固有の動物。冬は冬眠する。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背に一本の黒い線"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長いふさふさの尾"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamane.jpg",
+    "rarity": 5,
+    "redList": "NT"
+  },
+  {
+    "id": "akanezumi",
+    "nameJa": "アカネズミ",
+    "nameEn": "Large Japanese Field Mouse",
+    "nameScientific": "Apodemus speciosus",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "森や野原にすむ小さなネズミ。木の実や種を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背は赤みのある茶色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "腹は白い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akanezumi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "abura_koumori",
+    "nameJa": "アブラコウモリ",
+    "nameEn": "Japanese Pipistrelle",
+    "nameScientific": "Pipistrellus abramus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "夕方、人家の周りを飛ぶ日本で最も身近なコウモリ。蚊などを食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "小さく黒っぽい"
+      },
+      {
+        "part": "ポイント",
+        "detail": "夕暮れに飛び回る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/abura_koumori.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "iriomote",
+    "nameJa": "イリオモテヤマネコ",
+    "nameEn": "Iriomote Cat",
+    "nameScientific": "Prionailurus bengalensis iriomotensis",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "西表島だけにすむ野生のネコ。島の生態系の頂点に立つ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "耳の裏に白い斑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体に斑点"
+      }
+    ],
+    "imagePath": "assets/images/creatures/iriomote.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "amami_kurousagi",
+    "nameJa": "アマミノクロウサギ",
+    "nameEn": "Amami Rabbit",
+    "nameScientific": "Pentalagus furnessi",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "奄美大島と徳之島にだけすむ黒い毛のウサギ。「生きている化石」。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "耳が短く丸い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体は黒褐色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/amami_kurousagi.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "tsushima_yamaneko",
+    "nameJa": "ツシマヤマネコ",
+    "nameEn": "Tsushima Leopard Cat",
+    "nameScientific": "Prionailurus bengalensis euptilurus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "対馬にだけすむ野生のネコ。数が少なく、保護が続けられている。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "耳の裏の白い斑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体の斑点"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tsushima_yamaneko.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "zenigata",
+    "nameJa": "ゼニガタアザラシ",
+    "nameEn": "Spotted Seal (Harbor)",
+    "nameScientific": "Phoca vitulina stejnegeri",
+    "type": "animal",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "北海道の岩礁にすむアザラシ。数が減っている。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体に細かい斑点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "丸い顔"
+      }
+    ],
+    "imagePath": "assets/images/creatures/zenigata.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "amagaeru",
+    "nameJa": "ニホンアマガエル",
+    "nameEn": "Japanese Tree Frog",
+    "nameScientific": "Dryophytes japonicus",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "pond"
+    ],
+    "description": "緑色の小さなカエル。雨の前に鳴く。体色を周りに合わせて変える。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は鮮やかな緑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "目から鼻筋に黒い線"
+      }
+    ],
+    "imagePath": "assets/images/creatures/amagaeru.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "tonosama",
+    "nameJa": "トノサマガエル",
+    "nameEn": "Black-spotted Pond Frog",
+    "nameScientific": "Pelophylax nigromaculatus",
+    "type": "animal",
+    "habitats": [
+      "pond"
+    ],
+    "description": "田んぼや池にすむ大きめのカエル。背に3本の筋がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背に黄緑の筋"
+      },
+      {
+        "part": "ポイント",
+        "detail": "黒い斑点"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tonosama.jpg",
+    "rarity": 2,
+    "redList": "NT"
+  },
+  {
+    "id": "hikigaeru",
+    "nameJa": "ニホンヒキガエル",
+    "nameEn": "Japanese Common Toad",
+    "nameScientific": "Bufo japonicus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "いぼのある大きなカエル。ゆっくり歩き、春に池に集まる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背にいぼがある"
+      },
+      {
+        "part": "ポイント",
+        "detail": "ゆっくり歩く"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hikigaeru.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "moriao",
+    "nameJa": "モリアオガエル",
+    "nameEn": "Forest Green Tree Frog",
+    "nameScientific": "Zhangixalus arboreus",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "pond"
+    ],
+    "description": "初夏、水辺の木の枝に白い泡の卵を産む緑のカエル。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "緑の体に細かい斑点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "泡の卵塊が木に下がる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/moriao.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "akahara_imori",
+    "nameJa": "アカハライモリ",
+    "nameEn": "Japanese Fire-bellied Newt",
+    "nameScientific": "Cynops pyrrhogaster",
+    "type": "animal",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "腹が真っ赤な両生類。水がきれいな池や水田にすむ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹が赤く黒い斑"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背は黒褐色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akahara_imori.jpg",
+    "rarity": 2,
+    "redList": "NT"
+  },
+  {
+    "id": "hakone_sansho",
+    "nameJa": "ハコネサンショウウオ",
+    "nameEn": "Japanese Clawed Salamander",
+    "nameScientific": "Onychodactylus japonicus",
+    "type": "animal",
+    "habitats": [
+      "river",
+      "mountainMid"
+    ],
+    "description": "冷たくてきれいな渓流にすむ細長い両生類。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は黒褐色で細長い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "指に爪"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hakone_sansho.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "osansho",
+    "nameJa": "オオサンショウウオ",
+    "nameEn": "Japanese Giant Salamander",
+    "nameScientific": "Andrias japonicus",
+    "type": "animal",
+    "habitats": [
+      "river"
+    ],
+    "description": "世界最大級の両生類。冷たいきれいな川にすむ「生きた化石」。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きく平たい頭"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体にまだら模様"
+      }
+    ],
+    "imagePath": "assets/images/creatures/osansho.jpg",
+    "rarity": 5,
+    "redList": "VU"
+  },
+  {
+    "id": "ishigame",
+    "nameJa": "ニホンイシガメ",
+    "nameEn": "Japanese Pond Turtle",
+    "nameScientific": "Mauremys japonica",
+    "type": "animal",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "日本固有のカメ。池や川にすむ。甲羅は茶色で、縁にぎざぎざ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "甲羅の後ろの縁がぎざぎざ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "首筋に黄色い線"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ishigame.jpg",
+    "rarity": 3,
+    "redList": "NT"
+  },
+  {
+    "id": "kanahebi",
+    "nameJa": "ニホンカナヘビ",
+    "nameEn": "Japanese Grass Lizard",
+    "nameScientific": "Takydromus tachydromoides",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "細く長い尾をもつ茶色のトカゲ。草むらで日向ぼっこする。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "尾が体の倍ほど長い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体は茶色でなめらか"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kanahebi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "oomurasaki",
+    "nameJa": "オオムラサキ",
+    "nameEn": "Great Purple Emperor",
+    "nameScientific": "Sasakia charonda",
+    "type": "animal",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "日本の国蝶。雄は羽が青紫色に輝く。エノキの葉に卵を産む。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽に青紫の輝き"
+      },
+      {
+        "part": "ポイント",
+        "detail": "白と赤の斑点"
+      }
+    ],
+    "imagePath": "assets/images/creatures/oomurasaki.jpg",
+    "rarity": 3,
+    "redList": "NT"
+  },
+  {
+    "id": "asagimadara",
+    "nameJa": "アサギマダラ",
+    "nameEn": "Chestnut Tiger",
+    "nameScientific": "Parantica sita",
+    "type": "animal",
+    "habitats": [
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "海を渡る旅をするチョウ。半透明の水色の羽。フジバカマの蜜を好む。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽が半透明の水色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "黒い筋が入る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/asagimadara.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "namiageha",
+    "nameJa": "ナミアゲハ",
+    "nameEn": "Asian Swallowtail",
+    "nameScientific": "Papilio xuthus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "黄色と黒の縞模様のチョウ。幼虫はミカンの葉を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄色に黒い筋"
+      },
+      {
+        "part": "ポイント",
+        "detail": "後ろ羽に青と赤の斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/namiageha.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "monshiro",
+    "nameJa": "モンシロチョウ",
+    "nameEn": "Cabbage White",
+    "nameScientific": "Pieris rapae",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "白い羽に黒い点があるチョウ。春の野原で見られる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白い羽に黒い点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "畑や草地を飛ぶ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/monshiro.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "gifuchou",
+    "nameJa": "ギフチョウ",
+    "nameEn": "Japanese Luehdorfia",
+    "nameScientific": "Luehdorfia japonica",
+    "type": "animal",
+    "habitats": [
+      "mountainLow"
+    ],
+    "description": "春、雑木林でカタクリが咲くころだけ姿を見せる「春の女神」。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄と黒の縞模様"
+      },
+      {
+        "part": "ポイント",
+        "detail": "春だけ現れる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/gifuchou.jpg",
+    "rarity": 4,
+    "redList": "VU"
+  },
+  {
+    "id": "genji_hotaru",
+    "nameJa": "ゲンジボタル",
+    "nameEn": "Genji Firefly",
+    "nameScientific": "Nipponoluciola cruciata",
+    "type": "animal",
+    "habitats": [
+      "river"
+    ],
+    "description": "初夏の夜、きれいな川辺で光る。幼虫はカワニナを食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "尾の先が明るく光る"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体の前の部分が赤い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/genji_hotaru.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "heike_hotaru",
+    "nameJa": "ヘイケボタル",
+    "nameEn": "Heike Firefly",
+    "nameScientific": "Luciola lateralis",
+    "type": "animal",
+    "habitats": [
+      "pond"
+    ],
+    "description": "水田や池にすむ小型のホタル。ゲンジより小さく光も弱い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体が小さい"
+      },
+      {
+        "part": "ポイント",
+        "detail": "光の間隔が短い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/heike_hotaru.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "oniyanma",
+    "nameJa": "オニヤンマ",
+    "nameEn": "Giant Dragonfly",
+    "nameScientific": "Anotogaster sieboldii",
+    "type": "animal",
+    "habitats": [
+      "river",
+      "forest"
+    ],
+    "description": "日本最大のトンボ。黄と黒の縞模様で、川の上をパトロールする。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄と黒の縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "緑の目"
+      }
+    ],
+    "imagePath": "assets/images/creatures/oniyanma.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "ginyanma",
+    "nameJa": "ギンヤンマ",
+    "nameEn": "Lesser Emperor",
+    "nameScientific": "Anax parthenope",
+    "type": "animal",
+    "habitats": [
+      "pond"
+    ],
+    "description": "池の上を飛ぶ大きなトンボ。雄は腹が青い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹の付け根が青"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大きな緑の目"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ginyanma.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "akiakane",
+    "nameJa": "アキアカネ",
+    "nameEn": "Autumn Darter",
+    "nameScientific": "Sympetrum frequens",
+    "type": "animal",
+    "habitats": [
+      "pond",
+      "mountainLow"
+    ],
+    "description": "夏は山で過ごし、秋に平地へおりて赤くなるトンボ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "秋に赤く色づく"
+      },
+      {
+        "part": "ポイント",
+        "detail": "田んぼや池で産卵"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akiakane.jpg",
+    "rarity": 1,
+    "redList": "NT"
+  },
+  {
+    "id": "kabutomushi",
+    "nameJa": "カブトムシ",
+    "nameEn": "Japanese Rhinoceros Beetle",
+    "nameScientific": "Trypoxylus dichotomus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "夏、クヌギなどの樹液に集まる甲虫。雄は大きな角をもつ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄は頭に大きな角"
+      },
+      {
+        "part": "ポイント",
+        "detail": "黒褐色のつやのある体"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kabutomushi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "nokogiri_kuwagata",
+    "nameJa": "ノコギリクワガタ",
+    "nameEn": "Saw Stag Beetle",
+    "nameScientific": "Prosopocoilus inclinatus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "雄の大あごはのこぎりのように曲がる。夏の雑木林の樹液に集まる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大あごがのこぎり状"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体は赤褐色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nokogiri_kuwagata.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "miyama_kuwagata",
+    "nameJa": "ミヤマクワガタ",
+    "nameEn": "Miyama Stag Beetle",
+    "nameScientific": "Lucanus maculifemoratus",
+    "type": "animal",
+    "habitats": [
+      "mountainLow",
+      "mountainMid"
+    ],
+    "description": "山地の林にすむクワガタ。頭に冠状の突起がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "頭が三角に張り出す"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大あごが太く曲がる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/miyama_kuwagata.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "ookuwagata",
+    "nameJa": "オオクワガタ",
+    "nameEn": "Giant Stag Beetle",
+    "nameScientific": "Dorcus hopei binodulosus",
+    "type": "animal",
+    "habitats": [
+      "forest"
+    ],
+    "description": "大木のうろにすむ大型のクワガタ。黒くつやのある体。開発で数が減っている。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "全体が漆黒"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大あごが太い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ookuwagata.jpg",
+    "rarity": 4,
+    "redList": "VU"
+  }
+]
