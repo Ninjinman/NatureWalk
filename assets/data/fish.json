@@ -686,5 +686,777 @@
     ],
     "imagePath": "assets/images/creatures/iwana.jpg",
     "rarity": 4
+  },
+  {
+    "id": "nigoi",
+    "nameJa": "ニゴイ",
+    "nameEn": "Barbel Chub",
+    "nameScientific": "Hemibarbus barbus",
+    "type": "fish",
+    "habitats": [
+      "river"
+    ],
+    "description": "川の中・下流にすむコイの仲間。口のまわりにひげがある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "口に短いひげ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体に黒い小さな斑点"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nigoi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kawamutsu",
+    "nameJa": "カワムツ",
+    "nameEn": "Dark Chub",
+    "nameScientific": "Nipponocypris temminckii",
+    "type": "fish",
+    "habitats": [
+      "river"
+    ],
+    "description": "川の流れがゆるやかなところにすむ。雄の腹は繁殖期に赤くなる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に青緑色の縦帯"
+      },
+      {
+        "part": "ポイント",
+        "detail": "雄は腹が赤くなる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawamutsu.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "abura_haya",
+    "nameJa": "アブラハヤ",
+    "nameEn": "Japanese Minnow",
+    "nameScientific": "Rhynchocypris lagowskii steindachneri",
+    "type": "fish",
+    "habitats": [
+      "river"
+    ],
+    "description": "冷たくきれいな小川にすむ小さな魚。群れで泳ぐ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に黒っぽい縦帯"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体は小さく細長い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/abura_haya.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "moroko",
+    "nameJa": "タモロコ",
+    "nameEn": "Willow Minnow",
+    "nameScientific": "Gnathopogon elongatus",
+    "type": "fish",
+    "habitats": [
+      "pond"
+    ],
+    "description": "池や水路の水草のあるところにすむ小魚。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は細長い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "口にひげが無い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/moroko.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "motsugo",
+    "nameJa": "モツゴ",
+    "nameEn": "Topmouth Gudgeon",
+    "nameScientific": "Pseudorasbora parva",
+    "type": "fish",
+    "habitats": [
+      "pond"
+    ],
+    "description": "池や用水路にすむ小魚。口が上向きにつく。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "口が小さく上向き"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体側に黒い縦線"
+      }
+    ],
+    "imagePath": "assets/images/creatures/motsugo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "zenitanago",
+    "nameJa": "ゼニタナゴ",
+    "nameEn": "Zeni Bitterling",
+    "nameScientific": "Acheilognathus typus",
+    "type": "fish",
+    "habitats": [
+      "pond"
+    ],
+    "description": "東北の限られた水域にだけすむタナゴの仲間。絶滅寸前。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "雄の体は婚姻色で赤く染まる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "貝に卵を産む"
+      }
+    ],
+    "imagePath": "assets/images/creatures/zenitanago.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "hotokedojo",
+    "nameJa": "ホトケドジョウ",
+    "nameEn": "Hotoke Loach",
+    "nameScientific": "Lefua echigonia",
+    "type": "fish",
+    "habitats": [
+      "pond"
+    ],
+    "description": "湧水のある冷たく浅い水路にすむ小さなドジョウ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は丸みのある円筒形"
+      },
+      {
+        "part": "ポイント",
+        "detail": "口のひげが4対"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hotokedojo.jpg",
+    "rarity": 4,
+    "redList": "EN"
+  },
+  {
+    "id": "yoshinobori",
+    "nameJa": "ヨシノボリ",
+    "nameEn": "Yoshinobori Goby",
+    "nameScientific": "Rhinogobius sp.",
+    "type": "fish",
+    "habitats": [
+      "river"
+    ],
+    "description": "川底の石の間にすむ小さなハゼの仲間。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹びれが吸盤の形"
+      },
+      {
+        "part": "ポイント",
+        "detail": "頬にオレンジの線"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yoshinobori.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "kajika",
+    "nameJa": "カジカ",
+    "nameEn": "Fourspine Sculpin",
+    "nameScientific": "Cottus pollux",
+    "type": "fish",
+    "habitats": [
+      "river"
+    ],
+    "description": "清流の石の下にすむ。頭が大きく平たい。オスは美しい声で鳴くと言われる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "頭が大きく平たい"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体にまだら模様"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kajika.jpg",
+    "rarity": 3,
+    "redList": "NT"
+  },
+  {
+    "id": "amago",
+    "nameJa": "アマゴ",
+    "nameEn": "Amago",
+    "nameScientific": "Oncorhynchus masou ishikawae",
+    "type": "fish",
+    "habitats": [
+      "river"
+    ],
+    "description": "西日本の渓流にすむ。体側に朱色の点がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に朱色の小さな点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "ヤマメと似るが朱点がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/amago.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "nikkoiwana",
+    "nameJa": "ニッコウイワナ",
+    "nameEn": "Nikko Char",
+    "nameScientific": "Salvelinus leucomaenis pluvius",
+    "type": "fish",
+    "habitats": [
+      "river",
+      "mountainMid"
+    ],
+    "description": "本州の源流にすむイワナ。白い斑点が体に散る。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体に白い斑点"
+      },
+      {
+        "part": "ポイント",
+        "detail": "腹びれが赤みを帯びる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/nikkoiwana.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "sakura_masu",
+    "nameJa": "サクラマス",
+    "nameEn": "Cherry Salmon",
+    "nameScientific": "Oncorhynchus masou masou",
+    "type": "fish",
+    "habitats": [
+      "river",
+      "ocean"
+    ],
+    "description": "川で生まれ、海で育ち、サクラの咲くころ川へ戻る。ヤマメが海へ下った姿。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "桜色の婚姻色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体にパーマークの名残"
+      }
+    ],
+    "imagePath": "assets/images/creatures/sakura_masu.jpg",
+    "rarity": 3,
+    "redList": "NT"
+  },
+  {
+    "id": "sake",
+    "nameJa": "サケ",
+    "nameEn": "Chum Salmon",
+    "nameScientific": "Oncorhynchus keta",
+    "type": "fish",
+    "habitats": [
+      "river",
+      "ocean"
+    ],
+    "description": "川で生まれ、海で育ち、秋に生まれた川へ戻って産卵する。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "産卵期は体に赤紫の帯"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背中は青灰色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/sake.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "ayukake",
+    "nameJa": "アユカケ",
+    "nameEn": "Kazika Sculpin",
+    "nameScientific": "Cottus kazika",
+    "type": "fish",
+    "habitats": [
+      "river",
+      "ocean"
+    ],
+    "description": "川と海を行き来するカジカの仲間。頬のとげでアユを掛けるという名の由来。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "えらぶたにとげ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "頭が大きい"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ayukake.jpg",
+    "rarity": 4,
+    "redList": "VU"
+  },
+  {
+    "id": "shinai_motsugo",
+    "nameJa": "シナイモツゴ",
+    "nameEn": "Shinai Gudgeon",
+    "nameScientific": "Pseudorasbora pumila",
+    "type": "fish",
+    "habitats": [
+      "pond"
+    ],
+    "description": "東北の限られたため池にだけすむ小魚。外来魚の影響で激減した。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体が小さく丸みがある"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体側に黒線"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shinai_motsugo.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "wataka",
+    "nameJa": "ワタカ",
+    "nameEn": "Wataka",
+    "nameScientific": "Ischikauia steenackeri",
+    "type": "fish",
+    "habitats": [
+      "pond"
+    ],
+    "description": "琵琶湖・淀川水系にすむコイの仲間。水草を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は平たく側扁"
+      },
+      {
+        "part": "ポイント",
+        "detail": "下あごがしゃくれる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/wataka.jpg",
+    "rarity": 4,
+    "redList": "EN"
+  },
+  {
+    "id": "madai",
+    "nameJa": "マダイ",
+    "nameEn": "Red Seabream",
+    "nameScientific": "Pagrus major",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "桃色の体の美しい魚。おめでたい席の魚としても親しまれる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は鮮やかな桜色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背に青い小さな点"
+      }
+    ],
+    "imagePath": "assets/images/creatures/madai.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "hirame",
+    "nameJa": "ヒラメ",
+    "nameEn": "Bastard Halibut",
+    "nameScientific": "Paralichthys olivaceus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "海底の砂地にすむ平たい魚。左側に両目がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は平たく両目が左側"
+      },
+      {
+        "part": "ポイント",
+        "detail": "体色を周りに合わせる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hirame.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "maiwashi",
+    "nameJa": "マイワシ",
+    "nameEn": "Japanese Sardine",
+    "nameScientific": "Sardinops melanostictus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "群れで泳ぐ小さな魚。体側に黒い点が並ぶ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に黒い点が並ぶ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背は青緑色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/maiwashi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "maaji",
+    "nameJa": "マアジ",
+    "nameEn": "Japanese Horse Mackerel",
+    "nameScientific": "Trachurus japonicus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "日本人に親しみのある海の魚。体の側面に「ぜいご」と呼ばれる硬いうろこがある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に硬いうろこ（ぜいご）"
+      },
+      {
+        "part": "ポイント",
+        "detail": "えらぶたに黒い斑"
+      }
+    ],
+    "imagePath": "assets/images/creatures/maaji.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "masaba",
+    "nameJa": "マサバ",
+    "nameEn": "Chub Mackerel",
+    "nameScientific": "Scomber japonicus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "背に波のような青い模様がある。群れで回遊する。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背に青黒い波模様"
+      },
+      {
+        "part": "ポイント",
+        "detail": "腹は銀白色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/masaba.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "katsuo",
+    "nameJa": "カツオ",
+    "nameEn": "Skipjack Tuna",
+    "nameScientific": "Katsuwonus pelamis",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "黒潮にのって回遊する魚。春から秋に日本の太平洋側にやってくる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "腹に縦縞"
+      },
+      {
+        "part": "ポイント",
+        "detail": "紡錘形の体"
+      }
+    ],
+    "imagePath": "assets/images/creatures/katsuo.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "buri",
+    "nameJa": "ブリ",
+    "nameEn": "Japanese Amberjack",
+    "nameScientific": "Seriola quinqueradiata",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "成長とともに名前が変わる出世魚。体側に黄色い線がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に黄色い縦帯"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背は青緑色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/buri.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kuromaguro",
+    "nameJa": "クロマグロ",
+    "nameEn": "Pacific Bluefin Tuna",
+    "nameScientific": "Thunnus orientalis",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "世界最大級のマグロ。高速で長距離を回遊する。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は太い紡錘形"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背は濃い青黒"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kuromaguro.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "ainame",
+    "nameJa": "アイナメ",
+    "nameEn": "Fat Greenling",
+    "nameScientific": "Hexagrammos otakii",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "岩礁にすむ根魚。体の色は環境により黄褐色から緑褐色まで変わる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体側に側線が5本"
+      },
+      {
+        "part": "ポイント",
+        "detail": "黄褐色〜褐色のまだら"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ainame.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "ishidai",
+    "nameJa": "イシダイ",
+    "nameEn": "Striped Beakfish",
+    "nameScientific": "Oplegnathus fasciatus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "岩礁にすむ魚。若魚は黒い縦縞が目立ち、老成すると縞が消える。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黒い縦縞（若魚）"
+      },
+      {
+        "part": "ポイント",
+        "detail": "強い歯を持つ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ishidai.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "minokasago",
+    "nameJa": "ミノカサゴ",
+    "nameEn": "Lunar Lionfish",
+    "nameScientific": "Pterois lunulata",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "長い胸びれを広げた姿が美しいが、背びれに毒がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "長い胸びれと背びれ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "赤茶色の縞"
+      }
+    ],
+    "imagePath": "assets/images/creatures/minokasago.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "hakofugu",
+    "nameJa": "ハコフグ",
+    "nameEn": "Boxfish",
+    "nameScientific": "Ostracion immaculatus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "四角い体は硬い骨板でおおわれている。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "四角い箱のような体"
+      },
+      {
+        "part": "ポイント",
+        "detail": "小さな口とひれ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hakofugu.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "umitanago",
+    "nameJa": "ウミタナゴ",
+    "nameEn": "Surfperch",
+    "nameScientific": "Ditrema temminckii",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "海藻の茂る浅場にすむ。胎生で、子魚を産む。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は平たく卵形"
+      },
+      {
+        "part": "ポイント",
+        "detail": "銀色〜青みがかった灰色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/umitanago.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "tobiuo",
+    "nameJa": "トビウオ",
+    "nameEn": "Japanese Flying Fish",
+    "nameScientific": "Cheilopogon agoo",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "大きな胸びれで海面を滑空する魚。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きな胸びれ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背は藍色"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tobiuo.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "tachiuo",
+    "nameJa": "タチウオ",
+    "nameEn": "Largehead Hairtail",
+    "nameScientific": "Trichiurus japonicus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "刀のように細長い銀白色の魚。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "体は細長く銀色"
+      },
+      {
+        "part": "ポイント",
+        "detail": "鋭い歯"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tachiuo.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "napoleon",
+    "nameJa": "メガネモチノウオ",
+    "nameEn": "Humphead Wrasse",
+    "nameScientific": "Cheilinus undulatus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "サンゴ礁にすむ大型の魚。額のこぶと厚い唇が特徴。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "額にこぶ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "青緑の体に細かい模様"
+      }
+    ],
+    "imagePath": "assets/images/creatures/napoleon.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "honsome",
+    "nameJa": "ホンソメワケベラ",
+    "nameEn": "Cleaner Wrasse",
+    "nameScientific": "Labroides dimidiatus",
+    "type": "fish",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "他の魚の体の寄生虫を食べて掃除する小さな魚。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "青い体に黒い縦帯"
+      },
+      {
+        "part": "ポイント",
+        "detail": "他の魚を掃除する"
+      }
+    ],
+    "imagePath": "assets/images/creatures/honsome.jpg",
+    "rarity": 3
   }
 ]

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'data/species_database.dart';
+import 'services/bgm.dart';
 import 'screens/home_screen.dart';
 
 void main() async {
@@ -30,6 +31,12 @@ class NatureWalkApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: const Color(0xFF090806),
         textTheme: GoogleFonts.zenOldMinchoTextTheme(ThemeData.dark().textTheme),
+      ),
+      // 最初のタップで和風BGMを始める（ブラウザは操作の後でないと音を出せない）
+      builder: (context, child) => Listener(
+        behavior: HitTestBehavior.translucent,
+        onPointerDown: (_) => Bgm.ensureStarted(),
+        child: child,
       ),
       home: const HomeScreen(),
     );

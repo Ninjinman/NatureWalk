@@ -59,7 +59,7 @@ class _AreaZoomScreenState extends ConsumerState<AreaZoomScreen>
       final t = _clock.value * 60;
       final seen = [
         for (final c in IsoIslandPainter.habitatSpecies(widget.habitat, s, n, SpeciesDatabase.instance.all))
-          if (!s.discovered.contains(c.id) &&
+          if (!s.foundNow.contains(c.id) &&
               IsoIslandPainter.presenceAlpha(c, t, s.turn, s.population[c.id] ?? 0) > 0.5)
             c.id,
       ];
@@ -230,22 +230,6 @@ class _AreaZoomScreenState extends ConsumerState<AreaZoomScreen>
             ),
               Expanded(child: AreaPanel(habitat: h)),
             ],
-            Padding(
-              padding: const EdgeInsets.fromLTRB(24, 0, 24, 10),
-              child: SizedBox(
-                width: double.infinity,
-                child: OutlinedButton(
-                  onPressed: s.finished ? null : n.nextTurn,
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: kGold,
-                    side: const BorderSide(color: kGold),
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
-                  ),
-                  child: const Text('季節をすすめる', style: TextStyle(letterSpacing: 4)),
-                ),
-              ),
-            ),
           ],
         ),
       ),
@@ -307,7 +291,8 @@ class _SpeciesGrid extends ConsumerWidget {
           );
         }
         final absent = s.absent.contains(c.id);
-        final extinct = pop == 0 && !absent;
+        final extinct = pop == 0 && !absent && s.foundNow.contains(c.id);
+        final waiting = pop == 0 && !absent && !extinct;
         final ring = Color.lerp(const Color(0xFFB5533A), kGold, fit)!;
         return InkWell(
           borderRadius: BorderRadius.circular(8),
@@ -317,7 +302,7 @@ class _SpeciesGrid extends ConsumerWidget {
             decoration: BoxDecoration(
               color: const Color(0xFF14110C),
               borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: ((extinct || absent) ? Colors.white12 : ring).withValues(alpha: 0.6)),
+              border: Border.all(color: ((extinct || absent || waiting) ? Colors.white12 : ring).withValues(alpha: 0.6)),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -327,7 +312,7 @@ class _SpeciesGrid extends ConsumerWidget {
                     builder: (_, c2) => CreatureThumb(
                       creature: c,
                       size: min(c2.maxWidth, c2.maxHeight),
-                      dim: extinct || absent,
+                      dim: extinct || absent || waiting,
                     ),
                   ),
                 ),
@@ -338,12 +323,14 @@ class _SpeciesGrid extends ConsumerWidget {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontSize: 11,
-                    color: (extinct || absent) ? Colors.white38 : Colors.white,
+                    color: (extinct || absent || waiting) ? Colors.white38 : Colors.white,
                     decoration: extinct ? TextDecoration.lineThrough : null,
                   ),
                 ),
                 if (absent)
                   const Text('分布外', style: TextStyle(fontSize: 9, color: Colors.white30))
+                else if (waiting)
+                  const Text('まだ来ていません', style: TextStyle(fontSize: 9, color: Colors.white30))
                 else if (extinct)
                   SizedBox(
                     height: 22,

@@ -224,6 +224,7 @@ class _ObservationOverlayState extends State<ObservationOverlay>
       case CreatureType.plant: return '🌿';
       case CreatureType.bird: return '🐦';
       case CreatureType.fish: return '🐟';
+      case CreatureType.animal: return '🦌';
     }
   }
 }

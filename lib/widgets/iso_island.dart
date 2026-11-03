@@ -693,7 +693,9 @@ class IsoIslandPainter extends CustomPainter {
   static const _waterPlants = {'suiren', 'hasu', 'kohone', 'amamo', 'mangrove'};
 
   static bool _placeOnLand(Habitat h, Creature c) =>
-      h.isLand || (c.type == CreatureType.plant && !_waterPlants.contains(c.id));
+      h.isLand ||
+      c.type == CreatureType.animal ||
+      (c.type == CreatureType.plant && !_waterPlants.contains(c.id));
 
   static Offset _samplePoint(Habitat h, bool land, Random rng) {
     switch (h) {
@@ -818,6 +820,8 @@ class IsoIslandPainter extends CustomPainter {
         return base + Offset(cos(t * 0.5 + ph), sin(t * 0.7 + ph)) * 0.035;
       case CreatureType.fish:
         return base + Offset(sin(t * 0.4 + ph) * 0.05, cos(t * 0.3 + ph) * 0.015);
+      case CreatureType.animal:
+        return base + Offset(cos(t * 0.25 + ph), sin(t * 0.3 + ph)) * 0.02;
     }
   }
 
@@ -856,6 +860,8 @@ class IsoIslandPainter extends CustomPainter {
         SpeciesRenderer.paint(_c, c, ground - Offset(0, lift), _v.s, t, fit: fit, pop: pop, boost: scale);
       case CreatureType.fish:
         SpeciesRenderer.paint(_c, c, _v.p(x, y, z - 0.015), _v.s, t, fit: fit, pop: pop, boost: scale);
+      case CreatureType.animal:
+        SpeciesRenderer.paint(_c, c, ground, _v.s, t, fit: fit, pop: pop, boost: scale);
     }
   }
 

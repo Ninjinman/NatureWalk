@@ -17,7 +17,7 @@ class EncyclopediaScreen extends ConsumerWidget {
     final s = ref.watch(conservationProvider);
     final dex = SpeciesDatabase.instance.all.length;
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         backgroundColor: kInk,
         appBar: AppBar(
@@ -31,6 +31,7 @@ class EncyclopediaScreen extends ConsumerWidget {
               Tab(icon: Icon(Icons.local_florist, size: 18), text: '植物'),
               Tab(icon: Icon(Icons.flutter_dash, size: 18), text: '鳥'),
               Tab(icon: Icon(Icons.set_meal, size: 18), text: '魚'),
+              Tab(icon: Icon(Icons.pets, size: 18), text: '動物'),
             ],
           ),
         ),
@@ -39,6 +40,7 @@ class EncyclopediaScreen extends ConsumerWidget {
             _Dex(type: CreatureType.plant),
             _Dex(type: CreatureType.bird),
             _Dex(type: CreatureType.fish),
+            _Dex(type: CreatureType.animal),
           ],
         ),
       ),

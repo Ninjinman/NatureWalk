@@ -29,6 +29,8 @@ class SpeciesRenderer {
         _bird(canvas, c.id, t, phase);
       case CreatureType.fish:
         _fish(canvas, c.id, t, phase);
+      case CreatureType.animal:
+        _animal(canvas, c.id, t, phase);
     }
     canvas.restore();
   }
@@ -38,6 +40,7 @@ class SpeciesRenderer {
         CreatureType.plant => 0.13,
         CreatureType.bird => 0.07,
         CreatureType.fish => 0.03,
+        CreatureType.animal => 0.07,
       };
 
   static double radius(Creature c) => switch (c.type) {
@@ -47,6 +50,7 @@ class SpeciesRenderer {
           },
         CreatureType.bird => (c.id == 'aosagi' || c.id == 'daisagi' || c.id == 'tobi' || c.id == 'misago' || c.id == 'kawau') ? 0.13 : 0.08,
         CreatureType.fish => 0.07,
+        CreatureType.animal => 0.11,
       };
 
   // ---------------------------------------------------------------------
@@ -929,6 +933,381 @@ class SpeciesRenderer {
   }
 
   // ---------------------------------------------------------------------
+  // 動物（哺乳類・両生類・爬虫類・昆虫）：種類ごとの部品を組み合わせて描く
+  // ---------------------------------------------------------------------
+
+  static void _blob(Canvas c, Rect r, Color col) {
+    c.drawOval(
+        r,
+        Paint()
+          ..shader = RadialGradient(
+            center: const Alignment(-0.3, -0.55),
+            radius: 1.0,
+            colors: [_tint(col, 0.28), col, _shade(col, 0.68)],
+            stops: const [0, 0.55, 1],
+          ).createShader(r));
+  }
+
+  static void _eye(Canvas c, Offset o, double r) {
+    c.drawCircle(o, r, _p(const Color(0xFF16120E)));
+    c.drawCircle(o + Offset(r * 0.3, -r * 0.3), r * 0.35, _p(Colors.white.withValues(alpha: 0.9)));
+  }
+
+  static void _animal(Canvas c, String id, double t, double ph) {
+    final s = _animalSpecs[id] ?? _animalSpecs['tanuki']!;
+    switch (s.kind) {
+      case 'frog':
+        _frog(c, s, t, ph);
+      case 'newt':
+        _newt(c, s, t, ph);
+      case 'turtle':
+        _turtle(c, s);
+      case 'seal':
+        _seal(c, s, t, ph);
+      case 'butterfly':
+        _butterfly(c, s, t, ph);
+      case 'bat':
+        _bat(c, s, t, ph);
+      case 'dragonfly':
+        _dragonfly(c, s, t, ph);
+      case 'firefly':
+        _firefly(c, s, t, ph);
+      case 'beetle':
+        _beetle(c, s);
+      default:
+        _quad(c, s, t, ph);
+    }
+  }
+
+  /// 四つ足の哺乳類
+  static void _quad(Canvas c, _A s, double t, double ph) {
+    final L = s.len, bh = s.tall, leg = s.leg;
+    final by = -leg - bh * 0.45 + sin(t * 1.3 + ph) * 0.002;
+    _shadow(c, L * 0.95, h: 0.4);
+    final legW = max(0.008, bh * 0.2);
+    final dark = _shade(s.body, 0.7);
+    // 奥の足
+    for (final x in const [-0.3, 0.28]) {
+      c.drawLine(Offset(L * x, by + bh * 0.2), Offset(L * x + 0.004, 0), _stroke(_shade(dark, 0.85), legW));
+    }
+    // 尾
+    final tb = Offset(-L * 0.48, by - bh * 0.1);
+    switch (s.tailKind) {
+      case 1: // ふさふさ
+        _blob(c, Rect.fromCenter(center: tb + Offset(-s.tail * 0.5, s.tail * 0.1), width: s.tail * 1.1, height: s.tail * 0.5),
+            s.body);
+        if (s.tip != null) {
+          c.drawOval(Rect.fromCenter(center: tb + Offset(-s.tail * 0.95, s.tail * 0.12), width: s.tail * 0.35, height: s.tail * 0.38),
+              _p(s.tip!));
+        }
+      case 3: // 立ち上がる尾（リス）
+        final p = Path()
+          ..moveTo(tb.dx, tb.dy + bh * 0.1)
+          ..quadraticBezierTo(tb.dx - s.tail * 0.9, tb.dy - s.tail * 0.2, tb.dx - s.tail * 0.2, tb.dy - s.tail * 1.5);
+        c.drawPath(p, _stroke(_shade(s.body, 0.9), s.tail * 0.5));
+        c.drawPath(p, _stroke(_tint(s.body, 0.18), s.tail * 0.22));
+      case 2:
+        c.drawCircle(tb + Offset(-s.tail * 0.3, 0), max(0.008, s.tail * 0.6), _p(s.belly));
+      default:
+        final p = Path()
+          ..moveTo(tb.dx, tb.dy)
+          ..quadraticBezierTo(tb.dx - s.tail * 0.6, tb.dy + s.tail * 0.5, tb.dx - s.tail, tb.dy - s.tail * 0.1);
+        c.drawPath(p, _stroke(dark, 0.009));
+        if (s.tip != null) c.drawCircle(Offset(tb.dx - s.tail, tb.dy - s.tail * 0.1), 0.007, _p(s.tip!));
+    }
+    // 体
+    _blob(c, Rect.fromCenter(center: Offset(0, by), width: L, height: bh), s.body);
+    if (s.hump) {
+      _blob(c, Rect.fromCenter(center: Offset(L * 0.22, by - bh * 0.42), width: L * 0.34, height: bh * 0.5), s.body);
+    }
+    c.drawOval(Rect.fromCenter(center: Offset(L * 0.02, by + bh * 0.24), width: L * 0.78, height: bh * 0.46),
+        _p(s.belly.withValues(alpha: 0.75)));
+    if (s.spots) {
+      final rng = Random(9);
+      for (var k = 0; k < 9; k++) {
+        final o = Offset((rng.nextDouble() - 0.5) * L * 0.7, by - bh * 0.1 + (rng.nextDouble() - 0.5) * bh * 0.5);
+        c.drawCircle(o, max(0.005, bh * 0.05), _p(Colors.white.withValues(alpha: 0.75)));
+      }
+    }
+    if (s.stripes) c.drawLine(Offset(-L * 0.4, by - bh * 0.35), Offset(L * 0.35, by - bh * 0.35), _stroke(const Color(0xFF3A2A1E), 0.006));
+    if (s.chest != null) {
+      c.drawArc(Rect.fromCenter(center: Offset(L * 0.38, by + bh * 0.05), width: bh * 0.5, height: bh * 0.5), 0.2, 2.8, false,
+          _stroke(s.chest!, bh * 0.1));
+    }
+    // 手前の足
+    for (final x in const [-0.26, 0.34]) {
+      c.drawLine(Offset(L * x, by + bh * 0.3), Offset(L * x + 0.004, 0), _stroke(dark, legW * 1.1));
+    }
+    // 頭
+    final hr = s.headR;
+    final tall = s.antlers > 0 || s.leg > 0.1;
+    final hc = Offset(L * 0.5 + hr * 0.2, by - bh * 0.18 - (tall ? bh * 0.55 : 0));
+    if (tall) {
+      c.drawLine(Offset(L * 0.36, by - bh * 0.05), hc + Offset(-hr * 0.3, hr * 0.3), _stroke(_shade(s.body, 0.9), hr * 0.9));
+    }
+    // 耳（頭の奥）
+    final ec = hc + Offset(-hr * 0.25, -hr * 0.75);
+    switch (s.earKind) {
+      case 2:
+        c.drawOval(Rect.fromCenter(center: ec + Offset(-hr * 0.2, -s.ear * 0.4), width: hr * 0.55, height: s.ear), _p(_shade(s.body, 0.9)));
+        c.drawOval(Rect.fromCenter(center: ec + Offset(hr * 0.15, -s.ear * 0.35), width: hr * 0.5, height: s.ear * 0.9), _p(s.body));
+      case 1:
+        c.drawCircle(ec + Offset(0, hr * 0.15), s.ear * 0.55, _p(_shade(s.body, 0.9)));
+        c.drawCircle(ec + Offset(0, hr * 0.15), s.ear * 0.3, _p(const Color(0xFFD8A8A0)));
+      default:
+        c.drawPath(
+            Path()
+              ..moveTo(ec.dx - s.ear * 0.5, ec.dy + hr * 0.3)
+              ..lineTo(ec.dx + s.ear * 0.05, ec.dy - s.ear)
+              ..lineTo(ec.dx + s.ear * 0.55, ec.dy + hr * 0.3)
+              ..close(),
+            _p(_shade(s.body, 0.9)));
+    }
+    // 角
+    final ac = hc + Offset(-hr * 0.1, -hr * 0.85);
+    if (s.antlers == 1) {
+      final col = const Color(0xFFD8C8A0);
+      for (final d in const [0.0, 0.05]) {
+        c.drawLine(ac + Offset(d, 0), ac + Offset(-hr * 0.5 + d, -hr * 2.0), _stroke(col, 0.007));
+        c.drawLine(ac + Offset(-hr * 0.25 + d, -hr * 1.0), ac + Offset(hr * 0.5 + d, -hr * 1.7), _stroke(col, 0.006));
+        c.drawLine(ac + Offset(-hr * 0.5 + d, -hr * 2.0), ac + Offset(hr * 0.1 + d, -hr * 2.4), _stroke(col, 0.005));
+      }
+    } else if (s.antlers == 2) {
+      for (final d in const [0.0, 0.04]) {
+        c.drawPath(
+            Path()
+              ..moveTo(ac.dx + d, ac.dy)
+              ..quadraticBezierTo(ac.dx + d - hr * 0.1, ac.dy - hr * 1.0, ac.dx + d - hr * 0.7, ac.dy - hr * 1.2),
+            _stroke(const Color(0xFF2A2622), 0.01));
+      }
+    }
+    _blob(c, Rect.fromCircle(center: hc, radius: hr), _tint(s.body, 0.04));
+    // 口先
+    final sn = hr * s.snout;
+    final snc = hc + Offset(hr * 0.8 + sn * 0.2, hr * 0.28);
+    _blob(c, Rect.fromCenter(center: snc, width: sn * 1.3, height: hr * 0.85), _shade(s.belly, 0.97));
+    c.drawCircle(snc + Offset(sn * 0.6, -hr * 0.1), max(0.005, hr * 0.17), _p(const Color(0xFF1E1814)));
+    if (s.face != null) c.drawCircle(hc + Offset(hr * 0.2, hr * 0.35), hr * 0.5, _p(s.face!.withValues(alpha: 0.85)));
+    if (s.mask) {
+      c.drawOval(Rect.fromCenter(center: hc + Offset(hr * 0.2, -hr * 0.05), width: hr * 1.0, height: hr * 0.55), _p(const Color(0xFF2A2622)));
+    }
+    _eye(c, hc + Offset(hr * 0.35, -hr * 0.12), max(0.006, hr * 0.14));
+  }
+
+  static void _frog(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    _shadow(c, L * 1.0, h: 0.4);
+    final puff = 1 + sin(t * 2.4 + ph) * 0.04;
+    // 後ろ足
+    c.drawPath(
+        Path()
+          ..moveTo(-L * 0.2, -L * 0.3)
+          ..lineTo(-L * 0.55, -L * 0.05)
+          ..lineTo(-L * 0.1, -L * 0.02)
+          ..close(),
+        _p(_shade(s.body, 0.8)));
+    _blob(c, Rect.fromCenter(center: Offset(0, -L * 0.33), width: L * 1.1 * puff, height: L * 0.62 * puff), s.body);
+    c.drawOval(Rect.fromCenter(center: Offset(L * 0.12, -L * 0.2), width: L * 0.7, height: L * 0.28), _p(s.belly.withValues(alpha: 0.85)));
+    if (s.spots) {
+      final rng = Random(5);
+      for (var k = 0; k < 7; k++) {
+        c.drawCircle(Offset((rng.nextDouble() - 0.5) * L * 0.8, -L * 0.45 + rng.nextDouble() * L * 0.18), L * 0.04, _p(s.accent));
+      }
+    }
+    // 前足・目・口
+    c.drawLine(Offset(L * 0.28, -L * 0.2), Offset(L * 0.34, 0), _stroke(_shade(s.body, 0.75), L * 0.09));
+    for (final dx in const [0.22, 0.36]) {
+      c.drawCircle(Offset(L * dx, -L * 0.62), L * 0.11, _p(_tint(s.body, 0.1)));
+      _eye(c, Offset(L * (dx + 0.02), -L * 0.63), L * 0.06);
+    }
+    c.drawLine(Offset(L * 0.45, -L * 0.4), Offset(L * 0.1, -L * 0.37), _stroke(s.accent, 0.004));
+  }
+
+  /// イモリ・サンショウウオ・トカゲ（細長い体）
+  static void _newt(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    final h = s.flat ? L * 0.14 : L * 0.12;
+    _shadow(c, L * 1.0, h: 0.35);
+    final sw = sin(t * 1.5 + ph) * L * 0.08;
+    // 尾
+    final tail = Path()
+      ..moveTo(-L * 0.3, -h)
+      ..quadraticBezierTo(-L * 0.6, -h + sw, -L * (s.lizard ? 1.2 : 0.85), -h * 0.6 + sw * 1.5);
+    c.drawPath(tail, _stroke(_shade(s.body, 0.9), h * (s.lizard ? 0.6 : 1.5)));
+    for (final x in const [-0.15, 0.22]) {
+      c.drawLine(Offset(L * x, -h * 0.9), Offset(L * (x + 0.06), 0), _stroke(_shade(s.body, 0.7), h * 0.5));
+    }
+    _blob(c, Rect.fromCenter(center: Offset(0, -h), width: L * 0.85, height: h * 1.8), s.body);
+    if (s.bellyUp) {
+      c.drawOval(Rect.fromCenter(center: Offset(0, -h * 0.3), width: L * 0.7, height: h * 0.7), _p(s.belly));
+      for (var k = 0; k < 4; k++) {
+        c.drawCircle(Offset(-L * 0.25 + k * L * 0.17, -h * 0.3), h * 0.12, _p(const Color(0xFF2A2622)));
+      }
+    }
+    final hc = Offset(L * 0.5, -h * 1.05);
+    _blob(c, Rect.fromCenter(center: hc, width: L * 0.34, height: h * (s.flat ? 1.6 : 1.5)), _tint(s.body, 0.05));
+    _eye(c, hc + Offset(L * 0.08, -h * 0.3), max(0.005, L * 0.025));
+  }
+
+  static void _turtle(Canvas c, _A s) {
+    final L = s.len;
+    _shadow(c, L * 1.0, h: 0.4);
+    c.drawLine(Offset(-L * 0.28, -L * 0.1), Offset(-L * 0.28, 0), _stroke(_shade(s.body, 0.6), L * 0.12));
+    c.drawLine(Offset(L * 0.2, -L * 0.1), Offset(L * 0.22, 0), _stroke(_shade(s.body, 0.6), L * 0.12));
+    final hc = Offset(L * 0.55, -L * 0.25);
+    c.drawLine(Offset(L * 0.35, -L * 0.2), hc, _stroke(_shade(s.belly, 0.8), L * 0.16));
+    c.drawCircle(hc, L * 0.1, _p(_shade(s.belly, 0.85)));
+    _eye(c, hc + Offset(L * 0.04, -L * 0.03), L * 0.025);
+    final shell = Rect.fromCenter(center: Offset(0, -L * 0.22), width: L * 1.05, height: L * 0.62);
+    _blob(c, shell, s.body);
+    // 甲羅のもよう
+    for (var k = -1; k <= 1; k++) {
+      c.drawLine(Offset(k * L * 0.2, -L * 0.52), Offset(k * L * 0.26, -L * 0.14), _stroke(_shade(s.body, 0.65), 0.004));
+    }
+    c.drawArc(Rect.fromCenter(center: Offset(0, -L * 0.25), width: L * 0.8, height: L * 0.4), pi, pi, false,
+        _stroke(_shade(s.body, 0.65), 0.004));
+  }
+
+  static void _seal(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    _shadow(c, L * 1.0, h: 0.4);
+    final lift = sin(t * 1.0 + ph) * 0.004;
+    c.drawPath(
+        Path()
+          ..moveTo(-L * 0.5, -L * 0.04)
+          ..quadraticBezierTo(-L * 0.62, -L * 0.2, -L * 0.7, -L * 0.1 + lift)
+          ..lineTo(-L * 0.55, -L * 0.04)
+          ..close(),
+        _p(_shade(s.body, 0.8)));
+    _blob(c, Rect.fromCenter(center: Offset(0, -L * 0.2), width: L * 1.15, height: L * 0.38), s.body);
+    final hc = Offset(L * 0.5, -L * 0.3 + lift);
+    _blob(c, Rect.fromCenter(center: hc, width: L * 0.34, height: L * 0.3), _tint(s.body, 0.05));
+    c.drawCircle(hc + Offset(L * 0.15, L * 0.02), L * 0.025, _p(const Color(0xFF1A1612)));
+    _eye(c, hc + Offset(L * 0.05, -L * 0.04), L * 0.027);
+    final rng = Random(3);
+    for (var k = 0; k < 14; k++) {
+      c.drawCircle(Offset((rng.nextDouble() - 0.5) * L * 0.9, -L * 0.22 + (rng.nextDouble() - 0.5) * L * 0.2), L * 0.012,
+          _p(s.accent));
+    }
+  }
+
+  static void _butterfly(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    final y = -0.14 + sin(t * 1.6 + ph) * 0.012;
+    final flap = 0.35 + 0.65 * ((sin(t * 7 + ph) + 1) / 2);
+    c.drawOval(Rect.fromCenter(center: const Offset(0, -0.01), width: L * 0.5, height: 0.012), _p(Colors.black26));
+    final o = Offset(0, y);
+    for (final side in const [-1.0, 1.0]) {
+      // 前羽
+      c.drawPath(
+          Path()
+            ..moveTo(o.dx, o.dy)
+            ..quadraticBezierTo(o.dx + side * L * 0.9 * flap, o.dy - L * 0.7, o.dx + side * L * 0.7 * flap, o.dy - L * 0.1)
+            ..close(),
+          _p(s.body));
+      // 後ろ羽
+      c.drawPath(
+          Path()
+            ..moveTo(o.dx, o.dy)
+            ..quadraticBezierTo(o.dx + side * L * 0.8 * flap, o.dy + L * 0.1, o.dx + side * L * 0.4 * flap, o.dy + L * 0.55)
+            ..close(),
+          _p(_shade(s.body, 0.88)));
+      c.drawCircle(o + Offset(side * L * 0.45 * flap, -L * 0.25), L * 0.06, _p(s.accent));
+      c.drawCircle(o + Offset(side * L * 0.3 * flap, L * 0.18), L * 0.05, _p(s.belly));
+    }
+    c.drawLine(o + Offset(0, -L * 0.2), o + Offset(0, L * 0.3), _stroke(const Color(0xFF2A2622), L * 0.1));
+    c.drawLine(o + Offset(0, -L * 0.2), o + Offset(-L * 0.12, -L * 0.45), _stroke(const Color(0xFF2A2622), 0.003));
+    c.drawLine(o + Offset(0, -L * 0.2), o + Offset(L * 0.12, -L * 0.45), _stroke(const Color(0xFF2A2622), 0.003));
+  }
+
+  static void _bat(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    final y = -0.15 + sin(t * 1.3 + ph) * 0.015;
+    final flap = sin(t * 9 + ph) * 0.35;
+    for (final side in const [-1.0, 1.0]) {
+      final p = Path()
+        ..moveTo(0, y)
+        ..lineTo(side * L * 1.6, y - L * (0.5 + flap))
+        ..quadraticBezierTo(side * L * 1.2, y - L * 0.1, side * L * 1.0, y + L * 0.2)
+        ..quadraticBezierTo(side * L * 0.5, y + L * 0.05, side * L * 0.2, y + L * 0.3)
+        ..close();
+      c.drawPath(p, _p(s.body));
+    }
+    _blob(c, Rect.fromCenter(center: Offset(0, y + L * 0.05), width: L * 0.45, height: L * 0.7), s.belly);
+    c.drawCircle(Offset(L * 0.05, y - L * 0.3), L * 0.2, _p(s.belly));
+  }
+
+  static void _dragonfly(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    final y = -0.16 + sin(t * 1.4 + ph) * 0.014;
+    final fl = (sin(t * 22 + ph) + 1) / 2;
+    c.drawOval(Rect.fromCenter(center: const Offset(0, -0.01), width: L * 0.9, height: 0.01), _p(Colors.black26));
+    for (final dx in const [0.0, -0.18]) {
+      for (final side in const [-1.0, 1.0]) {
+        c.drawOval(
+            Rect.fromCenter(center: Offset(L * (0.2 + dx), y + side * L * 0.28 * (0.6 + fl * 0.4)), width: L * 0.62, height: L * 0.13),
+            _p(Colors.white.withValues(alpha: 0.42)));
+      }
+    }
+    // 腹・胸・頭
+    c.drawLine(Offset(-L * 0.9, y), Offset(L * 0.1, y), _stroke(s.body, L * 0.05));
+    for (var k = 0; k < 5; k++) {
+      c.drawLine(Offset(-L * 0.15 - k * L * 0.15, y), Offset(-L * 0.24 - k * L * 0.15, y), _stroke(s.belly, L * 0.052));
+    }
+    c.drawCircle(Offset(L * 0.1, y), L * 0.1, _p(_shade(s.body, 0.95)));
+    c.drawCircle(Offset(L * 0.26, y - L * 0.01), L * 0.09, _p(s.accent));
+  }
+
+  static void _firefly(Canvas c, _A s, double t, double ph) {
+    final L = s.len;
+    final y = -0.12 + sin(t * 1.1 + ph) * 0.02;
+    final glow = 0.25 + 0.75 * ((sin(t * 2.2 + ph) + 1) / 2);
+    c.drawCircle(
+        Offset(-L * 0.5, y),
+        L * 2.6,
+        Paint()
+          ..shader = RadialGradient(colors: [
+            s.belly.withValues(alpha: 0.55 * glow),
+            s.belly.withValues(alpha: 0),
+          ]).createShader(Rect.fromCircle(center: Offset(-L * 0.5, y), radius: L * 2.6)));
+    c.drawOval(Rect.fromCenter(center: Offset(0, y), width: L * 1.4, height: L * 0.6), _p(s.body));
+    c.drawOval(Rect.fromCenter(center: Offset(-L * 0.55, y), width: L * 0.55, height: L * 0.5), _p(Color.lerp(s.body, s.belly, glow)!));
+    c.drawOval(Rect.fromCenter(center: Offset(L * 0.5, y), width: L * 0.35, height: L * 0.4), _p(s.accent));
+    c.drawOval(Rect.fromCenter(center: Offset(0, y - L * 0.3), width: L * 1.3, height: L * 0.34), _p(Colors.white.withValues(alpha: 0.35)));
+  }
+
+  static void _beetle(Canvas c, _A s) {
+    final L = s.len;
+    _shadow(c, L * 1.0, h: 0.4);
+    for (var k = 0; k < 3; k++) {
+      final x = -L * 0.25 + k * L * 0.25;
+      c.drawLine(Offset(x, -L * 0.15), Offset(x - L * 0.1, 0), _stroke(_shade(s.body, 0.6), 0.005));
+    }
+    _blob(c, Rect.fromCenter(center: Offset(-L * 0.1, -L * 0.28), width: L * 1.0, height: L * 0.62), s.body);
+    c.drawLine(Offset(-L * 0.1, -L * 0.55), Offset(-L * 0.1, -L * 0.05), _stroke(_shade(s.body, 0.6), 0.003));
+    final hc = Offset(L * 0.5, -L * 0.28);
+    _blob(c, Rect.fromCenter(center: hc, width: L * 0.34, height: L * 0.34), _shade(s.body, 0.9));
+    if (s.horn == 1) {
+      c.drawPath(
+          Path()
+            ..moveTo(hc.dx, hc.dy - L * 0.1)
+            ..quadraticBezierTo(hc.dx + L * 0.3, hc.dy - L * 0.5, hc.dx + L * 0.5, hc.dy - L * 0.45)
+            ..quadraticBezierTo(hc.dx + L * 0.28, hc.dy - L * 0.3, hc.dx + L * 0.08, hc.dy + L * 0.02)
+            ..close(),
+          _p(s.accent));
+    } else {
+      for (final d in const [-1.0, 1.0]) {
+        c.drawPath(
+            Path()
+              ..moveTo(hc.dx + L * 0.1, hc.dy + d * L * 0.05)
+              ..quadraticBezierTo(hc.dx + L * 0.45, hc.dy + d * L * 0.28, hc.dx + L * 0.3, hc.dy + d * L * 0.02),
+            _stroke(_shade(s.body, 0.85), L * 0.05));
+      }
+    }
+    c.drawCircle(hc + Offset(L * 0.05, -L * 0.05), L * 0.025, _p(Colors.black));
+  }
+
+  // ---------------------------------------------------------------------
   // 鳥
   // ---------------------------------------------------------------------
 
@@ -1368,6 +1747,37 @@ class SpeciesRenderer {
     c.drawCircle(Offset(s.len * 0.47, -0.005), 0.004, _p(Colors.black));
   }
 
+
+  /// 追加した魚の模様（縦縞・斑点・体側の線など）
+  static void _fishGeneric(Canvas c, String id, double L, double H) {
+    final spec = _fishPatterns[id];
+    if (spec == null) return;
+    final f = spec.split('|');
+    final col = Color(0xFF000000 | (int.tryParse(f[1], radix: 16) ?? 0));
+    final rng = Random(id.hashCode & 0xFFFF);
+    switch (f[0]) {
+      case 'bars':
+        for (var i = 0; i < 6; i++) {
+          c.drawRect(Rect.fromCenter(center: Offset(-L * 0.3 + i * L * 0.11, 0), width: L * 0.035, height: H * 1.0),
+              _p(col.withValues(alpha: 0.5)));
+        }
+      case 'spots':
+        for (var i = 0; i < 14; i++) {
+          c.drawCircle(Offset((rng.nextDouble() - 0.5) * L * 0.8, (rng.nextDouble() - 0.4) * H * 0.8), H * 0.09,
+              _p(col.withValues(alpha: 0.85)));
+        }
+      case 'dots':
+        for (var i = 0; i < 24; i++) {
+          c.drawCircle(Offset((rng.nextDouble() - 0.5) * L * 0.85, (rng.nextDouble() - 0.5) * H * 0.8), H * 0.05,
+              _p(col.withValues(alpha: 0.7)));
+        }
+      case 'lateral':
+        c.drawLine(Offset(-L * 0.42, H * 0.03), Offset(L * 0.38, H * 0.03), _stroke(col.withValues(alpha: 0.75), 0.004));
+      case 'belly':
+        c.drawRect(Rect.fromLTRB(-L * 0.45, H * 0.1, L * 0.4, H * 0.5), _p(col.withValues(alpha: 0.55)));
+    }
+  }
+
   static void _fishPattern(Canvas c, String id, double L, double H) {
     switch (id) {
       case 'ayu':
@@ -1486,6 +1896,8 @@ class SpeciesRenderer {
         c.drawRect(Rect.fromCenter(center: Offset(L * 0.31, 0), width: L * 0.07, height: H * 1.2), _p(Colors.black87));
       case 'mejina': // 濃い灰青色、うろこの白い縁取り
         c.drawRect(Rect.fromLTRB(-L * 0.5, H * 0.1, L * 0.5, H * 0.5), _p(const Color(0xFF8A94A0).withValues(alpha: 0.3)));
+      default:
+        _fishGeneric(c, id, L, H);
     }
   }
 }
@@ -1654,6 +2066,39 @@ const _fishSpecs = <String, _F>{
   'mahaze': _F(len: 0.12, h: 0.03, back: Color(0xFF9A8A5A), belly: Color(0xFFE0D4A8), fin: Color(0xFFA89A68), tail: 0.14, dorsal: 0.4, eye: 0.1),
   'nijimasu': _F(len: 0.15, h: 0.045, back: Color(0xFF6A7A62), belly: Color(0xFFEAE6DA), fin: Color(0xFFA8A488), dorsal: 0.4),
   'iwana': _F(len: 0.15, h: 0.036, back: Color(0xFF5A5A3E), belly: Color(0xFFD8CCA8), fin: Color(0xFFD88A4A), dorsal: 0.4),
+  'nigoi': _F(len: 0.17, h: 0.04, back: Color(0xFF8A8A6A), belly: Color(0xFFE8E4D0), fin: Color(0xFFA8A488), dorsal: 0.45),
+  'kawamutsu': _F(len: 0.11, h: 0.032, back: Color(0xFF7A8A70), belly: Color(0xFFE8E4D4), fin: Color(0xFFE0A060)),
+  'abura_haya': _F(len: 0.09, h: 0.024, back: Color(0xFF8A8A60), belly: Color(0xFFE8E4D0), fin: Color(0xFFC8C4A0)),
+  'moroko': _F(len: 0.09, h: 0.028, back: Color(0xFF8A8A70), belly: Color(0xFFEAE6D0), fin: Color(0xFFC8C4A8)),
+  'motsugo': _F(len: 0.08, h: 0.026, back: Color(0xFF8A8A70), belly: Color(0xFFE0DCC8), fin: Color(0xFFC8C4A8)),
+  'zenitanago': _F(len: 0.08, h: 0.04, back: Color(0xFF8AA0A8), belly: Color(0xFFE8D8D0), fin: Color(0xFFE08A8A), dorsal: 0.45, eye: 0.12),
+  'hotokedojo': _F(len: 0.07, h: 0.022, back: Color(0xFFA89A60), belly: Color(0xFFE8DCB0), fin: Color(0xFFB8A870), tail: 0.14, dorsal: 0.3),
+  'yoshinobori': _F(len: 0.07, h: 0.024, back: Color(0xFF7A6A4A), belly: Color(0xFFC8B890), fin: Color(0xFF8A7A5A), dorsal: 0.45, eye: 0.14),
+  'kajika': _F(len: 0.1, h: 0.034, back: Color(0xFF6A5A44), belly: Color(0xFFB8A888), fin: Color(0xFF7A6A50), tail: 0.16, eye: 0.1),
+  'amago': _F(len: 0.14, h: 0.034, back: Color(0xFF7A8A62), belly: Color(0xFFEAE0CC), fin: Color(0xFFA89A78), dorsal: 0.4),
+  'nikkoiwana': _F(len: 0.16, h: 0.036, back: Color(0xFF6A6A52), belly: Color(0xFFE8D0A0), fin: Color(0xFFE0905A), dorsal: 0.4),
+  'sakura_masu': _F(len: 0.18, h: 0.04, back: Color(0xFF7A8A92), belly: Color(0xFFEAEAE4), fin: Color(0xFFA8A8A0), dorsal: 0.4),
+  'sake': _F(len: 0.2, h: 0.045, back: Color(0xFF5A6A78), belly: Color(0xFFE0E4E4), fin: Color(0xFF7A8A90), dorsal: 0.4),
+  'ayukake': _F(len: 0.13, h: 0.036, back: Color(0xFF7A6A4A), belly: Color(0xFFC8B890), fin: Color(0xFF8A7A58), tail: 0.16, eye: 0.1),
+  'shinai_motsugo': _F(len: 0.07, h: 0.026, back: Color(0xFF8A8A6A), belly: Color(0xFFE0DCC8), fin: Color(0xFFC8C4A8)),
+  'wataka': _F(len: 0.17, h: 0.05, back: Color(0xFFA8B0A0), belly: Color(0xFFEEEEE6), fin: Color(0xFFC8C8B8), dorsal: 0.5),
+  'madai': _F(len: 0.19, h: 0.075, back: Color(0xFFE08A8A), belly: Color(0xFFF6E4DE), fin: Color(0xFFD86A6A), dorsal: 0.6),
+  'hirame': _F(len: 0.2, h: 0.06, back: Color(0xFF8A7A5A), belly: Color(0xFFE8E0D0), fin: Color(0xFF8A7A5A), dorsal: 0.3, tail: 0.15),
+  'maiwashi': _F(len: 0.12, h: 0.028, back: Color(0xFF4A6A8A), belly: Color(0xFFEEF2F2), fin: Color(0xFF8A9AA0)),
+  'maaji': _F(len: 0.14, h: 0.04, back: Color(0xFF6A8AA0), belly: Color(0xFFF0F2EE), fin: Color(0xFF9AA8B0)),
+  'masaba': _F(len: 0.17, h: 0.038, back: Color(0xFF3A6A8A), belly: Color(0xFFEEF0F0), fin: Color(0xFF7A8A9A)),
+  'katsuo': _F(len: 0.2, h: 0.055, back: Color(0xFF2A4A6A), belly: Color(0xFFE0E6E8), fin: Color(0xFF5A6A7A), dorsal: 0.4),
+  'buri': _F(len: 0.22, h: 0.05, back: Color(0xFF4A6A7A), belly: Color(0xFFEEEEEA), fin: Color(0xFF8A9AA0)),
+  'kuromaguro': _F(len: 0.28, h: 0.085, back: Color(0xFF1E2E48), belly: Color(0xFFE0E6EA), fin: Color(0xFF3A4A5A), dorsal: 0.5),
+  'ainame': _F(len: 0.16, h: 0.045, back: Color(0xFF8A7A44), belly: Color(0xFFD8C890), fin: Color(0xFF7A6A3A), dorsal: 0.5),
+  'ishidai': _F(len: 0.18, h: 0.08, back: Color(0xFFB8B8B0), belly: Color(0xFFE8E8E4), fin: Color(0xFF3A3A3A), dorsal: 0.55),
+  'minokasago': _F(len: 0.14, h: 0.06, back: Color(0xFFA83A2A), belly: Color(0xFFE8C8B0), fin: Color(0xFFC8503A), dorsal: 0.9),
+  'hakofugu': _F(len: 0.1, h: 0.07, back: Color(0xFFE8D86A), belly: Color(0xFFF4EEC8), fin: Color(0xFFD8C84A), tail: 0.15, dorsal: 0.2, eye: 0.13),
+  'umitanago': _F(len: 0.13, h: 0.06, back: Color(0xFF8A9AA8), belly: Color(0xFFE8ECEC), fin: Color(0xFFA0A8B0), dorsal: 0.6),
+  'tobiuo': _F(len: 0.17, h: 0.035, back: Color(0xFF2A4A72), belly: Color(0xFFE4EAEC), fin: Color(0xFF6A8AA8), dorsal: 0.3),
+  'tachiuo': _F(len: 0.3, h: 0.025, back: Color(0xFFC8D0D4), belly: Color(0xFFECF0F0), fin: Color(0xFFB8C0C4), dorsal: 0.9, tail: 0.05),
+  'napoleon': _F(len: 0.28, h: 0.08, back: Color(0xFF4A9AA8), belly: Color(0xFFA8D0D4), fin: Color(0xFF3A8A98), dorsal: 0.6),
+  'honsome': _F(len: 0.08, h: 0.02, back: Color(0xFF4AA0E0), belly: Color(0xFFE8F2F6), fin: Color(0xFF4A90C8), dorsal: 0.4),
 };
 
 const _genericPlants = <String, String>{
@@ -1728,4 +2173,179 @@ const _genericPlants = <String, String>{
   'chingruma': 'herb|F8F8F2|5EAA4A|F2D24A|0.4|r',
   'kurumayuri': 'herb|F08A2A|4F8A3A|C85A1A|1.0|l',
   'reba': 'herb|F2C21A|5EAA4A|F8D24A|0.4|s',
+  'kashiwa': 'tree|55402C|5A8A34|-|1.1|',
+  'kuri': 'treeF|5A4A3A|5A8A34|8A5A2A|1.05|',
+  'kurumi': 'treeF|6A5A48|5E8F3A|7A5A2A|1.1|',
+  'hannoki': 'tree|5A4A3A|5E8F3A|-|1.0|',
+  'yamanarashi': 'tree|D8D4C4|7ABA5A|-|1.0|',
+  'hoonoki': 'treeB|7A6A58|5E9A44|F6F2D8|1.15|',
+  'toneriko': 'tree|7A6A58|5E9A44|-|1.05|',
+  'akagashi': 'tree|4A3A30|2F5A34|-|1.1|',
+  'tsuburajii': 'tree|5A4636|2A6A3A|-|1.1|',
+  'yabunikkei': 'tree|4A3A30|2F6A3A|-|0.95|',
+  'inumaki': 'conifer|2F5A34|5A9A5A|-|0.95|',
+  'sotetsu': 'herb|2F6A3A|3F8A3A|-|1.2|r',
+  'gajumaru': 'tree|7A6A58|3F8A3A|-|1.15|',
+  'akou': 'tree|8A7A68|3F8A3A|-|1.15|',
+  'miyagino_hagi': 'shrub|7A6A48|5E9A44|D85AA0|1.0|',
+  'utsugi': 'shrub|8A7A58|5E9A44|F8F8F2|0.9|',
+  'yamabukisou': 'herb|F2C21A|5E9A44|F8D24A|0.6|r',
+  'gamazumi': 'shrubF|6A5A48|5E9A44|D82A3A|1.0|',
+  'noibara': 'shrub|5A7A44|5E9A44|F8F4EC|0.95|',
+  'murasakishikibu': 'shrubF|6A5A48|5E9A44|9A3AC8|0.95|',
+  'tsutsuji': 'shrub|6A5A48|5E9A44|F08A2A|1.0|',
+  'kuroyuri': 'herb|3A1E2A|5EAA4A|5A2A3A|0.5|b',
+  'urupposou': 'spike|6A5AE8|5EAA4A|-|0.6|',
+  'teikakazura': 'shrub|4F7A3A|3F7A3A|F8F4E8|1.0|',
+  'yamaimo': 'herb|F2E4C8|5E9A44|F8F0D8|0.6|s',
+  'hanashobu': 'spike|8A3AC8|4F8A3A|-|1.0|',
+  'kumazasa': 'grass|5E9A44|-|-|1.0|',
+  'mousouchiku': 'grass|5E9A44|-|-|1.8|',
+  'chigaya': 'grass|9AAA5A|-|-|0.9|',
+  'suisen': 'herb|F8F8F2|4F8A3A|F2C21A|0.7|r',
+  'hamaecho': 'herb|C85AC8|5EAA4A|F8D8F0|0.5|b',
+  'hamasuge': 'grass|9AAA5A|-|-|0.7|',
+  'ezorindo': 'herb|3A4AC8|5E9A44|7A8AF0|0.8|b',
+  'waremokou': 'spike|8A2A3A|5E9A44|-|1.0|',
+  'sasayuri': 'herb|F8D8E4|4F8A3A|E8A0C0|1.0|l',
+  'yukiwari': 'herb|C88AE8|5EAA4A|F2D8F8|0.4|r',
+  'iwakagami': 'herb|E88AB8|2F6A3A|F8D8E8|0.4|r',
+  'suminoe': 'herb|F2D82A|5E9A44|F8E858|0.9|s',
+  'mizuaoi': 'herb|3A4AC8|4F8A3A|7A8AF0|0.8|b',
+  'jusai': 'floating|3A6A3A|8A2A3A|-|0.9|',
+  'kuromo': 'seaweed|4A8A3A|-|-|0.7|',
+  'himegama': 'grass|7A9A44|8A5A2A|-|1.1|',
+  'makomo': 'grass|7AAA4A|-|-|1.2|',
+  'kawaraketsumei': 'herb|F2D82A|6EAA4A|F8E858|0.5|s',
+  'kawarahahako': 'herb|F8F8F2|8AAA88|F2D24A|0.7|r',
+  'sawagurumi': 'tree|8A7A68|5E9A44|-|1.2|',
+  'katsura': 'tree|7A6A58|7AAA4A|-|1.2|',
+  'urajiro': 'conifer|2F5A44|8AAAAA|-|1.05|',
+  'shirabe': 'conifer|2A5A44|6AAA8A|-|1.0|',
+  'okukanba': 'conifer|1F4A3A|5A9A80|-|1.05|',
+  'kitadake_kusa': 'herb|F8F8F4|6EAA4A|F2D24A|0.4|r',
+  'miyamadaikonsou': 'herb|F2C21A|5EAA4A|F8D24A|0.5|s',
+  'shinanokinbai': 'herb|F2C21A|5EAA4A|F8D24A|0.8|r',
+  'mineduo': 'shrub|4A5A3A|3A6A3A|F4A0B8|0.5|',
+  'benibanaichiyakusou': 'herb|E870A8|2F6A3A|F8C8E0|0.5|b',
+};
+
+class _A {
+  final String kind;
+  final Color body, belly, accent;
+  final double len, tall, leg, headR, ear, tail, snout;
+  final int earKind, tailKind, antlers, horn;
+  final bool spots, stripes, mask, hump, bellyUp, flat, lizard;
+  final Color? face, tip, chest;
+  const _A({
+    required this.kind,
+    required this.body,
+    required this.belly,
+    required this.accent,
+    required this.len,
+    this.tall = 0.1,
+    this.leg = 0.06,
+    this.headR = 0.05,
+    this.ear = 0.03,
+    this.earKind = 0,
+    this.tail = 0.06,
+    this.tailKind = 0,
+    this.snout = 0.8,
+    this.antlers = 0,
+    this.horn = 0,
+    this.spots = false,
+    this.stripes = false,
+    this.mask = false,
+    this.hump = false,
+    this.bellyUp = false,
+    this.flat = false,
+    this.lizard = false,
+    this.face,
+    this.tip,
+    this.chest,
+  });
+}
+
+const _animalSpecs = <String, _A>{
+  'nihonjika': _A(kind: 'quad', body: Color(0xFFA8764A), belly: Color(0xFFEDE0CC), accent: Color(0xFF8A6A4A), len: 0.32, tall: 0.12, leg: 0.15, headR: 0.05, ear: 0.04, earKind: 1, tail: 0.03, tailKind: 2, snout: 0.8, antlers: 1, spots: true),
+  'ezoshika': _A(kind: 'quad', body: Color(0xFF8A7058), belly: Color(0xFFE4D8C4), accent: Color(0xFF8A6A4A), len: 0.36, tall: 0.14, leg: 0.16, headR: 0.055, ear: 0.04, earKind: 1, tail: 0.03, tailKind: 2, snout: 0.85, antlers: 1),
+  'inoshishi': _A(kind: 'quad', body: Color(0xFF4A3A30), belly: Color(0xFFA0907C), accent: Color(0xFF8A6A4A), len: 0.3, tall: 0.15, leg: 0.08, headR: 0.06, ear: 0.03, earKind: 0, tail: 0.03, tailKind: 2, snout: 1.3, mask: false),
+  'nihonzaru': _A(kind: 'quad', body: Color(0xFF9A8466), belly: Color(0xFFC8B898), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.12, leg: 0.08, headR: 0.06, ear: 0.025, earKind: 1, tail: 0.05, tailKind: 0, snout: 0.5, face: Color(0xFFD8705A)),
+  'kamoshika': _A(kind: 'quad', body: Color(0xFFC8C4BA), belly: Color(0xFFEDEAE2), accent: Color(0xFF8A6A4A), len: 0.28, tall: 0.14, leg: 0.12, headR: 0.055, ear: 0.04, earKind: 0, tail: 0.03, tailKind: 2, snout: 0.8, antlers: 2),
+  'nihonrisu': _A(kind: 'quad', body: Color(0xFFA8643A), belly: Color(0xFFF0E4D0), accent: Color(0xFF8A6A4A), len: 0.11, tall: 0.06, leg: 0.03, headR: 0.035, ear: 0.025, earKind: 0, tail: 0.12, tailKind: 3, snout: 0.5),
+  'ezorisu': _A(kind: 'quad', body: Color(0xFFB8723A), belly: Color(0xFFF6EEE0), accent: Color(0xFF8A6A4A), len: 0.12, tall: 0.065, leg: 0.03, headR: 0.035, ear: 0.03, earKind: 0, tail: 0.13, tailKind: 3, snout: 0.5),
+  'kitsune': _A(kind: 'quad', body: Color(0xFFD8803A), belly: Color(0xFFF4ECE0), accent: Color(0xFF8A6A4A), len: 0.24, tall: 0.1, leg: 0.1, headR: 0.05, ear: 0.045, earKind: 0, tail: 0.16, tailKind: 1, snout: 1.2, tip: Color(0xFFFAFAF6)),
+  'kitakitsune': _A(kind: 'quad', body: Color(0xFFD88A3A), belly: Color(0xFFF6EEE0), accent: Color(0xFF8A6A4A), len: 0.25, tall: 0.11, leg: 0.1, headR: 0.05, ear: 0.045, earKind: 0, tail: 0.17, tailKind: 1, snout: 1.2, tip: Color(0xFFFAFAF6)),
+  'tanuki': _A(kind: 'quad', body: Color(0xFF8A7A64), belly: Color(0xFFB8A88C), accent: Color(0xFF8A6A4A), len: 0.22, tall: 0.12, leg: 0.05, headR: 0.05, ear: 0.03, earKind: 1, tail: 0.07, tailKind: 1, snout: 0.9, mask: true),
+  'nousagi': _A(kind: 'quad', body: Color(0xFFA8845A), belly: Color(0xFFEDE0CC), accent: Color(0xFF8A6A4A), len: 0.16, tall: 0.09, leg: 0.06, headR: 0.04, ear: 0.07, earKind: 2, tail: 0.025, tailKind: 2, snout: 0.6),
+  'tsukinowaguma': _A(kind: 'quad', body: Color(0xFF2A2622), belly: Color(0xFF3A3430), accent: Color(0xFF8A6A4A), len: 0.3, tall: 0.16, leg: 0.09, headR: 0.06, ear: 0.035, earKind: 1, tail: 0.02, tailKind: 2, snout: 0.8, chest: Color(0xFFF2EEE4)),
+  'higuma': _A(kind: 'quad', body: Color(0xFF5A4332), belly: Color(0xFF6A5342), accent: Color(0xFF8A6A4A), len: 0.36, tall: 0.19, leg: 0.1, headR: 0.07, ear: 0.03, earKind: 1, tail: 0.02, tailKind: 2, snout: 0.9, hump: true),
+  'anaguma': _A(kind: 'quad', body: Color(0xFF6A5E52), belly: Color(0xFF4A423A), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.1, leg: 0.04, headR: 0.045, ear: 0.02, earKind: 1, tail: 0.04, tailKind: 2, snout: 1.0, mask: true),
+  'honden': _A(kind: 'quad', body: Color(0xFFA8803A), belly: Color(0xFFF2D86A), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.07, leg: 0.05, headR: 0.04, ear: 0.03, earKind: 1, tail: 0.14, tailKind: 1, snout: 0.9),
+  'itachi': _A(kind: 'quad', body: Color(0xFFA8743A), belly: Color(0xFFEDD8B0), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.06, leg: 0.04, headR: 0.035, ear: 0.02, earKind: 1, tail: 0.09, tailKind: 0, snout: 0.8),
+  'okojo': _A(kind: 'quad', body: Color(0xFFF6F4EE), belly: Color(0xFFFAFAF6), accent: Color(0xFF8A6A4A), len: 0.16, tall: 0.05, leg: 0.03, headR: 0.03, ear: 0.015, earKind: 1, tail: 0.06, tailKind: 0, snout: 0.7, tip: Color(0xFF2A2622)),
+  'musasabi': _A(kind: 'quad', body: Color(0xFF9A8670), belly: Color(0xFFE4DCCC), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.1, leg: 0.04, headR: 0.045, ear: 0.02, earKind: 1, tail: 0.18, tailKind: 1, snout: 0.5),
+  'momonga': _A(kind: 'quad', body: Color(0xFFB8A89A), belly: Color(0xFFF2ECE2), accent: Color(0xFF8A6A4A), len: 0.12, tall: 0.06, leg: 0.025, headR: 0.04, ear: 0.02, earKind: 1, tail: 0.1, tailKind: 1, snout: 0.4),
+  'yamane': _A(kind: 'quad', body: Color(0xFFC8A878), belly: Color(0xFFF2E8D4), accent: Color(0xFF8A6A4A), len: 0.09, tall: 0.05, leg: 0.02, headR: 0.03, ear: 0.015, earKind: 1, tail: 0.08, tailKind: 1, snout: 0.4, stripes: true),
+  'akanezumi': _A(kind: 'quad', body: Color(0xFFA8643A), belly: Color(0xFFF0E8DC), accent: Color(0xFF8A6A4A), len: 0.1, tall: 0.05, leg: 0.025, headR: 0.03, ear: 0.025, earKind: 1, tail: 0.1, tailKind: 0, snout: 0.7),
+  'abura_koumori': _A(kind: 'bat', body: Color(0xFF3A3430), belly: Color(0xFF5A5048), accent: Color(0xFF2A2622), len: 0.08),
+  'iriomote': _A(kind: 'quad', body: Color(0xFF8A6A4A), belly: Color(0xFFE0D4BC), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.09, leg: 0.06, headR: 0.045, ear: 0.03, earKind: 1, tail: 0.12, tailKind: 0, snout: 0.5, spots: true),
+  'amami_kurousagi': _A(kind: 'quad', body: Color(0xFF3A302A), belly: Color(0xFF5A4A3C), accent: Color(0xFF8A6A4A), len: 0.16, tall: 0.1, leg: 0.04, headR: 0.045, ear: 0.04, earKind: 1, tail: 0.02, tailKind: 2, snout: 0.6),
+  'tsushima_yamaneko': _A(kind: 'quad', body: Color(0xFF9A7A52), belly: Color(0xFFE4D8BC), accent: Color(0xFF8A6A4A), len: 0.2, tall: 0.09, leg: 0.06, headR: 0.045, ear: 0.03, earKind: 1, tail: 0.12, tailKind: 0, snout: 0.5, spots: true),
+  'zenigata': _A(kind: 'seal', body: Color(0xFF8A8A84), belly: Color(0xFFD8D8D0), accent: Color(0xFF6A6A66), len: 0.2),
+  'amagaeru': _A(kind: 'frog', body: Color(0xFF5AB04A), belly: Color(0xFFE8F0D0), accent: Color(0xFF2A2A2A), len: 0.08),
+  'tonosama': _A(kind: 'frog', body: Color(0xFF7A9A44), belly: Color(0xFFE8E4C8), accent: Color(0xFF3A3A22), len: 0.11, spots: true),
+  'hikigaeru': _A(kind: 'frog', body: Color(0xFF8A6A44), belly: Color(0xFFD8C8A0), accent: Color(0xFF5A4228), len: 0.13, spots: true),
+  'moriao': _A(kind: 'frog', body: Color(0xFF5AA85A), belly: Color(0xFFF0F0DC), accent: Color(0xFF3A7A3A), len: 0.1),
+  'akahara_imori': _A(kind: 'newt', body: Color(0xFF3A3430), belly: Color(0xFFE8503A), accent: Color(0xFF2A2622), len: 0.14, bellyUp: true),
+  'hakone_sansho': _A(kind: 'newt', body: Color(0xFF4A4038), belly: Color(0xFF8A7A6A), accent: Color(0xFF3A322A), len: 0.15),
+  'osansho': _A(kind: 'newt', body: Color(0xFF6A5A48), belly: Color(0xFFA89A88), accent: Color(0xFF4A3E30), len: 0.28, flat: true),
+  'ishigame': _A(kind: 'turtle', body: Color(0xFF6A5238), belly: Color(0xFFD8C07A), accent: Color(0xFF4A3826), len: 0.15),
+  'kanahebi': _A(kind: 'newt', body: Color(0xFF8A6A44), belly: Color(0xFFD8C8A0), accent: Color(0xFF6A4A2C), len: 0.12, lizard: true),
+  'oomurasaki': _A(kind: 'butterfly', body: Color(0xFF5A3AA8), belly: Color(0xFFF2EEE0), accent: Color(0xFFF4F0EC), len: 0.1),
+  'asagimadara': _A(kind: 'butterfly', body: Color(0xFF8AC8D8), belly: Color(0xFF3A3A3A), accent: Color(0xFFBEE4EC), len: 0.1),
+  'namiageha': _A(kind: 'butterfly', body: Color(0xFFF2D84A), belly: Color(0xFF2A2A2A), accent: Color(0xFFE8C020), len: 0.1),
+  'monshiro': _A(kind: 'butterfly', body: Color(0xFFF6F6F2), belly: Color(0xFF2A2A2A), accent: Color(0xFFFAFAF6), len: 0.08),
+  'gifuchou': _A(kind: 'butterfly', body: Color(0xFFF2E070), belly: Color(0xFF2A2A2A), accent: Color(0xFFE8D048), len: 0.1),
+  'genji_hotaru': _A(kind: 'firefly', body: Color(0xFF2A2622), belly: Color(0xFFF6E070), accent: Color(0xFFD8402A), len: 0.06),
+  'heike_hotaru': _A(kind: 'firefly', body: Color(0xFF3A3228), belly: Color(0xFFF0D860), accent: Color(0xFFD8503A), len: 0.05),
+  'oniyanma': _A(kind: 'dragonfly', body: Color(0xFF2A2A2A), belly: Color(0xFFE8D030), accent: Color(0xFF4AA86A), len: 0.18),
+  'ginyanma': _A(kind: 'dragonfly', body: Color(0xFF3A8AA8), belly: Color(0xFFC8E0A0), accent: Color(0xFF4AA86A), len: 0.15),
+  'akiakane': _A(kind: 'dragonfly', body: Color(0xFFD8502A), belly: Color(0xFFE8A878), accent: Color(0xFFD8402A), len: 0.11),
+  'kabutomushi': _A(kind: 'beetle', body: Color(0xFF5A3A28), belly: Color(0xFF3A2A20), accent: Color(0xFF3A2A20), len: 0.1, horn: 1),
+  'nokogiri_kuwagata': _A(kind: 'beetle', body: Color(0xFF6A3A28), belly: Color(0xFF4A2A20), accent: Color(0xFF4A2A20), len: 0.1, horn: 2),
+  'miyama_kuwagata': _A(kind: 'beetle', body: Color(0xFF4A3426), belly: Color(0xFF3A2A20), accent: Color(0xFF3A2A20), len: 0.11, horn: 2),
+  'ookuwagata': _A(kind: 'beetle', body: Color(0xFF1E1A18), belly: Color(0xFF2A2420), accent: Color(0xFF2A2420), len: 0.12, horn: 2),
+};
+
+const _fishPatterns = <String, String>{
+  'nigoi': 'dots|4A4A38',
+  'kawamutsu': 'lateral|3A8AA0',
+  'abura_haya': 'lateral|3A3A30',
+  'moroko': 'lateral|4A4A38',
+  'motsugo': 'lateral|3A3A30',
+  'zenitanago': 'belly|E88A8A',
+  'hotokedojo': 'dots|4A3A22',
+  'yoshinobori': 'dots|3A2A1A',
+  'kajika': 'spots|3A2E22',
+  'amago': 'spots|E85A3A',
+  'nikkoiwana': 'spots|F2EEDC',
+  'sakura_masu': 'bars|C88A9A',
+  'sake': 'bars|8A3A5A',
+  'ayukake': 'spots|3A2E22',
+  'shinai_motsugo': 'lateral|3A3A30',
+  'madai': 'dots|4A9AD8',
+  'hirame': 'spots|4A3E2A',
+  'maiwashi': 'dots|1E2A38',
+  'maaji': 'lateral|C8B048',
+  'masaba': 'bars|1E3A4A',
+  'katsuo': 'bars|1E2A3A',
+  'buri': 'lateral|E8C83A',
+  'ainame': 'dots|3A2E1A',
+  'ishidai': 'bars|1E1E1E',
+  'minokasago': 'bars|F2E8D8',
+  'hakofugu': 'dots|3A5AA8',
+  'tobiuo': 'lateral|7AA8D8',
+  'napoleon': 'lateral|2A5A68',
+  'honsome': 'lateral|1E1E2E',
 };

@@ -2472,5 +2472,1300 @@
     ],
     "imagePath": "assets/images/creatures/reba.jpg",
     "rarity": 3
+  },
+  {
+    "id": "kashiwa",
+    "nameJa": "カシワ",
+    "nameEn": "Daimyo Oak",
+    "nameScientific": "Quercus dentata",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "大きな葉をもつ落葉樹。柏餅を包む葉に使われる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉は大きく波打つ縁"
+      },
+      {
+        "part": "ポイント",
+        "detail": "冬も枯れ葉が枝に残る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kashiwa.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kuri",
+    "nameJa": "クリ",
+    "nameEn": "Japanese Chestnut",
+    "nameScientific": "Castanea crenata",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "秋にイガに包まれた実をつける。縄文時代から食べられてきた。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "細長い葉にギザギザ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "実はトゲのあるイガに包まれる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kuri.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "kurumi",
+    "nameJa": "オニグルミ",
+    "nameEn": "Japanese Walnut",
+    "nameScientific": "Juglans mandshurica",
+    "type": "plant",
+    "habitats": [
+      "river",
+      "forest"
+    ],
+    "description": "川沿いに育つ落葉高木。硬い殻の実をリスが好む。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きな羽状の葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "実は固い殻に包まれる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kurumi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "hannoki",
+    "nameJa": "ハンノキ",
+    "nameEn": "Japanese Alder",
+    "nameScientific": "Alnus japonica",
+    "type": "plant",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "湿地や川沿いに育つ落葉樹。根に窒素を固定する菌が付く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "小さな松かさ状の実"
+      },
+      {
+        "part": "ポイント",
+        "detail": "水辺の湿った土地を好む"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hannoki.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "yamanarashi",
+    "nameJa": "ヤマナラシ",
+    "nameEn": "Aspen",
+    "nameScientific": "Populus tremula",
+    "type": "plant",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "葉柄が平たく、わずかな風でも葉が震える落葉樹。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "丸い葉がよく震える"
+      },
+      {
+        "part": "ポイント",
+        "detail": "樹皮は白っぽい"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamanarashi.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "hoonoki",
+    "nameJa": "ホオノキ",
+    "nameEn": "Japanese Big-leaf Magnolia",
+    "nameScientific": "Magnolia obovata",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "日本の樹木で最大級の葉。初夏に大きな白い花が咲く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉は長さ40cmにもなる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "花は強い香りがある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hoonoki.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "toneriko",
+    "nameJa": "トネリコ",
+    "nameEn": "Japanese Ash",
+    "nameScientific": "Fraxinus japonica",
+    "type": "plant",
+    "habitats": [
+      "river"
+    ],
+    "description": "湿った谷や川沿いに生える落葉樹。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽状の複葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "枝先に翼のある種ができる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/toneriko.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "akagashi",
+    "nameJa": "アカガシ",
+    "nameEn": "Japanese Evergreen Oak",
+    "nameScientific": "Quercus acuta",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "暖かい山地の照葉樹林をつくる常緑のカシ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きく硬い葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "どんぐりは大きい"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akagashi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "tsuburajii",
+    "nameJa": "ツブラジイ",
+    "nameEn": "Tsubura-jii",
+    "nameScientific": "Castanopsis cuspidata",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "暖かい地方の里山に育つ常緑高木。どんぐりは食べられる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "実は丸く小さい"
+      },
+      {
+        "part": "ポイント",
+        "detail": "初夏に黄色い花で山が染まる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tsuburajii.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "yabunikkei",
+    "nameJa": "ヤブニッケイ",
+    "nameEn": "Yabu-nikkei",
+    "nameScientific": "Cinnamomum yabunikkei",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "ocean"
+    ],
+    "description": "海岸に近い森に育つ常緑樹。葉をもむとよい香りがする。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "3本の葉脈が目立つ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉をもむとニッキの香り"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yabunikkei.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "inumaki",
+    "nameJa": "イヌマキ",
+    "nameEn": "Kusamaki",
+    "nameScientific": "Podocarpus macrophyllus",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "ocean"
+    ],
+    "description": "暖かい海に近い地方に育つ常緑針葉樹。生け垣に使われる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉は細長く厚い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "赤い実の台座は食べられる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/inumaki.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "sotetsu",
+    "nameJa": "ソテツ",
+    "nameEn": "Sago Palm",
+    "nameScientific": "Cycas revoluta",
+    "type": "plant",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "南の海岸に育つ。太古から姿を変えない「生きた化石」。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽状の硬い葉が放射状に広がる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "雄株と雌株がある"
+      }
+    ],
+    "imagePath": "assets/images/creatures/sotetsu.jpg",
+    "rarity": 3,
+    "redList": "NT"
+  },
+  {
+    "id": "gajumaru",
+    "nameJa": "ガジュマル",
+    "nameEn": "Chinese Banyan",
+    "nameScientific": "Ficus microcarpa",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "南の島の森に育つ。幹から垂れ下がる気根が特徴。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "幹から気根が垂れる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "木に精霊が宿ると言われる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/gajumaru.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "akou",
+    "nameJa": "アコウ",
+    "nameEn": "Akou",
+    "nameScientific": "Ficus superba",
+    "type": "plant",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "暖かい海岸に育つ榕樹の仲間。巨木になる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "幹や枝から気根が出る"
+      },
+      {
+        "part": "ポイント",
+        "detail": "小さな実がつく"
+      }
+    ],
+    "imagePath": "assets/images/creatures/akou.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "miyagino_hagi",
+    "nameJa": "ミヤギノハギ",
+    "nameEn": "Thunberg Bush Clover",
+    "nameScientific": "Lespedeza thunbergii",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "秋、枝をしだれさせて紅紫色の花を咲かせる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "枝がアーチ状にしだれる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "小さな蝶形の花"
+      }
+    ],
+    "imagePath": "assets/images/creatures/miyagino_hagi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "utsugi",
+    "nameJa": "ウツギ",
+    "nameEn": "Deutzia",
+    "nameScientific": "Deutzia crenata",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "初夏、白い小さな花を枝いっぱいにつける。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "枝が中空"
+      },
+      {
+        "part": "ポイント",
+        "detail": "卯の花として親しまれる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/utsugi.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "yamabukisou",
+    "nameJa": "ヤマブキソウ",
+    "nameEn": "Celandine Poppy",
+    "nameScientific": "Hylomecon japonicum",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainMid"
+    ],
+    "description": "春、林の中で黄色い花を咲かせる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄色い4枚の花びら"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は羽状に裂ける"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamabukisou.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "gamazumi",
+    "nameJa": "ガマズミ",
+    "nameEn": "Linden Arrowwood",
+    "nameScientific": "Viburnum dilatatum",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "秋に赤い実をつける低木。実は鳥の食べ物になる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "丸い葉に粗いギザギザ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "赤い実の房"
+      }
+    ],
+    "imagePath": "assets/images/creatures/gamazumi.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "noibara",
+    "nameJa": "ノイバラ",
+    "nameEn": "Multiflora Rose",
+    "nameScientific": "Rosa multiflora",
+    "type": "plant",
+    "habitats": [
+      "river",
+      "forest"
+    ],
+    "description": "野原や川原に生えるバラ。初夏、白い花が香る。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "枝にトゲがある"
+      },
+      {
+        "part": "ポイント",
+        "detail": "秋に小さな赤い実"
+      }
+    ],
+    "imagePath": "assets/images/creatures/noibara.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "murasakishikibu",
+    "nameJa": "ムラサキシキブ",
+    "nameEn": "Japanese Beautyberry",
+    "nameScientific": "Callicarpa japonica",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "秋、紫色の小さな実が枝にびっしりつく。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "紫の実が輪になる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉はギザギザ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/murasakishikibu.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "tsutsuji",
+    "nameJa": "レンゲツツジ",
+    "nameEn": "Renge Tsutsuji",
+    "nameScientific": "Rhododendron molle",
+    "type": "plant",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "高原を朱色に染めるツツジ。全体に毒がある。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "朱橙色の大きな花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉に毛が生える"
+      }
+    ],
+    "imagePath": "assets/images/creatures/tsutsuji.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kuroyuri",
+    "nameJa": "クロユリ",
+    "nameEn": "Black Lily",
+    "nameScientific": "Fritillaria camschatcensis",
+    "type": "plant",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "高山の草原に咲く黒紫色の花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黒紫の鐘形の花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は輪になる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kuroyuri.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "urupposou",
+    "nameJa": "ウルップソウ",
+    "nameEn": "Urup Grass",
+    "nameScientific": "Lagotis glauca",
+    "type": "plant",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "北の高山にだけ生える、青紫の花穂の草。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "青紫の小花が穂になる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "分厚い葉が根元から出る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/urupposou.jpg",
+    "rarity": 5,
+    "redList": "EN"
+  },
+  {
+    "id": "teikakazura",
+    "nameJa": "テイカカズラ",
+    "nameEn": "Asiatic Jasmine",
+    "nameScientific": "Trachelospermum asiaticum",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "常緑のつる植物。初夏に風車のような白い花が咲く。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "花は風車形で香る"
+      },
+      {
+        "part": "ポイント",
+        "detail": "木や岩にからみつく"
+      }
+    ],
+    "imagePath": "assets/images/creatures/teikakazura.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "yamaimo",
+    "nameJa": "ヤマノイモ",
+    "nameEn": "Japanese Yam",
+    "nameScientific": "Dioscorea japonica",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "山野のつる草。長い根を掘って食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "ハート形の葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "秋に黄色いむかごがつく"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yamaimo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "hanashobu",
+    "nameJa": "ハナショウブ",
+    "nameEn": "Japanese Iris",
+    "nameScientific": "Iris ensata",
+    "type": "plant",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "湿地に咲く大きな紫の花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きな花びらが垂れる"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は剣のように立つ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hanashobu.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kumazasa",
+    "nameJa": "クマザサ",
+    "nameEn": "Kuma-zasa",
+    "nameScientific": "Sasa veitchii",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "山の林床に群生する大型のササ。冬、葉の縁が白く枯れ上がる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉の縁が白く隈取る"
+      },
+      {
+        "part": "ポイント",
+        "detail": "背丈ほどに群生する"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kumazasa.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "mousouchiku",
+    "nameJa": "モウソウチク",
+    "nameEn": "Moso Bamboo",
+    "nameScientific": "Phyllostachys edulis",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日本最大のタケ。春にタケノコが出る。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "節が1つで枝が2本"
+      },
+      {
+        "part": "ポイント",
+        "detail": "春にタケノコが出る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/mousouchiku.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "chigaya",
+    "nameJa": "チガヤ",
+    "nameEn": "Cogongrass",
+    "nameScientific": "Imperata cylindrica",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "日当たりのよい草地に群生。初夏に白い綿のような穂が出る。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白い穂が風になびく"
+      },
+      {
+        "part": "ポイント",
+        "detail": "地下茎でふえる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/chigaya.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "suisen",
+    "nameJa": "ニホンズイセン",
+    "nameEn": "Chinese Sacred Lily",
+    "nameScientific": "Narcissus tazetta",
+    "type": "plant",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "冬、海岸の斜面に群生して白い花を咲かせる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白い花に黄色い副冠"
+      },
+      {
+        "part": "ポイント",
+        "detail": "香りが強い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/suisen.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "hamaecho",
+    "nameJa": "ハマエンドウ",
+    "nameEn": "Beach Pea",
+    "nameScientific": "Lathyrus japonicus",
+    "type": "plant",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "砂浜をはう豆の仲間。紫の花を咲かせる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "つるが砂の上にはう"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉の先が巻きひげ"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hamaecho.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "hamasuge",
+    "nameJa": "コウボウムギ",
+    "nameEn": "Kobomugi",
+    "nameScientific": "Carex kobomugi",
+    "type": "plant",
+    "habitats": [
+      "ocean"
+    ],
+    "description": "砂浜に生える草。地下茎が砂を押さえる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉が硬く厚い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "砂地に根を張る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/hamasuge.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "ezorindo",
+    "nameJa": "エゾリンドウ",
+    "nameEn": "Ezo Rindo",
+    "nameScientific": "Gentiana triflora",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainMid"
+    ],
+    "description": "湿った草地に咲く青紫の花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "釣鐘形の青紫の花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "茎が太く直立する"
+      }
+    ],
+    "imagePath": "assets/images/creatures/ezorindo.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "waremokou",
+    "nameJa": "ワレモコウ",
+    "nameEn": "Great Burnet",
+    "nameScientific": "Sanguisorba officinalis",
+    "type": "plant",
+    "habitats": [
+      "forest"
+    ],
+    "description": "秋の草原に咲く暗紅色の小さな花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "暗紅色の丸い穂"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は羽状"
+      }
+    ],
+    "imagePath": "assets/images/creatures/waremokou.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "sasayuri",
+    "nameJa": "ササユリ",
+    "nameEn": "Sasa Yuri",
+    "nameScientific": "Lilium japonicum",
+    "type": "plant",
+    "habitats": [
+      "forest",
+      "mountainLow"
+    ],
+    "description": "日本固有のユリ。淡いピンクの花を咲かせるが、数が減っている。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "笹に似た細長い葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "淡いピンクの花"
+      }
+    ],
+    "imagePath": "assets/images/creatures/sasayuri.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "yukiwari",
+    "nameJa": "ユキワリソウ",
+    "nameEn": "Yukiwari-so",
+    "nameScientific": "Primula modesta",
+    "type": "plant",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "雪解けのころに咲く、紅紫色の小さな花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "花は桜形"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は肉厚"
+      }
+    ],
+    "imagePath": "assets/images/creatures/yukiwari.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "iwakagami",
+    "nameJa": "イワカガミ",
+    "nameEn": "Fringed Galax",
+    "nameScientific": "Schizocodon soldanelloides",
+    "type": "plant",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "岩場に生える。花びらの先が細かく裂ける。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "丸い厚い葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "花びらが細く裂ける"
+      }
+    ],
+    "imagePath": "assets/images/creatures/iwakagami.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "suminoe",
+    "nameJa": "クサレダマ",
+    "nameEn": "Kusaredama",
+    "nameScientific": "Lysimachia vulgaris",
+    "type": "plant",
+    "habitats": [
+      "pond"
+    ],
+    "description": "湿った草地に咲く黄色い花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄色い小さな花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "茎は直立する"
+      }
+    ],
+    "imagePath": "assets/images/creatures/suminoe.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "mizuaoi",
+    "nameJa": "ミズアオイ",
+    "nameEn": "Mizuaoi",
+    "nameScientific": "Monochoria korsakowii",
+    "type": "plant",
+    "habitats": [
+      "pond"
+    ],
+    "description": "水田や池に咲く青紫の花。かつては田に普通にあったが、減っている。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "ハート形の葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "青紫の花"
+      }
+    ],
+    "imagePath": "assets/images/creatures/mizuaoi.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "jusai",
+    "nameJa": "ジュンサイ",
+    "nameEn": "Water Shield",
+    "nameScientific": "Brasenia schreberi",
+    "type": "plant",
+    "habitats": [
+      "pond"
+    ],
+    "description": "池に浮かぶ楕円の葉。若芽を食べる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "楕円の浮き葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "ぬるぬるした膜に包まれる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/jusai.jpg",
+    "rarity": 4,
+    "redList": "NT"
+  },
+  {
+    "id": "kuromo",
+    "nameJa": "クロモ",
+    "nameEn": "Hydrilla",
+    "nameScientific": "Hydrilla verticillata",
+    "type": "plant",
+    "habitats": [
+      "pond"
+    ],
+    "description": "池や沼の水中で育つ水草。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "細い葉が輪になって茎につく"
+      },
+      {
+        "part": "ポイント",
+        "detail": "冬に殖芽を作る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kuromo.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "himegama",
+    "nameJa": "ヒメガマ",
+    "nameEn": "Narrowleaf Cattail",
+    "nameScientific": "Typha domingensis",
+    "type": "plant",
+    "habitats": [
+      "pond"
+    ],
+    "description": "池や沼に群生する大型の水辺の草。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "茶色い円柱形の穂"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は細長い"
+      }
+    ],
+    "imagePath": "assets/images/creatures/himegama.jpg",
+    "rarity": 1
+  },
+  {
+    "id": "makomo",
+    "nameJa": "マコモ",
+    "nameEn": "Manchurian Wild Rice",
+    "nameScientific": "Zizania latifolia",
+    "type": "plant",
+    "habitats": [
+      "pond",
+      "river"
+    ],
+    "description": "水辺に群生する大型のイネ科。お盆のござに使われた。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "背が高く群生する"
+      },
+      {
+        "part": "ポイント",
+        "detail": "秋に穂が出る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/makomo.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "kawaraketsumei",
+    "nameJa": "カワラケツメイ",
+    "nameEn": "Kawara-ketsumei",
+    "nameScientific": "Chamaecrista nomame",
+    "type": "plant",
+    "habitats": [
+      "river"
+    ],
+    "description": "河原に生える小さな草。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "小さな黄色い花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は羽状で夜に閉じる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawaraketsumei.jpg",
+    "rarity": 3,
+    "redList": "NT"
+  },
+  {
+    "id": "kawarahahako",
+    "nameJa": "カワラハハコ",
+    "nameEn": "Pearly Everlasting",
+    "nameScientific": "Anaphalis margaritacea",
+    "type": "plant",
+    "habitats": [
+      "river"
+    ],
+    "description": "河原の砂礫地に生える白い花の草。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉の裏が白い綿毛"
+      },
+      {
+        "part": "ポイント",
+        "detail": "白い花びらに見える苞"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kawarahahako.jpg",
+    "rarity": 2
+  },
+  {
+    "id": "sawagurumi",
+    "nameJa": "サワグルミ",
+    "nameEn": "Japanese Wingnut",
+    "nameScientific": "Pterocarya rhoifolia",
+    "type": "plant",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "渓流沿いに育つ高木。翼のある実が房になって垂れ下がる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "羽状の大きな葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "長い穂に翼のある実"
+      }
+    ],
+    "imagePath": "assets/images/creatures/sawagurumi.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "katsura",
+    "nameJa": "カツラ",
+    "nameEn": "Katsura",
+    "nameScientific": "Cercidiphyllum japonicum",
+    "type": "plant",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "谷沿いの大木。ハート形の葉は秋に黄色くなり、甘い香りが漂う。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "ハート形の葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "秋に落ち葉が甘く香る"
+      }
+    ],
+    "imagePath": "assets/images/creatures/katsura.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "urajiro",
+    "nameJa": "ウラジロモミ",
+    "nameEn": "Nikko Fir",
+    "nameScientific": "Abies homolepis",
+    "type": "plant",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "山地に育つモミの仲間。葉の裏が白い。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉の裏が白い"
+      },
+      {
+        "part": "ポイント",
+        "detail": "球果は上向きにつく"
+      }
+    ],
+    "imagePath": "assets/images/creatures/urajiro.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "shirabe",
+    "nameJa": "シラビソ",
+    "nameEn": "Veitch Fir",
+    "nameScientific": "Abies veitchii",
+    "type": "plant",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "亜高山の針葉樹林をつくる。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "葉の裏に2本の白い筋"
+      },
+      {
+        "part": "ポイント",
+        "detail": "円錐形の樹形"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shirabe.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "okukanba",
+    "nameJa": "オオシラビソ",
+    "nameEn": "Maries Fir",
+    "nameScientific": "Abies mariesii",
+    "type": "plant",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "亜高山帯の主役の針葉樹。雪の重みに耐える形。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "青黒い球果が上向き"
+      },
+      {
+        "part": "ポイント",
+        "detail": "樹氷になる"
+      }
+    ],
+    "imagePath": "assets/images/creatures/okukanba.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "kitadake_kusa",
+    "nameJa": "キタダケソウ",
+    "nameEn": "Kitadake-so",
+    "nameScientific": "Callianthemum kitadakeense",
+    "type": "plant",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "南アルプス・北岳にだけ咲く白い花。世界でここだけ。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "白い花びらに黄色い雄しべ"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は細かく裂ける"
+      }
+    ],
+    "imagePath": "assets/images/creatures/kitadake_kusa.jpg",
+    "rarity": 5,
+    "redList": "CR"
+  },
+  {
+    "id": "miyamadaikonsou",
+    "nameJa": "ミヤマダイコンソウ",
+    "nameEn": "Miyama-daikon-so",
+    "nameScientific": "Geum calthifolium",
+    "type": "plant",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "高山の湿った草地に咲く黄色い花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "黄色い花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "大きな丸い葉"
+      }
+    ],
+    "imagePath": "assets/images/creatures/miyamadaikonsou.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "shinanokinbai",
+    "nameJa": "シナノキンバイ",
+    "nameEn": "Shinano-kinbai",
+    "nameScientific": "Trollius riederianus",
+    "type": "plant",
+    "habitats": [
+      "mountainMid",
+      "mountainHigh"
+    ],
+    "description": "高山の湿った草地に咲く金色の花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "大きな黄金色の花"
+      },
+      {
+        "part": "ポイント",
+        "detail": "葉は深く切れ込む"
+      }
+    ],
+    "imagePath": "assets/images/creatures/shinanokinbai.jpg",
+    "rarity": 3
+  },
+  {
+    "id": "mineduo",
+    "nameJa": "ミネズオウ",
+    "nameEn": "Alpine Azalea",
+    "nameScientific": "Loiseleuria procumbens",
+    "type": "plant",
+    "habitats": [
+      "mountainHigh"
+    ],
+    "description": "高山の風衝地をはう小さな低木。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "厚い小さな葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "淡紅色の小さな花"
+      }
+    ],
+    "imagePath": "assets/images/creatures/mineduo.jpg",
+    "rarity": 4
+  },
+  {
+    "id": "benibanaichiyakusou",
+    "nameJa": "ベニバナイチヤクソウ",
+    "nameEn": "Pink Wintergreen",
+    "nameScientific": "Pyrola asarifolia",
+    "type": "plant",
+    "habitats": [
+      "mountainMid"
+    ],
+    "description": "針葉樹林の林床に咲く桃色の花。",
+    "tips": [
+      {
+        "part": "特徴",
+        "detail": "丸い厚い葉"
+      },
+      {
+        "part": "ポイント",
+        "detail": "桃色の花が横向き"
+      }
+    ],
+    "imagePath": "assets/images/creatures/benibanaichiyakusou.jpg",
+    "rarity": 3
   }
 ]

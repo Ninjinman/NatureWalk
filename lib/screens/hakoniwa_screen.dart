@@ -10,6 +10,7 @@ import '../providers/conservation_provider.dart';
 import '../providers/species_provider.dart';
 import '../services/real_weather.dart';
 import '../widgets/creature_photo.dart';
+import '../services/bgm.dart';
 import '../widgets/hint_dialog.dart';
 import '../widgets/iso_island.dart';
 import 'area_zoom_screen.dart';
@@ -58,7 +59,7 @@ class _HakoniwaScreenState extends ConsumerState<HakoniwaScreen>
     final seen = <String>[];
     for (final h in isoLayout) {
       for (final c in IsoIslandPainter.habitatSpecies(h, s, n, all)) {
-        if (!s.discovered.contains(c.id) &&
+        if (!s.foundNow.contains(c.id) &&
             IsoIslandPainter.presenceAlpha(c, t, s.turn, s.population[c.id] ?? 0) > 0.5) {
           seen.add(c.id);
         }
@@ -105,7 +106,6 @@ class _HakoniwaScreenState extends ConsumerState<HakoniwaScreen>
     ref.listen(conservationProvider.select((v) => v.finished), (_, done) {
       if (done) _showResult();
     });
-    listenSeasonEvents(context, ref);
     listenDiscoveries(context, ref);
 
     final aliveRatio = all.isEmpty ? 0.0 : s.aliveCount / all.length;
@@ -117,7 +117,6 @@ class _HakoniwaScreenState extends ConsumerState<HakoniwaScreen>
           children: [
             _TopBar(state: s, total: s.total, onReset: _confirmReset),
             const WeatherBar(),
-            const EventBanner(),
             Expanded(
               child: LayoutBuilder(builder: (context, c) {
                 final size = Size(c.maxWidth, c.maxHeight);
@@ -146,36 +145,10 @@ class _HakoniwaScreenState extends ConsumerState<HakoniwaScreen>
             ),
             const Padding(
               padding: EdgeInsets.only(bottom: 4),
-              child: Text('ドラッグで回転 / エリアをタップで拡大',
+              child: Text('ドラッグで回転 / エリアをタップで拡大 / 現れた生きものは図鑑に載ります',
                   style: TextStyle(fontSize: 10, color: Colors.white30)),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(24, 0, 24, 6),
-              child: Text(
-                s.log.first,
-                maxLines: 2,
-                textAlign: TextAlign.center,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(color: Colors.white54, fontSize: 12),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(24, 0, 24, 14),
-              child: SizedBox(
-                width: double.infinity,
-                child: OutlinedButton(
-                  onPressed: s.finished ? n.restart : n.nextTurn,
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: kGold,
-                    side: const BorderSide(color: kGold, width: 1),
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
-                  ),
-                  child: Text(s.finished ? 'もう一度はじめる' : '季節をすすめる',
-                      style: const TextStyle(letterSpacing: 4, fontSize: 15)),
-                ),
-              ),
-            ),
+            const SizedBox(height: 10),
           ],
         ),
       ),
@@ -240,8 +213,14 @@ class _TopBar extends StatelessWidget {
           _chip('出会い', '${state.foundNow.length}/$total'),
           const SizedBox(width: 12),
           _chip('図鑑', '${state.discovered.length}/${state.dexTotal}'),
-          const SizedBox(width: 12),
-          _chip('予算', '${state.budget}'),
+          ValueListenableBuilder<bool>(
+            valueListenable: Bgm.on,
+            builder: (_, on, __) => IconButton(
+              tooltip: on ? 'BGMを止める' : 'BGMを流す',
+              icon: Icon(on ? Icons.music_note : Icons.music_off, color: kGold),
+              onPressed: Bgm.toggle,
+            ),
+          ),
           IconButton(
             tooltip: '最初からやり直す',
             icon: const Icon(Icons.restart_alt, color: kGold),
@@ -281,7 +260,7 @@ IconData commandIcon(EnvParam p) {
   }
 }
 
-/// エリアの操作パネル：診断（原因とおすすめ）→ コマンド → くわしい数値（読み取り専用）→ 種の一覧
+/// エリアの情報パネル：場所 → いまの環境（天気などの実データ） → いる（かもしれない）生きもの
 class AreaPanel extends ConsumerWidget {
   final Habitat habitat;
   final bool showSpecies;
@@ -290,97 +269,36 @@ class AreaPanel extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final s = ref.watch(conservationProvider);
-    final n = ref.read(conservationProvider.notifier);
     final all = ref.watch(allCreaturesProvider);
     final area = s.areas[habitat]!;
-    final hints = n.diagnose(habitat);
     final species = all.where((c) => c.habitats.contains(habitat)).toList()
-      ..sort((a, b) => a.type.index.compareTo(b.type.index));
-
-    bool recommended(EnvParam p, int dir) => hints.any((h) => h.param == p && h.direction == dir);
-
-    Widget command(String label, int cost, IconData icon, VoidCallback? onTap, {bool hot = false}) {
-      return OutlinedButton.icon(
-        onPressed: onTap,
-        icon: Icon(icon, size: 16),
-        label: Text('$label  $cost', style: const TextStyle(fontSize: 12)),
-        style: OutlinedButton.styleFrom(
-          foregroundColor: hot ? Colors.black : Colors.white70,
-          backgroundColor: hot ? kGold : Colors.transparent,
-          side: BorderSide(color: hot ? kGold : Colors.white24),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-          minimumSize: const Size(0, 34),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        ),
-      );
-    }
+      ..sort((a, b) {
+        // 出会えた種を先に、次に分布する種、最後に分布外
+        int rank(Creature c) => s.absent.contains(c.id) ? 2 : (s.discovered.contains(c.id) ? 0 : 1);
+        final r = rank(a).compareTo(rank(b));
+        return r != 0 ? r : a.type.index.compareTo(b.type.index);
+      });
+    final met = species.where((c) => s.discovered.contains(c.id)).length;
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
       children: [
         Row(
           children: [
-            Text(habitat.label + (area.protectedArea ? '（保護区）' : ''),
-                style: const TextStyle(fontSize: 22, color: kGold, letterSpacing: 4)),
+            Text(habitat.label, style: const TextStyle(fontSize: 22, color: kGold, letterSpacing: 4)),
             const Spacer(),
-            Text('予算 ${s.budget}', style: const TextStyle(color: Colors.white70)),
+            Text('出会い $met / ${species.where((c) => !s.absent.contains(c.id)).length}',
+                style: const TextStyle(color: Colors.white70)),
           ],
         ),
         PlaceLine(habitat: habitat),
         if (habitat.isMountain) ElevationSetting(habitat: habitat),
-        const SizedBox(height: 10),
-        const _SectionTitle('診断'),
-        if (hints.isEmpty)
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 4),
-            child: Text('いまのところ大きな問題はありません', style: TextStyle(fontSize: 12, color: Colors.white54)),
-          )
-        else
-          for (final h in hints)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 6),
-              child: Row(
-                children: [
-                  const Icon(Icons.warning_amber_rounded, size: 18, color: Color(0xFFE08A5A)),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text('${h.text}（${h.count}種が弱っています）',
-                        style: const TextStyle(fontSize: 12.5, height: 1.3)),
-                  ),
-                  command(h.command, h.param.cost, commandIcon(h.param),
-                      s.budget >= h.param.cost ? () => n.adjust(habitat, h.param, h.direction) : null,
-                      hot: true),
-                ],
-              ),
-            ),
-        const SizedBox(height: 8),
-        const _SectionTitle('コマンド'),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            for (final p in habitat.params)
-              for (final dir in const [1, -1])
-                if (!(p == EnvParam.pollution && dir > 0))
-                  command(dir > 0 ? p.actionUp : p.actionDown, p.cost, commandIcon(p),
-                      s.budget >= p.cost ? () => n.adjust(habitat, p, dir) : null,
-                      hot: recommended(p, dir)),
-            command('障害物を撤去（${area.obstacles}個）', ConservationNotifier.removeObstacleCost,
-                Icons.delete_sweep_outlined,
-                area.obstacles > 0 && s.budget >= ConservationNotifier.removeObstacleCost
-                    ? () => n.removeObstacle(habitat)
-                    : null),
-            if (!area.protectedArea)
-              command('保護区にする', 40, Icons.shield_outlined,
-                  s.budget >= 40 ? () => n.protect(habitat) : null),
-          ],
-        ),
         Theme(
           data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
           child: ExpansionTile(
             tilePadding: EdgeInsets.zero,
             childrenPadding: EdgeInsets.zero,
-            title: const Text('くわしい数値（参考）', style: TextStyle(fontSize: 12, color: Colors.white54)),
+            title: const Text('いまの環境（天気や場所から決まります）', style: TextStyle(fontSize: 12, color: Colors.white54)),
             children: [for (final p in habitat.params) ParamRow(param: p, value: area[p])],
           ),
         ),
@@ -655,7 +573,9 @@ class SpeciesRow extends ConsumerWidget {
     final pop = s.population[creature.id] ?? 0;
     final fit = n.suitability(creature, habitat);
     final absent = s.absent.contains(creature.id);
-    final extinct = pop == 0 && !absent;
+    // 今回出会ったのに居なくなった種だけ「姿を消した」。まだ来ていない種は別扱い
+    final extinct = pop == 0 && !absent && s.foundNow.contains(creature.id);
+    final waiting = pop == 0 && !absent && !extinct;
 
     if (!s.discovered.contains(creature.id)) {
       return ListTile(
@@ -677,22 +597,14 @@ class SpeciesRow extends ConsumerWidget {
     return ListTile(
       dense: true,
       contentPadding: EdgeInsets.zero,
-      leading: CreatureThumb(creature: creature, size: 40, dim: extinct || absent),
+      leading: CreatureThumb(creature: creature, size: 40, dim: extinct || absent || waiting),
       title: Text(creature.nameJa,
           style: TextStyle(
             decoration: extinct ? TextDecoration.lineThrough : null,
-            color: (extinct || absent) ? Colors.white38 : null,
+            color: (extinct || absent || waiting) ? Colors.white38 : null,
           )),
-      subtitle: Text(absent ? 'この地域には分布しません' : (extinct ? '絶滅' : '${creature.redLabel != null ? '${creature.endangered ? '★' : ''}${creature.redLabel}　' : ''}個体数 $pop ／ 適合度 ${(fit * 100).round()}%'),
+      subtitle: Text(absent ? 'この地域には分布しません' : (extinct ? '姿を消した' : waiting ? 'まだ来ていません（条件が合えば来ます）' :'${creature.redLabel != null ? '${creature.endangered ? '★' : ''}${creature.redLabel}　' : ''}個体数 $pop ／ 適合度 ${(fit * 100).round()}%'),
           style: const TextStyle(fontSize: 11)),
-      trailing: extinct
-          ? TextButton(
-              onPressed: s.budget >= n.reintroduceCost(creature)
-                  ? () => n.reintroduce(creature)
-                  : null,
-              child: Text('再導入 (${n.reintroduceCost(creature)})'),
-            )
-          : null,
       onTap: () => showCreatureDetail(context, creature),
     );
   }

@@ -10,13 +10,15 @@ class SpeciesDatabase {
   List<Creature>? _plants;
   List<Creature>? _birds;
   List<Creature>? _fish;
+  List<Creature>? _animals;
   List<Creature>? _all;
 
   Future<void> initialize() async {
     _plants = await _load('assets/data/plants.json');
     _birds = await _load('assets/data/birds.json');
     _fish = await _load('assets/data/fish.json');
-    _all = [..._plants!, ..._birds!, ..._fish!];
+    _animals = await _load('assets/data/animals.json');
+    _all = [..._plants!, ..._birds!, ..._fish!, ..._animals!];
   }
 
   Future<List<Creature>> _load(String path) async {
@@ -28,6 +30,7 @@ class SpeciesDatabase {
   List<Creature> get plants => _plants ?? [];
   List<Creature> get birds => _birds ?? [];
   List<Creature> get fish => _fish ?? [];
+  List<Creature> get animals => _animals ?? [];
   List<Creature> get all => _all ?? [];
 
   List<Creature> byHabitat(Habitat habitat) =>

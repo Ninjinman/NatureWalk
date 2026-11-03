@@ -1,4 +1,4 @@
-enum CreatureType { plant, bird, fish }
+enum CreatureType { plant, bird, fish, animal }
 
 /// フィールド。山は標高の帯ごとに3つのステージに分かれる（育つ生き物が違う）
 enum Habitat { forest, pond, river, ocean, mountainLow, mountainMid, mountainHigh }
@@ -150,6 +150,7 @@ class Creature {
       case CreatureType.plant: return '植物';
       case CreatureType.bird: return '鳥';
       case CreatureType.fish: return '魚';
+      case CreatureType.animal: return '動物';
     }
   }
 }

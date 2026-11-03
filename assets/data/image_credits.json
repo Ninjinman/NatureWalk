@@ -1,1498 +1,2658 @@
 {
-  "sakura": {
-    "file": "assets/images/creatures/sakura.jpg",
-    "title": "File:2020-04-07_Prunus_×_yedoensis_Tambasasayama,Hyogo(丹波篠山市篠山川のソメイヨシノ)DSCF2986☆彡.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "松岡明芳",
-    "page": "https://commons.wikimedia.org/wiki/File:2020-04-07_Prunus_%C3%97_yedoensis_Tambasasayama,Hyogo(%E4%B8%B9%E6%B3%A2%E7%AF%A0%E5%B1%B1%E5%B8%82%E7%AF%A0%E5%B1%B1%E5%B7%9D%E3%81%AE%E3%82%BD%E3%83%A1%E3%82%A4%E3%83%A8%E3%82%B7%E3%83%8E)DSCF2986%E2%98%86%E5%BD%A1.jpg",
-    "query": "Prunus × yedoensis"
-  },
-  "konara": {
-    "file": "assets/images/creatures/konara.jpg",
-    "title": "File:Quercus_serrata3.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Quercus_serrata3.jpg",
-    "query": "Quercus serrata"
-  },
-  "sugi": {
-    "file": "assets/images/creatures/sugi.jpg",
-    "title": "File:Fukaura_town_kitakanegasawa_seki_no_kame-sugi.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "ja:利用者:あおもりくま",
-    "page": "https://commons.wikimedia.org/wiki/File:Fukaura_town_kitakanegasawa_seki_no_kame-sugi.jpg",
-    "query": "Cryptomeria japonica"
-  },
-  "ajisai": {
-    "file": "assets/images/creatures/ajisai.jpg",
-    "title": "File:(Natural)_Hydrangea_macrophylla,_Iwafune,_Isumi,_Chiba,_Japan_2.jpg",
-    "license": "CC BY 4.0",
-    "author": "belvedere04",
-    "page": "https://commons.wikimedia.org/wiki/File:(Natural)_Hydrangea_macrophylla,_Iwafune,_Isumi,_Chiba,_Japan_2.jpg",
-    "query": "Hydrangea macrophylla"
-  },
-  "tanpopo": {
-    "file": "assets/images/creatures/tanpopo.jpg",
-    "title": "File:DandelionFlower.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Greg Hume",
-    "page": "https://commons.wikimedia.org/wiki/File:DandelionFlower.jpg",
-    "query": "Taraxacum"
-  },
-  "shida": {
-    "file": "assets/images/creatures/shida.jpg",
-    "title": "File:Adelaarsvaren_planten_Pteridium_aquilinum.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Rasbak",
-    "page": "https://commons.wikimedia.org/wiki/File:Adelaarsvaren_planten_Pteridium_aquilinum.jpg",
-    "query": "Pteridium aquilinum"
-  },
-  "nemunoki": {
-    "file": "assets/images/creatures/nemunoki.jpg",
-    "title": "File:2018-07-08_11_10_27_Rosea_Mimosa_blossoms_along_the_ramp_from_southbound_Interstate_95_(New_Jersey_Turnpike_Eastern_Spur)_to_westbound_Interstate_280_(Essex_Freeway)_in_the_New_Jersey_Meadowlands,_within_Kearny,_Hudson_County,_New_Jersey.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Famartin",
-    "page": "https://commons.wikimedia.org/wiki/File:2018-07-08_11_10_27_Rosea_Mimosa_blossoms_along_the_ramp_from_southbound_Interstate_95_(New_Jersey_Turnpike_Eastern_Spur)_to_westbound_Interstate_280_(Essex_Freeway)_in_the_New_Jersey_Meadowlands,_within_Kearny,_Hudson_County,_New_Jersey.jpg",
-    "query": "Albizia julibrissin"
-  },
-  "hasu": {
-    "file": "assets/images/creatures/hasu.jpg",
-    "title": "File:Sacred_lotus_Nelumbo_nucifera.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "T.Voekler",
-    "page": "https://commons.wikimedia.org/wiki/File:Sacred_lotus_Nelumbo_nucifera.jpg",
-    "query": "Nelumbo nucifera"
-  },
-  "mangrove": {
-    "file": "assets/images/creatures/mangrove.jpg",
-    "title": "File:Rhizopora_stylosa_Found_in_Mangrove_of_Cilintang,_Taman_Nasional_Ujung_Kulon,_Banten.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Putra Mahanaim Tampubolon",
-    "page": "https://commons.wikimedia.org/wiki/File:Rhizopora_stylosa_Found_in_Mangrove_of_Cilintang,_Taman_Nasional_Ujung_Kulon,_Banten.jpg",
-    "query": "Rhizophora stylosa"
-  },
-  "yamamo": {
-    "file": "assets/images/creatures/yamamo.jpg",
-    "title": "File:Yangmei_grown_in_Fremont,_California.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Lucuscal",
-    "page": "https://commons.wikimedia.org/wiki/File:Yangmei_grown_in_Fremont,_California.jpg",
-    "query": "Morella rubra"
-  },
-  "fuji": {
-    "file": "assets/images/creatures/fuji.jpg",
-    "title": "File:Wisteria_floribunda5.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Raul654",
-    "page": "https://commons.wikimedia.org/wiki/File:Wisteria_floribunda5.jpg",
-    "query": "Wisteria floribunda"
-  },
-  "suzume": {
-    "file": "assets/images/creatures/suzume.jpg",
-    "title": "File:Tree_Sparrow_August_2007_Osaka_Japan.jpg",
-    "license": "Public domain",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Tree_Sparrow_August_2007_Osaka_Japan.jpg",
-    "query": "Passer montanus"
-  },
-  "shijukara": {
-    "file": "assets/images/creatures/shijukara.jpg",
-    "title": "File:Cinereous_tit_(Parus_cinereus)_Photograph_by_Shantanu_Kuveskar.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Shantanu Kuveskar",
-    "page": "https://commons.wikimedia.org/wiki/File:Cinereous_tit_(Parus_cinereus)_Photograph_by_Shantanu_Kuveskar.jpg",
-    "query": "Parus minor"
-  },
-  "hiyodori": {
-    "file": "assets/images/creatures/hiyodori.jpg",
-    "title": "File:The_brown-eared_bulbul_after_playing_with_water.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:The_brown-eared_bulbul_after_playing_with_water.jpg",
-    "query": "Hypsipetes amaurotis"
-  },
-  "kawasemi": {
-    "file": "assets/images/creatures/kawasemi.jpg",
-    "title": "File:Alcedo_atthis_-England-8_(cropped).jpg",
-    "license": "CC BY 2.0",
-    "author": "Tony Wood",
-    "page": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-England-8_(cropped).jpg",
-    "query": "Alcedo atthis"
-  },
-  "kosagi": {
-    "file": "assets/images/creatures/kosagi.jpg",
-    "title": "File:Little_egret_(Egretta_garzetta)_Photograph_by_Shantanu_Kuveskar.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Shantanu Kuveskar",
-    "page": "https://commons.wikimedia.org/wiki/File:Little_egret_(Egretta_garzetta)_Photograph_by_Shantanu_Kuveskar.jpg",
-    "query": "Egretta garzetta"
-  },
-  "kaitsuburi": {
-    "file": "assets/images/creatures/kaitsuburi.jpg",
-    "title": "File:Little_grebe_Zwergtaucher.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "Andreas Trepte",
-    "page": "https://commons.wikimedia.org/wiki/File:Little_grebe_Zwergtaucher.jpg",
-    "query": "Tachybaptus ruficollis"
-  },
-  "tsubame": {
-    "file": "assets/images/creatures/tsubame.jpg",
-    "title": "File:Rauchschwalbe_Hirundo_rustica.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "Andreas Trepte",
-    "page": "https://commons.wikimedia.org/wiki/File:Rauchschwalbe_Hirundo_rustica.jpg",
-    "query": "Hirundo rustica"
-  },
-  "aosagi": {
-    "file": "assets/images/creatures/aosagi.jpg",
-    "title": "File:Il_pescatore_solitario.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Giacomo Cimino (foto.giacomocimino.workers.dev · @giacomociminoph)",
-    "page": "https://commons.wikimedia.org/wiki/File:Il_pescatore_solitario.jpg",
-    "query": "Ardea cinerea"
-  },
-  "onaga": {
-    "file": "assets/images/creatures/onaga.jpg",
-    "title": "File:Cyanopica_cyanus_458637382.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Zinogre",
-    "page": "https://commons.wikimedia.org/wiki/File:Cyanopica_cyanus_458637382.jpg",
-    "query": "Cyanopica cyanus"
-  },
-  "kijibato": {
-    "file": "assets/images/creatures/kijibato.jpg",
-    "title": "File:2026-08-27_Streptopelia_orientalis_in_Chitose.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "J. Patrick Fischer",
-    "page": "https://commons.wikimedia.org/wiki/File:2026-08-27_Streptopelia_orientalis_in_Chitose.jpg",
-    "query": "Streptopelia orientalis"
-  },
-  "karugamo": {
-    "file": "assets/images/creatures/karugamo.jpg",
-    "title": "File:Anas_zonorhyncha_swimming.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Anas_zonorhyncha_swimming.jpg",
-    "query": "Anas zonorhyncha"
-  },
-  "kawarabato": {
-    "file": "assets/images/creatures/kawarabato.jpg",
-    "title": "File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg",
-    "license": "CC BY 4.0",
-    "author": "william_stephens",
-    "page": "https://commons.wikimedia.org/wiki/File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg",
-    "query": "Columba livia"
-  },
-  "koi": {
-    "file": "assets/images/creatures/koi.jpg",
-    "title": "File:Cyprinus_carpio_2008_G1_(cropped).jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "George Chernilevsky",
-    "page": "https://commons.wikimedia.org/wiki/File:Cyprinus_carpio_2008_G1_(cropped).jpg",
-    "query": "Cyprinus carpio"
-  },
-  "funa": {
-    "file": "assets/images/creatures/funa.jpg",
-    "title": "File:Carassius_cuvieri_by_OpenCage.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Carassius_cuvieri_by_OpenCage.jpg",
-    "query": "Carassius cuvieri"
-  },
-  "medaka": {
-    "file": "assets/images/creatures/medaka.jpg",
-    "title": "File:Oryzias_latipes(Hamamatsu,Shizuoka,Japan,2007)-1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Seotaro",
-    "page": "https://commons.wikimedia.org/wiki/File:Oryzias_latipes(Hamamatsu,Shizuoka,Japan,2007)-1.jpg",
-    "query": "Oryzias latipes"
-  },
-  "yamame": {
-    "file": "assets/images/creatures/yamame.jpg",
-    "title": "File:Cherry_salmon.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Jony Cooper",
-    "page": "https://commons.wikimedia.org/wiki/File:Cherry_salmon.jpg",
-    "query": "Oncorhynchus masou"
-  },
-  "dojo": {
-    "file": "assets/images/creatures/dojo.jpg",
-    "title": "File:Misgurnus_anguillicaudatus.jpg",
-    "license": "Public domain",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Misgurnus_anguillicaudatus.jpg",
-    "query": "Misgurnus anguillicaudatus"
-  },
-  "donko": {
-    "file": "assets/images/creatures/donko.jpg",
-    "title": "File:Donko071007-2.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "ふうけ",
-    "page": "https://commons.wikimedia.org/wiki/File:Donko071007-2.jpg",
-    "query": "Odontobutis obscura"
-  },
-  "unagi": {
-    "file": "assets/images/creatures/unagi.jpg",
-    "title": "File:Anguilla_japonica.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "opencage",
-    "page": "https://commons.wikimedia.org/wiki/File:Anguilla_japonica.jpg",
-    "query": "Anguilla japonica"
-  },
-  "bluegill": {
-    "file": "assets/images/creatures/bluegill.jpg",
-    "title": "File:Bluegill_(cropped).jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Paleo1954",
-    "page": "https://commons.wikimedia.org/wiki/File:Bluegill_(cropped).jpg",
-    "query": "Lepomis macrochirus"
-  },
-  "magochi": {
-    "file": "assets/images/creatures/magochi.jpg",
-    "title": "File:Platycephalus_indicusFB.png",
-    "license": "CC BY 3.0",
-    "author": "Ibrahim Daas",
-    "page": "https://commons.wikimedia.org/wiki/File:Platycephalus_indicusFB.png",
-    "query": "Platycephalus indicus"
-  },
-  "kumanomi": {
-    "file": "assets/images/creatures/kumanomi.jpg",
-    "title": "File:Clown_fish_in_the_Andaman_Coral_Reef.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Ritiks",
-    "page": "https://commons.wikimedia.org/wiki/File:Clown_fish_in_the_Andaman_Coral_Reef.jpg",
-    "query": "Amphiprion ocellaris"
-  },
-  "chochouchakuo": {
-    "file": "assets/images/creatures/chochouchakuo.jpg",
-    "title": "File:Oriental_butterflyfish.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "R.horibe",
-    "page": "https://commons.wikimedia.org/wiki/File:Oriental_butterflyfish.jpg",
-    "query": "Chaetodon auripes"
-  },
-  "suiren": {
-    "file": "assets/images/creatures/suiren.jpg",
-    "title": "File:Nymphaea_alba.001_-_Breendonk.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Fernando Losada Rodríguez",
-    "page": "https://commons.wikimedia.org/wiki/File:Nymphaea_alba.001_-_Breendonk.jpg",
-    "query": "Nymphaea"
-  },
-  "mejina": {
-    "file": "assets/images/creatures/mejina.jpg",
-    "title": "File:Girella_fimbriata.jpg",
-    "license": "Public domain",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Girella_fimbriata.jpg",
-    "query": "Girella"
-  },
-  "ume": {
-    "file": "assets/images/creatures/ume.jpg",
-    "title": "File:Prunus_mume.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Kakidai",
-    "page": "https://commons.wikimedia.org/wiki/File:Prunus_mume.JPG",
-    "query": "Prunus mume"
-  },
-  "tsubaki": {
-    "file": "assets/images/creatures/tsubaki.jpg",
-    "title": "File:Camellia_japonica_NBG.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "PumpkinSky",
-    "page": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_NBG.jpg",
-    "query": "Camellia japonica"
-  },
-  "ayame": {
-    "file": "assets/images/creatures/ayame.jpg",
-    "title": "File:Iris_sanguinea.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Iris_sanguinea.JPG",
-    "query": "Iris sanguinea"
-  },
-  "susuki": {
-    "file": "assets/images/creatures/susuki.jpg",
-    "title": "File:Japanese_pampas_grass_ススキの穂波PB080105.jpg",
-    "license": "CC BY 3.0",
-    "author": "松岡明芳",
-    "page": "https://commons.wikimedia.org/wiki/File:Japanese_pampas_grass_%E3%82%B9%E3%82%B9%E3%82%AD%E3%81%AE%E7%A9%82%E6%B3%A2PB080105.jpg",
-    "query": "Miscanthus sinensis"
-  },
-  "higanbana": {
-    "file": "assets/images/creatures/higanbana.jpg",
-    "title": "File:Lycoris_radiata_Higanbana_in_a_woods.jpg",
-    "license": "CC BY 2.0",
-    "author": "Blue Lotus",
-    "page": "https://commons.wikimedia.org/wiki/File:Lycoris_radiata_Higanbana_in_a_woods.jpg",
-    "query": "Lycoris radiata"
-  },
-  "icho": {
-    "file": "assets/images/creatures/icho.jpg",
-    "title": "File:GINKGOBAUM-2.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "EecherplazGinkgo06.jpg: Cayambe\nderivative work: Ginkgotree (talk)",
-    "page": "https://commons.wikimedia.org/wiki/File:GINKGOBAUM-2.jpg",
-    "query": "Ginkgo biloba"
-  },
-  "momiji": {
-    "file": "assets/images/creatures/momiji.jpg",
-    "title": "File:Acer_palmatum0.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Kurt Stüber [1]",
-    "page": "https://commons.wikimedia.org/wiki/File:Acer_palmatum0.jpg",
-    "query": "Acer palmatum"
-  },
-  "kusunoki": {
-    "file": "assets/images/creatures/kusunoki.jpg",
-    "title": "File:Cinnamomum_camphora20050314.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora20050314.jpg",
-    "query": "Cinnamomum camphora"
-  },
-  "buna": {
-    "file": "assets/images/creatures/buna.jpg",
-    "title": "File:Fagus_crenata_in_Ogasayama_2010-10-17.jpg",
-    "license": "Public domain",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Fagus_crenata_in_Ogasayama_2010-10-17.jpg",
-    "query": "Fagus crenata"
-  },
-  "kuromatsu": {
-    "file": "assets/images/creatures/kuromatsu.jpg",
-    "title": "File:Pinus_thunbergii_Izu_Oshima.jpg",
-    "license": "CC BY 2.0",
-    "author": "Nikita from Russian Federation",
-    "page": "https://commons.wikimedia.org/wiki/File:Pinus_thunbergii_Izu_Oshima.jpg",
-    "query": "Pinus thunbergii"
-  },
-  "gama": {
-    "file": "assets/images/creatures/gama.jpg",
-    "title": "File:Bulrush_(Typha_latifolia)_(8139113636).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Peter O'Connor aka anemoneprojectors from Stevenage, United Kingdom",
-    "page": "https://commons.wikimedia.org/wiki/File:Bulrush_(Typha_latifolia)_(8139113636).jpg",
-    "query": "Typha latifolia"
-  },
-  "yoshi": {
-    "file": "assets/images/creatures/yoshi.jpg",
-    "title": "File:Reed_panicle_at_Brodalen_1.jpg",
-    "license": "CC0",
-    "author": "W.carter",
-    "page": "https://commons.wikimedia.org/wiki/File:Reed_panicle_at_Brodalen_1.jpg",
-    "query": "Phragmites australis"
-  },
-  "kohone": {
-    "file": "assets/images/creatures/kohone.jpg",
-    "title": "File:Nuphar_subintegerrimum1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Nuphar_subintegerrimum1.jpg",
-    "query": "Nuphar japonica"
-  },
-  "amamo": {
-    "file": "assets/images/creatures/amamo.jpg",
-    "title": "File:Zostera_marina_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07663.JPG",
-    "license": "CC0",
-    "author": "Daderot",
-    "page": "https://commons.wikimedia.org/wiki/File:Zostera_marina_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07663.JPG",
-    "query": "Zostera marina"
-  },
-  "uguisu": {
-    "file": "assets/images/creatures/uguisu.jpg",
-    "title": "File:Cettia_diphone_(crying).JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Cettia_diphone_(crying).JPG",
-    "query": "Horornis diphone"
-  },
-  "mejiro": {
-    "file": "assets/images/creatures/mejiro.jpg",
-    "title": "File:Japanese_white-eye_at_Tennōji_Park_in_Osaka,_January_2016_III.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Japanese_white-eye_at_Tenn%C5%8Dji_Park_in_Osaka,_January_2016_III.jpg",
-    "query": "Zosterops japonicus"
-  },
-  "joubitaki": {
-    "file": "assets/images/creatures/joubitaki.jpg",
-    "title": "File:Daurian_redstart_at_Daisen_Park_in_Osaka,_January_2016.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Daurian_redstart_at_Daisen_Park_in_Osaka,_January_2016.jpg",
-    "query": "Phoenicurus auroreus"
-  },
-  "kisekirei": {
-    "file": "assets/images/creatures/kisekirei.jpg",
-    "title": "File:Gebirgsstelze_im_Geo-Naturpark_Bergstraße-Odenwald.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Herwig Winter",
-    "page": "https://commons.wikimedia.org/wiki/File:Gebirgsstelze_im_Geo-Naturpark_Bergstra%C3%9Fe-Odenwald.jpg",
-    "query": "Motacilla cinerea"
-  },
-  "hakusekirei": {
-    "file": "assets/images/creatures/hakusekirei.jpg",
-    "title": "File:20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg",
-    "license": "CC BY 2.0",
-    "author": "Jac. Janssen from BAARLO LB, NL",
-    "page": "https://commons.wikimedia.org/wiki/File:20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg",
-    "query": "Motacilla alba"
-  },
-  "kawau": {
-    "file": "assets/images/creatures/kawau.jpg",
-    "title": "File:2021-05-05_Phalacrocorax_carbo_carbo,_Killingworth_Lake,_Northumberland_1-1.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "MPF",
-    "page": "https://commons.wikimedia.org/wiki/File:2021-05-05_Phalacrocorax_carbo_carbo,_Killingworth_Lake,_Northumberland_1-1.jpg",
-    "query": "Phalacrocorax carbo"
-  },
-  "goisagi": {
-    "file": "assets/images/creatures/goisagi.jpg",
-    "title": "File:Nycticorax_nycticorax_457953189.jpg",
-    "license": "CC BY 4.0",
-    "author": "ramidos",
-    "page": "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_457953189.jpg",
-    "query": "Nycticorax nycticorax"
-  },
-  "daisagi": {
-    "file": "assets/images/creatures/daisagi.jpg",
-    "title": "File:Great_Egret_(Ardea_alba)_in_Breeding_Plumage,_Cape_May_County,_New_Jersey,_USA_(cropped).png",
-    "license": "CC BY-SA 4.0",
-    "author": "Chuck Homler (FocusOnWildlife.Me)",
-    "page": "https://commons.wikimedia.org/wiki/File:Great_Egret_(Ardea_alba)_in_Breeding_Plumage,_Cape_May_County,_New_Jersey,_USA_(cropped).png",
-    "query": "Ardea alba"
-  },
-  "oshidori": {
-    "file": "assets/images/creatures/oshidori.jpg",
-    "title": "File:Pair_of_mandarin_ducks.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Francis C. Franklin",
-    "page": "https://commons.wikimedia.org/wiki/File:Pair_of_mandarin_ducks.jpg",
-    "query": "Aix galericulata"
-  },
-  "magamo": {
-    "file": "assets/images/creatures/magamo.jpg",
-    "title": "File:Anas_platyrhynchos_male_female_quadrat.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Lens",
-    "page": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg",
-    "query": "Anas platyrhynchos"
-  },
-  "tobi": {
-    "file": "assets/images/creatures/tobi.jpg",
-    "title": "File:Schwarzmilan.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Andreas Trepte",
-    "page": "https://commons.wikimedia.org/wiki/File:Schwarzmilan.jpg",
-    "query": "Milvus migrans"
-  },
-  "umineko": {
-    "file": "assets/images/creatures/umineko.jpg",
-    "title": "File:Laridae_in_Beijing_Zoo.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Laridae_in_Beijing_Zoo.JPG",
-    "query": "Larus crassirostris"
-  },
-  "yamagara": {
-    "file": "assets/images/creatures/yamagara.jpg",
-    "title": "File:Varied_tit_at_Tennōji_Park_in_Osaka,_January_2016.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Varied_tit_at_Tenn%C5%8Dji_Park_in_Osaka,_January_2016.jpg",
-    "query": "Sittiparus varius"
-  },
-  "misago": {
-    "file": "assets/images/creatures/misago.jpg",
-    "title": "File:Osprey_Perched_Snag_Heislerville.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Chuck Homler / Focus On Wildlife",
-    "page": "https://commons.wikimedia.org/wiki/File:Osprey_Perched_Snag_Heislerville.jpg",
-    "query": "Pandion haliaetus"
-  },
-  "oikawa": {
-    "file": "assets/images/creatures/oikawa.jpg",
-    "title": "File:Oikawa1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Oikawa1.jpg",
-    "query": "Pale Chub"
-  },
-  "ugui": {
-    "file": "assets/images/creatures/ugui.jpg",
-    "title": "File:Tribolodon_hakonensis,_-Higashiyama_Zoo,_-Nov._2011_a.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "OpenCage",
-    "page": "https://commons.wikimedia.org/wiki/File:Tribolodon_hakonensis,_-Higashiyama_Zoo,_-Nov._2011_a.jpg",
-    "query": "Tribolodon hakonensis"
-  },
-  "tanago": {
-    "file": "assets/images/creatures/tanago.jpg",
-    "title": "File:Achilognathus_melanogaster_-_1856-1859_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ15000112_(cropped).tif",
-    "license": "Public domain",
-    "author": "Acta societatis scientiarum Indo-Neerlandica, VI tab. II",
-    "page": "https://commons.wikimedia.org/wiki/File:Achilognathus_melanogaster_-_1856-1859_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ15000112_(cropped).tif",
-    "query": "Acheilognathus melanogaster"
-  },
-  "namazu": {
-    "file": "assets/images/creatures/namazu.jpg",
-    "title": "File:Silurus.jpg",
-    "license": "CC BY 2.0",
-    "author": "rhosoi",
-    "page": "https://commons.wikimedia.org/wiki/File:Silurus.jpg",
-    "query": "Silurus asotus"
-  },
-  "bora": {
-    "file": "assets/images/creatures/bora.jpg",
-    "title": "File:Mújol_(Mugil_cephalus),_Parque_natural_de_la_Arrábida,_Portugal,_2021-09-09,_DD_25.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Diego Delso",
-    "page": "https://commons.wikimedia.org/wiki/File:M%C3%BAjol_(Mugil_cephalus),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2021-09-09,_DD_25.jpg",
-    "query": "Mugil cephalus"
-  },
-  "kurodai": {
-    "file": "assets/images/creatures/kurodai.jpg",
-    "title": "File:クロダイ.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Rakurakuda",
-    "page": "https://commons.wikimedia.org/wiki/File:%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4.jpg",
-    "query": "Acanthopagrus schlegelii"
-  },
-  "mebaru": {
-    "file": "assets/images/creatures/mebaru.jpg",
-    "title": "File:Sebastes_Inermis.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Daiju Azuma",
-    "page": "https://commons.wikimedia.org/wiki/File:Sebastes_Inermis.jpg",
-    "query": "Sebastes inermis"
-  },
-  "kasago": {
-    "file": "assets/images/creatures/kasago.jpg",
-    "title": "File:Sebastiscus_marmoratus.jpg",
-    "license": "Public domain",
-    "author": "H. Patterson",
-    "page": "https://commons.wikimedia.org/wiki/File:Sebastiscus_marmoratus.jpg",
-    "query": "Sebastiscus marmoratus"
-  },
-  "suzuki": {
-    "file": "assets/images/creatures/suzuki.jpg",
-    "title": "File:Suzuki201302.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Izuzuki",
-    "page": "https://commons.wikimedia.org/wiki/File:Suzuki201302.jpg",
-    "query": "Lateolabrax japonicus"
-  },
-  "mahaze": {
-    "file": "assets/images/creatures/mahaze.jpg",
-    "title": "File:Acanthogobius_flavimanus_Nakagawa.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Totti",
-    "page": "https://commons.wikimedia.org/wiki/File:Acanthogobius_flavimanus_Nakagawa.jpg",
-    "query": "Acanthogobius flavimanus"
-  },
-  "nijimasu": {
-    "file": "assets/images/creatures/nijimasu.jpg",
-    "title": "File:Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg",
-    "license": "Public domain",
-    "author": "Engbretson Eric, U.S. Fish and Wildlife Service",
-    "page": "https://commons.wikimedia.org/wiki/File:Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg",
-    "query": "Oncorhynchus mykiss"
-  },
-  "ayu": {
-    "file": "assets/images/creatures/ayu.jpg",
-    "title": "File:Sweetfish, Plecoglossus altivelis.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "OAS at Japanese Wikipedia",
-    "page": "https://commons.wikimedia.org/wiki/File:Sweetfish,_Plecoglossus_altivelis.jpg",
-    "query": "Plecoglossus altivelis"
-  },
-  "haimatsu": {
-    "file": "assets/images/creatures/haimatsu.jpg",
-    "title": "File:Pinus_pumila_fruits.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Pinus_pumila_fruits.JPG",
-    "query": "Pinus pumila"
-  },
-  "komakusa": {
-    "file": "assets/images/creatures/komakusa.jpg",
-    "title": "File:Dicentra_peregrina_Komakusa.jpg",
-    "license": "Public domain",
-    "author": "Akiyoshi's Room",
-    "page": "https://commons.wikimedia.org/wiki/File:Dicentra_peregrina_Komakusa.jpg",
-    "query": "Dicentra peregrina"
-  },
-  "shirabiso": {
-    "file": "assets/images/creatures/shirabiso.jpg",
-    "title": "File:Abies_veitchii.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Abies_veitchii.JPG",
-    "query": "Abies veitchii"
-  },
-  "nikkokisuge": {
-    "file": "assets/images/creatures/nikkokisuge.jpg",
-    "title": "File:Hemerocallis_dumortieri_var._esculenta_03.jpg",
-    "license": "CC BY 3.0",
-    "author": "Σ64",
-    "page": "https://commons.wikimedia.org/wiki/File:Hemerocallis_dumortieri_var._esculenta_03.jpg",
-    "query": "Hemerocallis dumortieri"
-  },
-  "raicho": {
-    "file": "assets/images/creatures/raicho.jpg",
-    "title": "File:Rock_ptarmigan_(Lagopus_muta_islandorum)_female_breeding_Botnsvatn.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Charles J. Sharp",
-    "page": "https://commons.wikimedia.org/wiki/File:Rock_ptarmigan_(Lagopus_muta_islandorum)_female_breeding_Botnsvatn.jpg",
-    "query": "Lagopus muta"
-  },
-  "hoshigarasu": {
-    "file": "assets/images/creatures/hoshigarasu.jpg",
-    "title": "File:Nucifraga_caryocatactes_Davos_1.jpg",
-    "license": "CC BY 2.0",
-    "author": "kuhnmi",
-    "page": "https://commons.wikimedia.org/wiki/File:Nucifraga_caryocatactes_Davos_1.jpg",
-    "query": "Nucifraga caryocatactes"
-  },
-  "iwahibari": {
-    "file": "assets/images/creatures/iwahibari.jpg",
-    "title": "File:Alpine_accentor_saganta.jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Paco Gómez from Castellón, Spain",
-    "page": "https://commons.wikimedia.org/wiki/File:Alpine_accentor_saganta.jpg",
-    "query": "Prunella collaris"
-  },
-  "rurubitaki": {
-    "file": "assets/images/creatures/rurubitaki.jpg",
-    "title": "File:Tarsiger_cyanurus.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "M.Nishimura",
-    "page": "https://commons.wikimedia.org/wiki/File:Tarsiger_cyanurus.jpg",
-    "query": "Tarsiger cyanurus"
-  },
-  "iwana": {
-    "file": "assets/images/creatures/iwana.jpg",
-    "title": "File:Salvelinus_leucomaenis_01.jpg",
-    "license": "CC BY 4.0",
-    "author": "Σ64",
-    "page": "https://commons.wikimedia.org/wiki/File:Salvelinus_leucomaenis_01.jpg",
-    "query": "Salvelinus leucomaenis"
-  },
-  "yamazakura": {
-    "file": "assets/images/creatures/yamazakura.jpg",
-    "title": "File:Branches_of_Cerasus_jamasakura_at_Mount_Obukuma_Saga.JPG",
-    "license": "CC BY-SA 4.0",
-    "author": "Pekachu",
-    "page": "https://commons.wikimedia.org/wiki/File:Branches_of_Cerasus_jamasakura_at_Mount_Obukuma_Saga.JPG",
-    "query": "Prunus jamasakura"
-  },
-  "keyaki": {
-    "file": "assets/images/creatures/keyaki.jpg",
-    "title": "File:Zelkova_serrata_Noma_keyaki01.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "ja:User:Miya",
-    "page": "https://commons.wikimedia.org/wiki/File:Zelkova_serrata_Noma_keyaki01.jpg",
-    "query": "Zelkova serrata"
-  },
-  "kunugi": {
-    "file": "assets/images/creatures/kunugi.jpg",
-    "title": "File:Lasdon_Arboretum_-_Quercus_acutissima_-_IMG_1516.jpg",
-    "license": "Public domain",
-    "author": "Daderot",
-    "page": "https://commons.wikimedia.org/wiki/File:Lasdon_Arboretum_-_Quercus_acutissima_-_IMG_1516.jpg",
-    "query": "Quercus acutissima"
-  },
-  "shirakashi": {
-    "file": "assets/images/creatures/shirakashi.jpg",
-    "title": "File:Chinese_evergreen_oak_(Quercus_myrsinifolia)_(22245673008).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "harum.koh from Kobe city, Japan",
-    "page": "https://commons.wikimedia.org/wiki/File:Chinese_evergreen_oak_(Quercus_myrsinifolia)_(22245673008).jpg",
-    "query": "Quercus myrsinifolia"
-  },
-  "sudajii": {
-    "file": "assets/images/creatures/sudajii.jpg",
-    "title": "File:Castanopsis_sieboldii2.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Castanopsis_sieboldii2.jpg",
-    "query": "Castanopsis sieboldii"
-  },
-  "tabunoki": {
-    "file": "assets/images/creatures/tabunoki.jpg",
-    "title": "File:Machilus_thunbergii_in_Hiroshima_Castle.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "そらみみ",
-    "page": "https://commons.wikimedia.org/wiki/File:Machilus_thunbergii_in_Hiroshima_Castle.jpg",
-    "query": "Machilus thunbergii"
-  },
-  "yamaboushi": {
-    "file": "assets/images/creatures/yamaboushi.jpg",
-    "title": "File:Cornus_kousa_img_2066.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Henryhartley at English Wikipedia",
-    "page": "https://commons.wikimedia.org/wiki/File:Cornus_kousa_img_2066.jpg",
-    "query": "Cornus kousa"
-  },
-  "mizuki": {
-    "file": "assets/images/creatures/mizuki.jpg",
-    "title": "File:Cornus_controversa_'variegata'_-_NBGB_-_IMG_4246.JPG",
-    "license": "Public domain",
-    "author": "Daderot",
-    "page": "https://commons.wikimedia.org/wiki/File:Cornus_controversa_%27variegata%27_-_NBGB_-_IMG_4246.JPG",
-    "query": "Cornus controversa"
-  },
-  "kobushi": {
-    "file": "assets/images/creatures/kobushi.jpg",
-    "title": "File:Magnolia_kobus_borealis.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Bruce Marlin",
-    "page": "https://commons.wikimedia.org/wiki/File:Magnolia_kobus_borealis.jpg",
-    "query": "Magnolia kobus"
-  },
-  "hakumokuren": {
-    "file": "assets/images/creatures/hakumokuren.jpg",
-    "title": "File:Yulan_1.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "The original uploader was Yongxinge at English Wikipedia.",
-    "page": "https://commons.wikimedia.org/wiki/File:Yulan_1.JPG",
-    "query": "Magnolia denudata"
-  },
-  "sarusuberi": {
-    "file": "assets/images/creatures/sarusuberi.jpg",
-    "title": "File:Extremosa_(Lagerstroemia_indica)_em_um_fim_de_tarde_em_Bagé-RS_-_55013179934.jpg",
-    "license": "CC BY 4.0",
-    "author": "Gabriel Collares",
-    "page": "https://commons.wikimedia.org/wiki/File:Extremosa_(Lagerstroemia_indica)_em_um_fim_de_tarde_em_Bag%C3%A9-RS_-_55013179934.jpg",
-    "query": "Lagerstroemia indica"
-  },
-  "kinmokusei": {
-    "file": "assets/images/creatures/kinmokusei.jpg",
-    "title": "File:Osmanthus_fragrans_(orange_flowers).jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Laitr Keiows",
-    "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_(orange_flowers).jpg",
-    "query": "Osmanthus fragrans"
-  },
-  "yamatsutsuji": {
-    "file": "assets/images/creatures/yamatsutsuji.jpg",
-    "title": "File:Rhododendron_kaempferi_(Torch_Azalea)_(26922724613).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Plant Image Library",
-    "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_(Torch_Azalea)_(26922724613).jpg",
-    "query": "Rhododendron kaempferi"
-  },
-  "mitsubatsutsuji": {
-    "file": "assets/images/creatures/mitsubatsutsuji.jpg",
-    "title": "File:Rhododendron_dilatatum_forma_leucanthum_(34123220456).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Plant Image Library from Boston, USA",
-    "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_dilatatum_forma_leucanthum_(34123220456).jpg",
-    "query": "Rhododendron dilatatum"
-  },
-  "yamabuki": {
-    "file": "assets/images/creatures/yamabuki.jpg",
-    "title": "File:Afbeelding-063-Kerria_japonica.tif",
-    "license": "Public domain",
-    "author": "Abraham Jacobus Wendel",
-    "page": "https://commons.wikimedia.org/wiki/File:Afbeelding-063-Kerria_japonica.tif",
-    "query": "Kerria japonica"
-  },
-  "yamahagi": {
-    "file": "assets/images/creatures/yamahagi.jpg",
-    "title": "File:Lespedeza_ja01.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "user:Miya.m",
-    "page": "https://commons.wikimedia.org/wiki/File:Lespedeza_ja01.jpg",
-    "query": "Lespedeza bicolor"
-  },
-  "enoki": {
-    "file": "assets/images/creatures/enoki.jpg",
-    "title": "File:Celtis_sinensis=Chinese_Hackberry.jpg",
-    "license": "CC BY 3.0",
-    "author": "Geographer (talk)",
-    "page": "https://commons.wikimedia.org/wiki/File:Celtis_sinensis%3DChinese_Hackberry.jpg",
-    "query": "Celtis sinensis"
-  },
-  "mukunoki": {
-    "file": "assets/images/creatures/mukunoki.jpg",
-    "title": "File:Aphananthe_aspera3.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Aphananthe_aspera3.jpg",
-    "query": "Aphananthe aspera"
-  },
-  "nanten": {
-    "file": "assets/images/creatures/nanten.jpg",
-    "title": "File:Nandina_domestica_cv_Otafukunante1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_cv_Otafukunante1.jpg",
-    "query": "Nandina domestica"
-  },
-  "aoki": {
-    "file": "assets/images/creatures/aoki.jpg",
-    "title": "File:Aucuba_japonica_Gold_Dust_NBG_LR.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "PumpkinSky",
-    "page": "https://commons.wikimedia.org/wiki/File:Aucuba_japonica_Gold_Dust_NBG_LR.jpg",
-    "query": "Aucuba japonica"
-  },
-  "hinoki": {
-    "file": "assets/images/creatures/hinoki.jpg",
-    "title": "File:大智寺_(岐阜市)-樹齢約700年の大ヒノキdaichiji008.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "杉山宣嗣",
-    "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%99%BA%E5%AF%BA_(%E5%B2%90%E9%98%9C%E5%B8%82)-%E6%A8%B9%E9%BD%A2%E7%B4%84700%E5%B9%B4%E3%81%AE%E5%A4%A7%E3%83%92%E3%83%8E%E3%82%ADdaichiji008.jpg",
-    "query": "Chamaecyparis obtusa"
-  },
-  "akamatsu": {
-    "file": "assets/images/creatures/akamatsu.jpg",
-    "title": "File:Pinus_densiflora_01.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Dalgial",
-    "page": "https://commons.wikimedia.org/wiki/File:Pinus_densiflora_01.JPG",
-    "query": "Pinus densiflora"
-  },
-  "karamatsu": {
-    "file": "assets/images/creatures/karamatsu.jpg",
-    "title": "File:Larix_kaempferi_Oze_NP.jpg",
-    "license": "CC BY 2.0",
-    "author": "Tanaka Juuyoh",
-    "page": "https://commons.wikimedia.org/wiki/File:Larix_kaempferi_Oze_NP.jpg",
-    "query": "Larix kaempferi"
-  },
-  "momi": {
-    "file": "assets/images/creatures/momi.jpg",
-    "title": "File:Abies_firma.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "No machine-readable author provided. Inti-sol~commonswiki assumed (based on copyright claims).",
-    "page": "https://commons.wikimedia.org/wiki/File:Abies_firma.JPG",
-    "query": "Abies firma"
-  },
-  "tsuga": {
-    "file": "assets/images/creatures/tsuga.jpg",
-    "title": "File:Abies_tsuja_SZ106.png",
-    "license": "Public domain",
-    "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
-    "page": "https://commons.wikimedia.org/wiki/File:Abies_tsuja_SZ106.png",
-    "query": "Tsuga sieboldii"
-  },
-  "shirakanba": {
-    "file": "assets/images/creatures/shirakanba.jpg",
-    "title": "File:Betula_platyphylla_01-10-2005_14.55.52.JPG",
-    "license": "CC BY 2.5",
-    "author": "No machine-readable author provided. TeunSpaans assumed (based on copyright claims).",
-    "page": "https://commons.wikimedia.org/wiki/File:Betula_platyphylla_01-10-2005_14.55.52.JPG",
-    "query": "Betula platyphylla"
-  },
-  "mizunara": {
-    "file": "assets/images/creatures/mizunara.jpg",
-    "title": "File:Japanese_Oak_18488959.jpg",
-    "license": "CC BY 4.0",
-    "author": "(c) belvedere04, some rights reserved (CC BY)",
-    "page": "https://commons.wikimedia.org/wiki/File:Japanese_Oak_18488959.jpg",
-    "query": "Quercus crispula"
-  },
-  "tochinoki": {
-    "file": "assets/images/creatures/tochinoki.jpg",
-    "title": "File:Aesculus_turbinata_7.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Qwert1234",
-    "page": "https://commons.wikimedia.org/wiki/File:Aesculus_turbinata_7.JPG",
-    "query": "Aesculus turbinata"
-  },
-  "ezomatsu": {
-    "file": "assets/images/creatures/ezomatsu.jpg",
-    "title": "File:Picea_jezoensis.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "No machine-readable author provided. Inti-sol~commonswiki assumed (based on copyright claims).",
-    "page": "https://commons.wikimedia.org/wiki/File:Picea_jezoensis.JPG",
-    "query": "Picea jezoensis"
-  },
-  "todomatsu": {
-    "file": "assets/images/creatures/todomatsu.jpg",
-    "title": "File:Abies_sachalinensis1.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Inti-sol",
-    "page": "https://commons.wikimedia.org/wiki/File:Abies_sachalinensis1.JPG",
-    "query": "Abies sachalinensis"
-  },
-  "nanakamado": {
-    "file": "assets/images/creatures/nanakamado.jpg",
-    "title": "File:Sorbus_amabilis_-_Mount_Sanqing_2015.09.08_10-01-34.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Zhangzhugang",
-    "page": "https://commons.wikimedia.org/wiki/File:Sorbus_amabilis_-_Mount_Sanqing_2015.09.08_10-01-34.jpg",
-    "query": "Sorbus commixta"
-  },
-  "dakekanba": {
-    "file": "assets/images/creatures/dakekanba.jpg",
-    "title": "File:Betula_ermanii_(200612).jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "E-190",
-    "page": "https://commons.wikimedia.org/wiki/File:Betula_ermanii_(200612).jpg",
-    "query": "Betula ermanii"
-  },
-  "shakunage": {
-    "file": "assets/images/creatures/shakunage.jpg",
-    "title": "File:Rhododendron_brachycarpum_ssp._brachycarpum_-_University_of_Copenhagen_Botanical_Garden_-_DSC08077.JPG",
-    "license": "CC0",
-    "author": "Daderot",
-    "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_brachycarpum_ssp._brachycarpum_-_University_of_Copenhagen_Botanical_Garden_-_DSC08077.JPG",
-    "query": "Rhododendron brachycarpum"
-  },
-  "katakuri": {
-    "file": "assets/images/creatures/katakuri.jpg",
-    "title": "File:Erythronium_japonicum_2006_005.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Kropsoq",
-    "page": "https://commons.wikimedia.org/wiki/File:Erythronium_japonicum_2006_005.jpg",
-    "query": "Erythronium japonicum"
-  },
-  "nirinsou": {
-    "file": "assets/images/creatures/nirinsou.jpg",
-    "title": "File:Anemone_flaccida_(Montage_s4).jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Anemone_flaccida_(Montage_s4).jpg",
-    "query": "Anemone flaccida"
-  },
-  "sumire": {
-    "file": "assets/images/creatures/sumire.jpg",
-    "title": "File:Viola_mandshurica_(200704).jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "E-190",
-    "page": "https://commons.wikimedia.org/wiki/File:Viola_mandshurica_(200704).jpg",
-    "query": "Viola mandshurica"
-  },
-  "renge": {
-    "file": "assets/images/creatures/renge.jpg",
-    "title": "File:Astragalus_sinicus_ja_Renge01.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Miya",
-    "page": "https://commons.wikimedia.org/wiki/File:Astragalus_sinicus_ja_Renge01.jpg",
-    "query": "Astragalus sinicus"
-  },
-  "hotarubukuro": {
-    "file": "assets/images/creatures/hotarubukuro.jpg",
-    "title": "File:Campanula_punctata_01.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Dalgial",
-    "page": "https://commons.wikimedia.org/wiki/File:Campanula_punctata_01.JPG",
-    "query": "Campanula punctata"
-  },
-  "yamayuri": {
-    "file": "assets/images/creatures/yamayuri.jpg",
-    "title": "File:Lilium_auratum1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Lilium_auratum1.jpg",
-    "query": "Lilium auratum"
-  },
-  "tsuyukusa": {
-    "file": "assets/images/creatures/tsuyukusa.jpg",
-    "title": "File:Tagblume_Commelina_communis_stack25_2019-08-05-RM-8050218-PSD.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Ermell",
-    "page": "https://commons.wikimedia.org/wiki/File:Tagblume_Commelina_communis_stack25_2019-08-05-RM-8050218-PSD.jpg",
-    "query": "Commelina communis"
-  },
-  "ominaeshi": {
-    "file": "assets/images/creatures/ominaeshi.jpg",
-    "title": "File:Patrinia_scabiosifolia_kz2.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Krzysztof Ziarnek, Kenraiz",
-    "page": "https://commons.wikimedia.org/wiki/File:Patrinia_scabiosifolia_kz2.jpg",
-    "query": "Patrinia scabiosifolia"
-  },
-  "kikyo": {
-    "file": "assets/images/creatures/kikyo.jpg",
-    "title": "File:Platycodon_grandiflorum2.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "www.biolib.de",
-    "page": "https://commons.wikimedia.org/wiki/File:Platycodon_grandiflorum2.jpg",
-    "query": "Platycodon grandiflorus"
-  },
-  "fujibakama": {
-    "file": "assets/images/creatures/fujibakama.jpg",
-    "title": "File:Eupatorium_japonicum_flower_leaf.jpg",
-    "license": "CC BY 2.5",
-    "author": "No machine-readable author provided. Koba-chan assumed (based on copyright claims).",
-    "page": "https://commons.wikimedia.org/wiki/File:Eupatorium_japonicum_flower_leaf.jpg",
-    "query": "Eupatorium japonicum"
-  },
-  "nadeshiko": {
-    "file": "assets/images/creatures/nadeshiko.jpg",
-    "title": "File:Dianthus_superbus_140805a.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "Bernd Haynold",
-    "page": "https://commons.wikimedia.org/wiki/File:Dianthus_superbus_140805a.jpg",
-    "query": "Dianthus superbus"
-  },
-  "yomogi": {
-    "file": "assets/images/creatures/yomogi.jpg",
-    "title": "File:Mugwort_imported_from_iNaturalist_photo_180771010_on_26_August_2024.jpg",
-    "license": "CC BY 4.0",
-    "author": "(c) chiuluan, some rights reserved (CC BY)",
-    "page": "https://commons.wikimedia.org/wiki/File:Mugwort_imported_from_iNaturalist_photo_180771010_on_26_August_2024.jpg",
-    "query": "Artemisia indica"
-  },
-  "miyakozasa": {
-    "file": "assets/images/creatures/miyakozasa.jpg",
-    "title": "File:Sasa_nipponica1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Sasa_nipponica1.jpg",
-    "query": "Sasa nipponica"
-  },
-  "sakurasou": {
-    "file": "assets/images/creatures/sakurasou.jpg",
-    "title": "File:Primula_sieboldii_-_Berlin_Botanical_Garden_-_IMG_8646.JPG",
-    "license": "Public domain",
-    "author": "Daderot",
-    "page": "https://commons.wikimedia.org/wiki/File:Primula_sieboldii_-_Berlin_Botanical_Garden_-_IMG_8646.JPG",
-    "query": "Primula sieboldii"
-  },
-  "rindo": {
-    "file": "assets/images/creatures/rindo.jpg",
-    "title": "File:Gentiana_scabra2.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "~~",
-    "page": "https://commons.wikimedia.org/wiki/File:Gentiana_scabra2.jpg",
-    "query": "Gentiana scabra"
-  },
-  "kuzu": {
-    "file": "assets/images/creatures/kuzu.jpg",
-    "title": "File:Pueraria_montana_190929_05.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Schurdl",
-    "page": "https://commons.wikimedia.org/wiki/File:Pueraria_montana_190929_05.jpg",
-    "query": "Pueraria montana"
-  },
-  "hirugao": {
-    "file": "assets/images/creatures/hirugao.jpg",
-    "title": "File:Calystegia_pubescens1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "KENPEI",
-    "page": "https://commons.wikimedia.org/wiki/File:Calystegia_pubescens1.jpg",
-    "query": "Calystegia pubescens"
-  },
-  "kakitsubata": {
-    "file": "assets/images/creatures/kakitsubata.jpg",
-    "title": "File:Kakitsubata1.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Dennis L. Lindwall",
-    "page": "https://commons.wikimedia.org/wiki/File:Kakitsubata1.jpg",
-    "query": "Iris laevigata"
-  },
-  "mizubasho": {
-    "file": "assets/images/creatures/mizubasho.jpg",
-    "title": "File:Lysichite_blanc_à_Shiramine_(Hakusan)_-_08_-_2016-04-25.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "MathieuMD",
-    "page": "https://commons.wikimedia.org/wiki/File:Lysichite_blanc_%C3%A0_Shiramine_(Hakusan)_-_08_-_2016-04-25.jpg",
-    "query": "Lysichiton camtschatcensis"
-  },
-  "shidareyanagi": {
-    "file": "assets/images/creatures/shidareyanagi.jpg",
-    "title": "File:Château_de_Chenonceau_-_jardin_Russell-Page_(01).jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Fab5669",
-    "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chenonceau_-_jardin_Russell-Page_(01).jpg",
-    "query": "Salix babylonica"
-  },
-  "nekoyanagi": {
-    "file": "assets/images/creatures/nekoyanagi.jpg",
-    "title": "File:Salix_gracilistyla.jpg",
-    "license": "CC BY-SA 2.5",
-    "author": "OpenCage.info",
-    "page": "https://commons.wikimedia.org/wiki/File:Salix_gracilistyla.jpg",
-    "query": "Salix gracilistyla"
-  },
-  "hamaboufu": {
-    "file": "assets/images/creatures/hamaboufu.jpg",
-    "title": "File:Glehnia_littoralis.jpg",
-    "license": "Public domain",
-    "author": "Pieria(Uploader and Photographer)",
-    "page": "https://commons.wikimedia.org/wiki/File:Glehnia_littoralis.jpg",
-    "query": "Glehnia littoralis"
-  },
-  "hamahirugao": {
-    "file": "assets/images/creatures/hamahirugao.jpg",
-    "title": "File:Calystegia_soldanella_060524wb.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "User:Strobilomyces",
-    "page": "https://commons.wikimedia.org/wiki/File:Calystegia_soldanella_060524wb.jpg",
-    "query": "Calystegia soldanella"
-  },
-  "hamanasu": {
-    "file": "assets/images/creatures/hamanasu.jpg",
-    "title": "File:Rosa_rugosa_Tokyo.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Qwert1234",
-    "page": "https://commons.wikimedia.org/wiki/File:Rosa_rugosa_Tokyo.JPG",
-    "query": "Rosa rugosa"
-  },
-  "hamayu": {
-    "file": "assets/images/creatures/hamayu.jpg",
-    "title": "File:Crinum_Lily.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Cody Hough",
-    "page": "https://commons.wikimedia.org/wiki/File:Crinum_Lily.JPG",
-    "query": "Crinum asiaticum"
-  },
-  "tsuwabuki": {
-    "file": "assets/images/creatures/tsuwabuki.jpg",
-    "title": "File:Farfugium_japonicum_cv._Aureo-maculata.jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "J Brew",
-    "page": "https://commons.wikimedia.org/wiki/File:Farfugium_japonicum_cv._Aureo-maculata.jpg",
-    "query": "Farfugium japonicum"
-  },
-  "wakame": {
-    "file": "assets/images/creatures/wakame.jpg",
-    "title": "File:CSIRO_ScienceImage_952_Undaria_pinnatifida_Japanese_kelp.jpg",
-    "license": "CC BY 3.0",
-    "author": "division, CSIRO",
-    "page": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_952_Undaria_pinnatifida_Japanese_kelp.jpg",
-    "query": "Undaria pinnatifida"
-  },
-  "makonbu": {
-    "file": "assets/images/creatures/makonbu.jpg",
-    "title": "File:Dasima_2.jpg",
-    "license": "CC0",
-    "author": "freddy an",
-    "page": "https://commons.wikimedia.org/wiki/File:Dasima_2.jpg",
-    "query": "Saccharina japonica"
-  },
-  "hijiki": {
-    "file": "assets/images/creatures/hijiki.jpg",
-    "title": "File:Icones_of_Japanese_algae_(Pl._CXXVIII)_(8006311177).jpg",
-    "license": "Public domain",
-    "author": "Okamura, Kintaro",
-    "page": "https://commons.wikimedia.org/wiki/File:Icones_of_Japanese_algae_(Pl._CXXVIII)_(8006311177).jpg",
-    "query": "Sargassum fusiforme"
-  },
-  "kobaikeisou": {
-    "file": "assets/images/creatures/kobaikeisou.jpg",
-    "title": "File:Veratrum_stamineum_06.jpg",
-    "license": "CC BY 3.0",
-    "author": "Σ64",
-    "page": "https://commons.wikimedia.org/wiki/File:Veratrum_stamineum_06.jpg",
-    "query": "Veratrum stamineum"
-  },
-  "hakusanichige": {
-    "file": "assets/images/creatures/hakusanichige.jpg",
-    "title": "File:Berghähnlein_(Anemone_narcissiflora)_Blüten_nah.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Heinz Staudacher",
-    "page": "https://commons.wikimedia.org/wiki/File:Bergh%C3%A4hnlein_(Anemone_narcissiflora)_Bl%C3%BCten_nah.jpg",
-    "query": "Anemone narcissiflora"
-  },
-  "kurumayuri": {
-    "file": "assets/images/creatures/kurumayuri.jpg",
-    "title": "File:Lilium_medeoloides_220708.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Dono (talk)",
-    "page": "https://commons.wikimedia.org/wiki/File:Lilium_medeoloides_220708.JPG",
-    "query": "Lilium medeoloides"
-  },
-  "enaga": {
-    "file": "assets/images/creatures/enaga.jpg",
-    "title": "File:Довгохвоста_2.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Ігор Червоненко",
-    "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%B2%D0%B3%D0%BE%D1%85%D0%B2%D0%BE%D1%81%D1%82%D0%B0_2.jpg",
-    "query": "Aegithalos caudatus"
-  },
-  "ooruri": {
-    "file": "assets/images/creatures/ooruri.jpg",
-    "title": "File:Wiki-c-ooruri.jpg",
-    "license": "Public domain",
-    "author": "Tokumi Ohsaka",
-    "page": "https://commons.wikimedia.org/wiki/File:Wiki-c-ooruri.jpg",
-    "query": "Cyanoptila cyanomelana"
-  },
-  "kibitaki": {
-    "file": "assets/images/creatures/kibitaki.jpg",
-    "title": "File:Narcissus_Flycatcher-cropped.jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Kuribo",
-    "page": "https://commons.wikimedia.org/wiki/File:Narcissus_Flycatcher-cropped.jpg",
-    "query": "Ficedula narcissina"
-  },
-  "hoojiro": {
-    "file": "assets/images/creatures/hoojiro.jpg",
-    "title": "File:Emberiza_cioides_male.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Emberiza_cioides_male.JPG",
-    "query": "Emberiza cioides"
-  },
-  "shime": {
-    "file": "assets/images/creatures/shime.jpg",
-    "title": "File:Hawfinch_(Coccothraustes_coccothraustes)_male_Drenthe.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Charles J. Sharp",
-    "page": "https://commons.wikimedia.org/wiki/File:Hawfinch_(Coccothraustes_coccothraustes)_male_Drenthe.jpg",
-    "query": "Coccothraustes coccothraustes"
-  },
-  "kawarahiwa": {
-    "file": "assets/images/creatures/kawarahiwa.jpg",
-    "title": "File:Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_(23026479292).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Francesco Veronesi from Italy",
-    "page": "https://commons.wikimedia.org/wiki/File:Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_(23026479292).jpg",
-    "query": "Chloris sinica"
-  },
-  "tsugumi": {
-    "file": "assets/images/creatures/tsugumi.jpg",
-    "title": "File:Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_(cropped).jpeg",
-    "license": "CC BY 4.0",
-    "author": "Forest Botial-Jarvis",
-    "page": "https://commons.wikimedia.org/wiki/File:Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_(cropped).jpeg",
-    "query": "Turdus eunomus"
-  },
-  "shirohara": {
-    "file": "assets/images/creatures/shirohara.jpg",
-    "title": "File:Pale_Thrush_-_Taiwan_S4E8071_(17027483687).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Francesco Veronesi from Italy",
-    "page": "https://commons.wikimedia.org/wiki/File:Pale_Thrush_-_Taiwan_S4E8071_(17027483687).jpg",
-    "query": "Turdus pallidus"
-  },
-  "akahara": {
-    "file": "assets/images/creatures/akahara.jpg",
-    "title": "File:Akahara_08f2218.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "ISAKA Yoji ( cory )[ Recent works / Other works ]",
-    "page": "https://commons.wikimedia.org/wiki/File:Akahara_08f2218.jpg",
-    "query": "Turdus chrysolaus"
-  },
-  "kakesu": {
-    "file": "assets/images/creatures/kakesu.jpg",
-    "title": "File:Garrulus_glandarius_1_Luc_Viatour.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Luc Viatour",
-    "page": "https://commons.wikimedia.org/wiki/File:Garrulus_glandarius_1_Luc_Viatour.jpg",
-    "query": "Garrulus glandarius"
-  },
-  "ooakagera": {
-    "file": "assets/images/creatures/ooakagera.jpg",
-    "title": "File:Dendrocopos_leucotos_2.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Alastair Rae",
-    "page": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucotos_2.jpg",
-    "query": "Dendrocopos leucotos"
-  },
-  "akagera": {
-    "file": "assets/images/creatures/akagera.jpg",
-    "title": "File:Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Charles J. Sharp",
-    "page": "https://commons.wikimedia.org/wiki/File:Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg",
-    "query": "Dendrocopos major"
-  },
-  "kogera": {
-    "file": "assets/images/creatures/kogera.jpg",
-    "title": "File:Japanese_pygmy_woodpecker_in_Sakai,_Osaka,_February_2016.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Japanese_pygmy_woodpecker_in_Sakai,_Osaka,_February_2016.jpg",
-    "query": "Yungipicus kizuki"
-  },
-  "fukurou": {
-    "file": "assets/images/creatures/fukurou.jpg",
-    "title": "File:Strix_uralensis,_Kotka,_Finland_1.jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Jyrki Salmi from Finland",
-    "page": "https://commons.wikimedia.org/wiki/File:Strix_uralensis,_Kotka,_Finland_1.jpg",
-    "query": "Strix uralensis"
-  },
-  "ooshima_fukurou": {
-    "file": "assets/images/creatures/ooshima_fukurou.jpg",
-    "title": "File:Bubo_blakistoni.jpg",
-    "license": "Public domain",
-    "author": "Tokumi",
-    "page": "https://commons.wikimedia.org/wiki/File:Bubo_blakistoni.jpg",
-    "query": "Bubo blakistoni"
-  },
-  "ootaka": {
-    "file": "assets/images/creatures/ootaka.jpg",
-    "title": "File:Northern_Goshawk_ad_M2.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Norbert Kenntner, Berlin",
-    "page": "https://commons.wikimedia.org/wiki/File:Northern_Goshawk_ad_M2.jpg",
-    "query": "Accipiter gentilis"
-  },
-  "inuwashi": {
-    "file": "assets/images/creatures/inuwashi.jpg",
-    "title": "File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Giles Laurent",
-    "page": "https://commons.wikimedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
-    "query": "Aquila chrysaetos"
-  },
-  "hayabusa": {
-    "file": "assets/images/creatures/hayabusa.jpg",
-    "title": "File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Mykola Swarnyk",
-    "page": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
-    "query": "Falco peregrinus"
-  },
-  "kumataka": {
-    "file": "assets/images/creatures/kumataka.jpg",
-    "title": "File:Mountain_Hawk_Eagle_Mahananda_WLS_West_Bengal_India_07.12.2015.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Dibyendu Ash",
-    "page": "https://commons.wikimedia.org/wiki/File:Mountain_Hawk_Eagle_Mahananda_WLS_West_Bengal_India_07.12.2015.jpg",
-    "query": "Nisaetus nipalensis"
-  },
-  "yamadori": {
-    "file": "assets/images/creatures/yamadori.jpg",
-    "title": "File:Syrmaticus_soemmerringii_s1c.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Syrmaticus_soemmerringii_s1c.jpg",
-    "query": "Syrmaticus soemmerringii"
-  },
-  "kiji": {
-    "file": "assets/images/creatures/kiji.jpg",
-    "title": "File:Phasianus_versicolor_in_Japan.JPG",
-    "license": "CC BY-SA 3.0",
-    "author": "Alpsdake",
-    "page": "https://commons.wikimedia.org/wiki/File:Phasianus_versicolor_in_Japan.JPG",
-    "query": "Phasianus versicolor"
-  },
-  "hototogisu": {
-    "file": "assets/images/creatures/hototogisu.jpg",
-    "title": "File:Lesser_Cuckoo_by_Tisha_Mukherjee_16.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Tisha Mukherjee",
-    "page": "https://commons.wikimedia.org/wiki/File:Lesser_Cuckoo_by_Tisha_Mukherjee_16.jpg",
-    "query": "Cuculus poliocephalus"
-  },
-  "kakkou": {
-    "file": "assets/images/creatures/kakkou.jpg",
-    "title": "File:Cuckoo_(51169010335).jpg",
-    "license": "CC BY 2.0",
-    "author": "Andy  Morffew from Itchen Abbas, Hampshire, UK",
-    "page": "https://commons.wikimedia.org/wiki/File:Cuckoo_(51169010335).jpg",
-    "query": "Cuculus canorus"
-  },
-  "ooyoshikiri": {
-    "file": "assets/images/creatures/ooyoshikiri.jpg",
-    "title": "File:Oriental_Reed_Warbler_I_IMG_0246.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "J.M.Garg",
-    "page": "https://commons.wikimedia.org/wiki/File:Oriental_Reed_Warbler_I_IMG_0246.jpg",
-    "query": "Acrocephalus orientalis"
-  },
-  "kogamo": {
-    "file": "assets/images/creatures/kogamo.jpg",
-    "title": "File:Eurasian_teal_(Anas_crecca_crecca)_male_Qingshui.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Charles J. Sharp",
-    "page": "https://commons.wikimedia.org/wiki/File:Eurasian_teal_(Anas_crecca_crecca)_male_Qingshui.jpg",
-    "query": "Anas crecca"
-  },
-  "hidorigamo": {
-    "file": "assets/images/creatures/hidorigamo.jpg",
-    "title": "File:Eurasian_wigeon_in_Sakai,_Osaka,_February_2016.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Eurasian_wigeon_in_Sakai,_Osaka,_February_2016.jpg",
-    "query": "Mareca penelope"
-  },
-  "kinkurohajiro": {
-    "file": "assets/images/creatures/kinkurohajiro.jpg",
-    "title": "File:Tufted_Duck_09_05_2025_02.jpg",
-    "license": "CC BY 4.0",
-    "author": "Alexis Lours",
-    "page": "https://commons.wikimedia.org/wiki/File:Tufted_Duck_09_05_2025_02.jpg",
-    "query": "Aythya fuligula"
-  },
-  "oomizunagidori": {
-    "file": "assets/images/creatures/oomizunagidori.jpg",
-    "title": "File:Streaked_shearwater_sitting.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Kanachoro",
-    "page": "https://commons.wikimedia.org/wiki/File:Streaked_shearwater_sitting.jpg",
-    "query": "Calonectris leucomelas"
-  },
-  "kamome": {
-    "file": "assets/images/creatures/kamome.jpg",
-    "title": "File:Chroicocephalus_ridibundus_(summer).jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "Hans Hillewaert",
-    "page": "https://commons.wikimedia.org/wiki/File:Chroicocephalus_ridibundus_(summer).jpg",
-    "query": "Chroicocephalus ridibundus"
-  },
-  "ooseguro": {
-    "file": "assets/images/creatures/ooseguro.jpg",
-    "title": "File:Ooseguro-kamome.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "E-190",
-    "page": "https://commons.wikimedia.org/wiki/File:Ooseguro-kamome.jpg",
-    "query": "Larus schistisagus"
-  },
-  "ibisu": {
-    "file": "assets/images/creatures/ibisu.jpg",
-    "title": "File:Nipponia_nippon_77371852.jpg",
-    "license": "CC BY 4.0",
-    "author": "belvedere04",
-    "page": "https://commons.wikimedia.org/wiki/File:Nipponia_nippon_77371852.jpg",
-    "query": "Nipponia nippon"
-  },
-  "kounotori": {
-    "file": "assets/images/creatures/kounotori.jpg",
-    "title": "File:Kounotori_06f4471sv.jpg",
-    "license": "CC BY 2.1 jp",
-    "author": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Kounotori_06f4471sv.jpg",
-    "query": "Ciconia boyciana"
-  },
-  "tancho": {
-    "file": "assets/images/creatures/tancho.jpg",
-    "title": "File:Grus_japonensis_-Hokkaido,_Japan_-several-8_(1).jpg",
-    "license": "CC BY-SA 2.0",
-    "author": "Alastair Rae from London, United Kingdom",
-    "page": "https://commons.wikimedia.org/wiki/File:Grus_japonensis_-Hokkaido,_Japan_-several-8_(1).jpg",
-    "query": "Grus japonensis"
-  },
-  "shigi": {
-    "file": "assets/images/creatures/shigi.jpg",
-    "title": "File:Common_snipe_(Gallinago_gallinago)_2022.jpg",
-    "license": "CC BY 4.0",
-    "author": "TRinaud",
-    "page": "https://commons.wikimedia.org/wiki/File:Common_snipe_(Gallinago_gallinago)_2022.jpg",
-    "query": "Gallinago gallinago"
-  },
-  "ban": {
-    "file": "assets/images/creatures/ban.jpg",
-    "title": "File:Common_moorhen_(Gallinula_chloropus)_France.jpg",
-    "license": "CC BY 4.0",
-    "author": "Alexis Lours",
-    "page": "https://commons.wikimedia.org/wiki/File:Common_moorhen_(Gallinula_chloropus)_France.jpg",
-    "query": "Gallinula chloropus"
-  },
-  "akashoubin": {
-    "file": "assets/images/creatures/akashoubin.jpg",
-    "title": "File:Ruddy_Kingfisher_0A2A7077.jpg",
-    "license": "CC BY-SA 3.0",
-    "author": "JJ Harrison",
-    "page": "https://commons.wikimedia.org/wiki/File:Ruddy_Kingfisher_0A2A7077.jpg",
-    "query": "Halcyon coromanda"
-  },
-  "karasu": {
-    "file": "assets/images/creatures/karasu.jpg",
-    "title": "File:Jungle_crow_(Close-up_of_the_head_area),_Tennōji_Park,_Osaka_II.jpg",
-    "license": "CC BY-SA 4.0",
-    "author": "Laitche",
-    "page": "https://commons.wikimedia.org/wiki/File:Jungle_crow_(Close-up_of_the_head_area),_Tenn%C5%8Dji_Park,_Osaka_II.jpg",
-    "query": "Corvus macrorhynchos"
-  }
+ "sakura": {
+  "file": "assets/images/creatures/sakura.jpg",
+  "title": "File:2020-04-07_Prunus_×_yedoensis_Tambasasayama,Hyogo(丹波篠山市篠山川のソメイヨシノ)DSCF2986☆彡.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "松岡明芳",
+  "page": "https://commons.wikimedia.org/wiki/File:2020-04-07_Prunus_%C3%97_yedoensis_Tambasasayama,Hyogo(%E4%B8%B9%E6%B3%A2%E7%AF%A0%E5%B1%B1%E5%B8%82%E7%AF%A0%E5%B1%B1%E5%B7%9D%E3%81%AE%E3%82%BD%E3%83%A1%E3%82%A4%E3%83%A8%E3%82%B7%E3%83%8E)DSCF2986%E2%98%86%E5%BD%A1.jpg",
+  "query": "Prunus × yedoensis"
+ },
+ "konara": {
+  "file": "assets/images/creatures/konara.jpg",
+  "title": "File:Quercus_serrata3.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Quercus_serrata3.jpg",
+  "query": "Quercus serrata"
+ },
+ "sugi": {
+  "file": "assets/images/creatures/sugi.jpg",
+  "title": "File:Fukaura_town_kitakanegasawa_seki_no_kame-sugi.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "ja:利用者:あおもりくま",
+  "page": "https://commons.wikimedia.org/wiki/File:Fukaura_town_kitakanegasawa_seki_no_kame-sugi.jpg",
+  "query": "Cryptomeria japonica"
+ },
+ "ajisai": {
+  "file": "assets/images/creatures/ajisai.jpg",
+  "title": "File:(Natural)_Hydrangea_macrophylla,_Iwafune,_Isumi,_Chiba,_Japan_2.jpg",
+  "license": "CC BY 4.0",
+  "author": "belvedere04",
+  "page": "https://commons.wikimedia.org/wiki/File:(Natural)_Hydrangea_macrophylla,_Iwafune,_Isumi,_Chiba,_Japan_2.jpg",
+  "query": "Hydrangea macrophylla"
+ },
+ "tanpopo": {
+  "file": "assets/images/creatures/tanpopo.jpg",
+  "title": "File:DandelionFlower.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Greg Hume",
+  "page": "https://commons.wikimedia.org/wiki/File:DandelionFlower.jpg",
+  "query": "Taraxacum"
+ },
+ "shida": {
+  "file": "assets/images/creatures/shida.jpg",
+  "title": "File:Adelaarsvaren_planten_Pteridium_aquilinum.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Rasbak",
+  "page": "https://commons.wikimedia.org/wiki/File:Adelaarsvaren_planten_Pteridium_aquilinum.jpg",
+  "query": "Pteridium aquilinum"
+ },
+ "nemunoki": {
+  "file": "assets/images/creatures/nemunoki.jpg",
+  "title": "File:2018-07-08_11_10_27_Rosea_Mimosa_blossoms_along_the_ramp_from_southbound_Interstate_95_(New_Jersey_Turnpike_Eastern_Spur)_to_westbound_Interstate_280_(Essex_Freeway)_in_the_New_Jersey_Meadowlands,_within_Kearny,_Hudson_County,_New_Jersey.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Famartin",
+  "page": "https://commons.wikimedia.org/wiki/File:2018-07-08_11_10_27_Rosea_Mimosa_blossoms_along_the_ramp_from_southbound_Interstate_95_(New_Jersey_Turnpike_Eastern_Spur)_to_westbound_Interstate_280_(Essex_Freeway)_in_the_New_Jersey_Meadowlands,_within_Kearny,_Hudson_County,_New_Jersey.jpg",
+  "query": "Albizia julibrissin"
+ },
+ "hasu": {
+  "file": "assets/images/creatures/hasu.jpg",
+  "title": "File:Sacred_lotus_Nelumbo_nucifera.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "T.Voekler",
+  "page": "https://commons.wikimedia.org/wiki/File:Sacred_lotus_Nelumbo_nucifera.jpg",
+  "query": "Nelumbo nucifera"
+ },
+ "mangrove": {
+  "file": "assets/images/creatures/mangrove.jpg",
+  "title": "File:Rhizopora_stylosa_Found_in_Mangrove_of_Cilintang,_Taman_Nasional_Ujung_Kulon,_Banten.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Putra Mahanaim Tampubolon",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhizopora_stylosa_Found_in_Mangrove_of_Cilintang,_Taman_Nasional_Ujung_Kulon,_Banten.jpg",
+  "query": "Rhizophora stylosa"
+ },
+ "yamamo": {
+  "file": "assets/images/creatures/yamamo.jpg",
+  "title": "File:Yangmei_grown_in_Fremont,_California.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Lucuscal",
+  "page": "https://commons.wikimedia.org/wiki/File:Yangmei_grown_in_Fremont,_California.jpg",
+  "query": "Morella rubra"
+ },
+ "fuji": {
+  "file": "assets/images/creatures/fuji.jpg",
+  "title": "File:Wisteria_floribunda5.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Raul654",
+  "page": "https://commons.wikimedia.org/wiki/File:Wisteria_floribunda5.jpg",
+  "query": "Wisteria floribunda"
+ },
+ "suzume": {
+  "file": "assets/images/creatures/suzume.jpg",
+  "title": "File:Tree_Sparrow_August_2007_Osaka_Japan.jpg",
+  "license": "Public domain",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Tree_Sparrow_August_2007_Osaka_Japan.jpg",
+  "query": "Passer montanus"
+ },
+ "shijukara": {
+  "file": "assets/images/creatures/shijukara.jpg",
+  "title": "File:Cinereous_tit_(Parus_cinereus)_Photograph_by_Shantanu_Kuveskar.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Shantanu Kuveskar",
+  "page": "https://commons.wikimedia.org/wiki/File:Cinereous_tit_(Parus_cinereus)_Photograph_by_Shantanu_Kuveskar.jpg",
+  "query": "Parus minor"
+ },
+ "hiyodori": {
+  "file": "assets/images/creatures/hiyodori.jpg",
+  "title": "File:The_brown-eared_bulbul_after_playing_with_water.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:The_brown-eared_bulbul_after_playing_with_water.jpg",
+  "query": "Hypsipetes amaurotis"
+ },
+ "kawasemi": {
+  "file": "assets/images/creatures/kawasemi.jpg",
+  "title": "File:Alcedo_atthis_-England-8_(cropped).jpg",
+  "license": "CC BY 2.0",
+  "author": "Tony Wood",
+  "page": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-England-8_(cropped).jpg",
+  "query": "Alcedo atthis"
+ },
+ "kosagi": {
+  "file": "assets/images/creatures/kosagi.jpg",
+  "title": "File:Little_egret_(Egretta_garzetta)_Photograph_by_Shantanu_Kuveskar.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Shantanu Kuveskar",
+  "page": "https://commons.wikimedia.org/wiki/File:Little_egret_(Egretta_garzetta)_Photograph_by_Shantanu_Kuveskar.jpg",
+  "query": "Egretta garzetta"
+ },
+ "kaitsuburi": {
+  "file": "assets/images/creatures/kaitsuburi.jpg",
+  "title": "File:Little_grebe_Zwergtaucher.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "Andreas Trepte",
+  "page": "https://commons.wikimedia.org/wiki/File:Little_grebe_Zwergtaucher.jpg",
+  "query": "Tachybaptus ruficollis"
+ },
+ "tsubame": {
+  "file": "assets/images/creatures/tsubame.jpg",
+  "title": "File:Rauchschwalbe_Hirundo_rustica.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "Andreas Trepte",
+  "page": "https://commons.wikimedia.org/wiki/File:Rauchschwalbe_Hirundo_rustica.jpg",
+  "query": "Hirundo rustica"
+ },
+ "aosagi": {
+  "file": "assets/images/creatures/aosagi.jpg",
+  "title": "File:Il_pescatore_solitario.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Giacomo Cimino (foto.giacomocimino.workers.dev · @giacomociminoph)",
+  "page": "https://commons.wikimedia.org/wiki/File:Il_pescatore_solitario.jpg",
+  "query": "Ardea cinerea"
+ },
+ "onaga": {
+  "file": "assets/images/creatures/onaga.jpg",
+  "title": "File:Cyanopica_cyanus_458637382.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Zinogre",
+  "page": "https://commons.wikimedia.org/wiki/File:Cyanopica_cyanus_458637382.jpg",
+  "query": "Cyanopica cyanus"
+ },
+ "kijibato": {
+  "file": "assets/images/creatures/kijibato.jpg",
+  "title": "File:2026-08-27_Streptopelia_orientalis_in_Chitose.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "J. Patrick Fischer",
+  "page": "https://commons.wikimedia.org/wiki/File:2026-08-27_Streptopelia_orientalis_in_Chitose.jpg",
+  "query": "Streptopelia orientalis"
+ },
+ "karugamo": {
+  "file": "assets/images/creatures/karugamo.jpg",
+  "title": "File:Anas_zonorhyncha_swimming.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Anas_zonorhyncha_swimming.jpg",
+  "query": "Anas zonorhyncha"
+ },
+ "kawarabato": {
+  "file": "assets/images/creatures/kawarabato.jpg",
+  "title": "File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg",
+  "license": "CC BY 4.0",
+  "author": "william_stephens",
+  "page": "https://commons.wikimedia.org/wiki/File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg",
+  "query": "Columba livia"
+ },
+ "koi": {
+  "file": "assets/images/creatures/koi.jpg",
+  "title": "File:Cyprinus_carpio_2008_G1_(cropped).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "George Chernilevsky",
+  "page": "https://commons.wikimedia.org/wiki/File:Cyprinus_carpio_2008_G1_(cropped).jpg",
+  "query": "Cyprinus carpio"
+ },
+ "funa": {
+  "file": "assets/images/creatures/funa.jpg",
+  "title": "File:Carassius_cuvieri_by_OpenCage.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Carassius_cuvieri_by_OpenCage.jpg",
+  "query": "Carassius cuvieri"
+ },
+ "medaka": {
+  "file": "assets/images/creatures/medaka.jpg",
+  "title": "File:Oryzias_latipes(Hamamatsu,Shizuoka,Japan,2007)-1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Seotaro",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryzias_latipes(Hamamatsu,Shizuoka,Japan,2007)-1.jpg",
+  "query": "Oryzias latipes"
+ },
+ "yamame": {
+  "file": "assets/images/creatures/yamame.jpg",
+  "title": "File:Cherry_salmon.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Jony Cooper",
+  "page": "https://commons.wikimedia.org/wiki/File:Cherry_salmon.jpg",
+  "query": "Oncorhynchus masou"
+ },
+ "dojo": {
+  "file": "assets/images/creatures/dojo.jpg",
+  "title": "File:Misgurnus_anguillicaudatus.jpg",
+  "license": "Public domain",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Misgurnus_anguillicaudatus.jpg",
+  "query": "Misgurnus anguillicaudatus"
+ },
+ "donko": {
+  "file": "assets/images/creatures/donko.jpg",
+  "title": "File:Donko071007-2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "ふうけ",
+  "page": "https://commons.wikimedia.org/wiki/File:Donko071007-2.jpg",
+  "query": "Odontobutis obscura"
+ },
+ "unagi": {
+  "file": "assets/images/creatures/unagi.jpg",
+  "title": "File:Anguilla_japonica.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "opencage",
+  "page": "https://commons.wikimedia.org/wiki/File:Anguilla_japonica.jpg",
+  "query": "Anguilla japonica"
+ },
+ "bluegill": {
+  "file": "assets/images/creatures/bluegill.jpg",
+  "title": "File:Bluegill_(cropped).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Paleo1954",
+  "page": "https://commons.wikimedia.org/wiki/File:Bluegill_(cropped).jpg",
+  "query": "Lepomis macrochirus"
+ },
+ "magochi": {
+  "file": "assets/images/creatures/magochi.jpg",
+  "title": "File:Platycephalus_indicusFB.png",
+  "license": "CC BY 3.0",
+  "author": "Ibrahim Daas",
+  "page": "https://commons.wikimedia.org/wiki/File:Platycephalus_indicusFB.png",
+  "query": "Platycephalus indicus"
+ },
+ "kumanomi": {
+  "file": "assets/images/creatures/kumanomi.jpg",
+  "title": "File:Clown_fish_in_the_Andaman_Coral_Reef.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Ritiks",
+  "page": "https://commons.wikimedia.org/wiki/File:Clown_fish_in_the_Andaman_Coral_Reef.jpg",
+  "query": "Amphiprion ocellaris"
+ },
+ "chochouchakuo": {
+  "file": "assets/images/creatures/chochouchakuo.jpg",
+  "title": "File:Oriental_butterflyfish.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "R.horibe",
+  "page": "https://commons.wikimedia.org/wiki/File:Oriental_butterflyfish.jpg",
+  "query": "Chaetodon auripes"
+ },
+ "suiren": {
+  "file": "assets/images/creatures/suiren.jpg",
+  "title": "File:Nymphaea_alba.001_-_Breendonk.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Fernando Losada Rodríguez",
+  "page": "https://commons.wikimedia.org/wiki/File:Nymphaea_alba.001_-_Breendonk.jpg",
+  "query": "Nymphaea"
+ },
+ "mejina": {
+  "file": "assets/images/creatures/mejina.jpg",
+  "title": "File:Girella_fimbriata.jpg",
+  "license": "Public domain",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Girella_fimbriata.jpg",
+  "query": "Girella"
+ },
+ "ume": {
+  "file": "assets/images/creatures/ume.jpg",
+  "title": "File:Prunus_mume.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Kakidai",
+  "page": "https://commons.wikimedia.org/wiki/File:Prunus_mume.JPG",
+  "query": "Prunus mume"
+ },
+ "tsubaki": {
+  "file": "assets/images/creatures/tsubaki.jpg",
+  "title": "File:Camellia_japonica_NBG.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "PumpkinSky",
+  "page": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_NBG.jpg",
+  "query": "Camellia japonica"
+ },
+ "ayame": {
+  "file": "assets/images/creatures/ayame.jpg",
+  "title": "File:Iris_sanguinea.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Iris_sanguinea.JPG",
+  "query": "Iris sanguinea"
+ },
+ "susuki": {
+  "file": "assets/images/creatures/susuki.jpg",
+  "title": "File:Japanese_pampas_grass_ススキの穂波PB080105.jpg",
+  "license": "CC BY 3.0",
+  "author": "松岡明芳",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_pampas_grass_%E3%82%B9%E3%82%B9%E3%82%AD%E3%81%AE%E7%A9%82%E6%B3%A2PB080105.jpg",
+  "query": "Miscanthus sinensis"
+ },
+ "higanbana": {
+  "file": "assets/images/creatures/higanbana.jpg",
+  "title": "File:Lycoris_radiata_Higanbana_in_a_woods.jpg",
+  "license": "CC BY 2.0",
+  "author": "Blue Lotus",
+  "page": "https://commons.wikimedia.org/wiki/File:Lycoris_radiata_Higanbana_in_a_woods.jpg",
+  "query": "Lycoris radiata"
+ },
+ "icho": {
+  "file": "assets/images/creatures/icho.jpg",
+  "title": "File:GINKGOBAUM-2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "EecherplazGinkgo06.jpg: Cayambe\nderivative work: Ginkgotree (talk)",
+  "page": "https://commons.wikimedia.org/wiki/File:GINKGOBAUM-2.jpg",
+  "query": "Ginkgo biloba"
+ },
+ "momiji": {
+  "file": "assets/images/creatures/momiji.jpg",
+  "title": "File:Acer_palmatum0.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Kurt Stüber [1]",
+  "page": "https://commons.wikimedia.org/wiki/File:Acer_palmatum0.jpg",
+  "query": "Acer palmatum"
+ },
+ "kusunoki": {
+  "file": "assets/images/creatures/kusunoki.jpg",
+  "title": "File:Cinnamomum_camphora20050314.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora20050314.jpg",
+  "query": "Cinnamomum camphora"
+ },
+ "buna": {
+  "file": "assets/images/creatures/buna.jpg",
+  "title": "File:Fagus_crenata_in_Ogasayama_2010-10-17.jpg",
+  "license": "Public domain",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Fagus_crenata_in_Ogasayama_2010-10-17.jpg",
+  "query": "Fagus crenata"
+ },
+ "kuromatsu": {
+  "file": "assets/images/creatures/kuromatsu.jpg",
+  "title": "File:Pinus_thunbergii_Izu_Oshima.jpg",
+  "license": "CC BY 2.0",
+  "author": "Nikita from Russian Federation",
+  "page": "https://commons.wikimedia.org/wiki/File:Pinus_thunbergii_Izu_Oshima.jpg",
+  "query": "Pinus thunbergii"
+ },
+ "gama": {
+  "file": "assets/images/creatures/gama.jpg",
+  "title": "File:Bulrush_(Typha_latifolia)_(8139113636).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Peter O'Connor aka anemoneprojectors from Stevenage, United Kingdom",
+  "page": "https://commons.wikimedia.org/wiki/File:Bulrush_(Typha_latifolia)_(8139113636).jpg",
+  "query": "Typha latifolia"
+ },
+ "yoshi": {
+  "file": "assets/images/creatures/yoshi.jpg",
+  "title": "File:Reed_panicle_at_Brodalen_1.jpg",
+  "license": "CC0",
+  "author": "W.carter",
+  "page": "https://commons.wikimedia.org/wiki/File:Reed_panicle_at_Brodalen_1.jpg",
+  "query": "Phragmites australis"
+ },
+ "kohone": {
+  "file": "assets/images/creatures/kohone.jpg",
+  "title": "File:Nuphar_subintegerrimum1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Nuphar_subintegerrimum1.jpg",
+  "query": "Nuphar japonica"
+ },
+ "amamo": {
+  "file": "assets/images/creatures/amamo.jpg",
+  "title": "File:Zostera_marina_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07663.JPG",
+  "license": "CC0",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Zostera_marina_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07663.JPG",
+  "query": "Zostera marina"
+ },
+ "uguisu": {
+  "file": "assets/images/creatures/uguisu.jpg",
+  "title": "File:Cettia_diphone_(crying).JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Cettia_diphone_(crying).JPG",
+  "query": "Horornis diphone"
+ },
+ "mejiro": {
+  "file": "assets/images/creatures/mejiro.jpg",
+  "title": "File:Japanese_white-eye_at_Tennōji_Park_in_Osaka,_January_2016_III.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_white-eye_at_Tenn%C5%8Dji_Park_in_Osaka,_January_2016_III.jpg",
+  "query": "Zosterops japonicus"
+ },
+ "joubitaki": {
+  "file": "assets/images/creatures/joubitaki.jpg",
+  "title": "File:Daurian_redstart_at_Daisen_Park_in_Osaka,_January_2016.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Daurian_redstart_at_Daisen_Park_in_Osaka,_January_2016.jpg",
+  "query": "Phoenicurus auroreus"
+ },
+ "kisekirei": {
+  "file": "assets/images/creatures/kisekirei.jpg",
+  "title": "File:Gebirgsstelze_im_Geo-Naturpark_Bergstraße-Odenwald.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Herwig Winter",
+  "page": "https://commons.wikimedia.org/wiki/File:Gebirgsstelze_im_Geo-Naturpark_Bergstra%C3%9Fe-Odenwald.jpg",
+  "query": "Motacilla cinerea"
+ },
+ "hakusekirei": {
+  "file": "assets/images/creatures/hakusekirei.jpg",
+  "title": "File:20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg",
+  "license": "CC BY 2.0",
+  "author": "Jac. Janssen from BAARLO LB, NL",
+  "page": "https://commons.wikimedia.org/wiki/File:20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg",
+  "query": "Motacilla alba"
+ },
+ "kawau": {
+  "file": "assets/images/creatures/kawau.jpg",
+  "title": "File:2021-05-05_Phalacrocorax_carbo_carbo,_Killingworth_Lake,_Northumberland_1-1.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "MPF",
+  "page": "https://commons.wikimedia.org/wiki/File:2021-05-05_Phalacrocorax_carbo_carbo,_Killingworth_Lake,_Northumberland_1-1.jpg",
+  "query": "Phalacrocorax carbo"
+ },
+ "goisagi": {
+  "file": "assets/images/creatures/goisagi.jpg",
+  "title": "File:Nycticorax_nycticorax_457953189.jpg",
+  "license": "CC BY 4.0",
+  "author": "ramidos",
+  "page": "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_457953189.jpg",
+  "query": "Nycticorax nycticorax"
+ },
+ "daisagi": {
+  "file": "assets/images/creatures/daisagi.jpg",
+  "title": "File:Great_Egret_(Ardea_alba)_in_Breeding_Plumage,_Cape_May_County,_New_Jersey,_USA_(cropped).png",
+  "license": "CC BY-SA 4.0",
+  "author": "Chuck Homler (FocusOnWildlife.Me)",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_Egret_(Ardea_alba)_in_Breeding_Plumage,_Cape_May_County,_New_Jersey,_USA_(cropped).png",
+  "query": "Ardea alba"
+ },
+ "oshidori": {
+  "file": "assets/images/creatures/oshidori.jpg",
+  "title": "File:Pair_of_mandarin_ducks.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Francis C. Franklin",
+  "page": "https://commons.wikimedia.org/wiki/File:Pair_of_mandarin_ducks.jpg",
+  "query": "Aix galericulata"
+ },
+ "magamo": {
+  "file": "assets/images/creatures/magamo.jpg",
+  "title": "File:Anas_platyrhynchos_male_female_quadrat.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Lens",
+  "page": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg",
+  "query": "Anas platyrhynchos"
+ },
+ "tobi": {
+  "file": "assets/images/creatures/tobi.jpg",
+  "title": "File:Schwarzmilan.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Andreas Trepte",
+  "page": "https://commons.wikimedia.org/wiki/File:Schwarzmilan.jpg",
+  "query": "Milvus migrans"
+ },
+ "umineko": {
+  "file": "assets/images/creatures/umineko.jpg",
+  "title": "File:Laridae_in_Beijing_Zoo.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Laridae_in_Beijing_Zoo.JPG",
+  "query": "Larus crassirostris"
+ },
+ "yamagara": {
+  "file": "assets/images/creatures/yamagara.jpg",
+  "title": "File:Varied_tit_at_Tennōji_Park_in_Osaka,_January_2016.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Varied_tit_at_Tenn%C5%8Dji_Park_in_Osaka,_January_2016.jpg",
+  "query": "Sittiparus varius"
+ },
+ "misago": {
+  "file": "assets/images/creatures/misago.jpg",
+  "title": "File:Osprey_Perched_Snag_Heislerville.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Chuck Homler / Focus On Wildlife",
+  "page": "https://commons.wikimedia.org/wiki/File:Osprey_Perched_Snag_Heislerville.jpg",
+  "query": "Pandion haliaetus"
+ },
+ "oikawa": {
+  "file": "assets/images/creatures/oikawa.jpg",
+  "title": "File:Oikawa1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oikawa1.jpg",
+  "query": "Pale Chub"
+ },
+ "ugui": {
+  "file": "assets/images/creatures/ugui.jpg",
+  "title": "File:Tribolodon_hakonensis,_-Higashiyama_Zoo,_-Nov._2011_a.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "OpenCage",
+  "page": "https://commons.wikimedia.org/wiki/File:Tribolodon_hakonensis,_-Higashiyama_Zoo,_-Nov._2011_a.jpg",
+  "query": "Tribolodon hakonensis"
+ },
+ "tanago": {
+  "file": "assets/images/creatures/tanago.jpg",
+  "title": "File:Achilognathus_melanogaster_-_1856-1859_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ15000112_(cropped).tif",
+  "license": "Public domain",
+  "author": "Acta societatis scientiarum Indo-Neerlandica, VI tab. II",
+  "page": "https://commons.wikimedia.org/wiki/File:Achilognathus_melanogaster_-_1856-1859_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ15000112_(cropped).tif",
+  "query": "Acheilognathus melanogaster"
+ },
+ "namazu": {
+  "file": "assets/images/creatures/namazu.jpg",
+  "title": "File:Silurus.jpg",
+  "license": "CC BY 2.0",
+  "author": "rhosoi",
+  "page": "https://commons.wikimedia.org/wiki/File:Silurus.jpg",
+  "query": "Silurus asotus"
+ },
+ "bora": {
+  "file": "assets/images/creatures/bora.jpg",
+  "title": "File:Mújol_(Mugil_cephalus),_Parque_natural_de_la_Arrábida,_Portugal,_2021-09-09,_DD_25.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Diego Delso",
+  "page": "https://commons.wikimedia.org/wiki/File:M%C3%BAjol_(Mugil_cephalus),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2021-09-09,_DD_25.jpg",
+  "query": "Mugil cephalus"
+ },
+ "kurodai": {
+  "file": "assets/images/creatures/kurodai.jpg",
+  "title": "File:クロダイ.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Rakurakuda",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%AF%E3%83%AD%E3%83%80%E3%82%A4.jpg",
+  "query": "Acanthopagrus schlegelii"
+ },
+ "mebaru": {
+  "file": "assets/images/creatures/mebaru.jpg",
+  "title": "File:Sebastes_Inermis.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Daiju Azuma",
+  "page": "https://commons.wikimedia.org/wiki/File:Sebastes_Inermis.jpg",
+  "query": "Sebastes inermis"
+ },
+ "kasago": {
+  "file": "assets/images/creatures/kasago.jpg",
+  "title": "File:Sebastiscus_marmoratus.jpg",
+  "license": "Public domain",
+  "author": "H. Patterson",
+  "page": "https://commons.wikimedia.org/wiki/File:Sebastiscus_marmoratus.jpg",
+  "query": "Sebastiscus marmoratus"
+ },
+ "suzuki": {
+  "file": "assets/images/creatures/suzuki.jpg",
+  "title": "File:Suzuki201302.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Izuzuki",
+  "page": "https://commons.wikimedia.org/wiki/File:Suzuki201302.jpg",
+  "query": "Lateolabrax japonicus"
+ },
+ "mahaze": {
+  "file": "assets/images/creatures/mahaze.jpg",
+  "title": "File:Acanthogobius_flavimanus_Nakagawa.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Totti",
+  "page": "https://commons.wikimedia.org/wiki/File:Acanthogobius_flavimanus_Nakagawa.jpg",
+  "query": "Acanthogobius flavimanus"
+ },
+ "nijimasu": {
+  "file": "assets/images/creatures/nijimasu.jpg",
+  "title": "File:Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg",
+  "license": "Public domain",
+  "author": "Engbretson Eric, U.S. Fish and Wildlife Service",
+  "page": "https://commons.wikimedia.org/wiki/File:Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg",
+  "query": "Oncorhynchus mykiss"
+ },
+ "ayu": {
+  "file": "assets/images/creatures/ayu.jpg",
+  "title": "File:Sweetfish, Plecoglossus altivelis.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "OAS at Japanese Wikipedia",
+  "page": "https://commons.wikimedia.org/wiki/File:Sweetfish,_Plecoglossus_altivelis.jpg",
+  "query": "Plecoglossus altivelis"
+ },
+ "haimatsu": {
+  "file": "assets/images/creatures/haimatsu.jpg",
+  "title": "File:Pinus_pumila_fruits.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Pinus_pumila_fruits.JPG",
+  "query": "Pinus pumila"
+ },
+ "komakusa": {
+  "file": "assets/images/creatures/komakusa.jpg",
+  "title": "File:Dicentra_peregrina_Komakusa.jpg",
+  "license": "Public domain",
+  "author": "Akiyoshi's Room",
+  "page": "https://commons.wikimedia.org/wiki/File:Dicentra_peregrina_Komakusa.jpg",
+  "query": "Dicentra peregrina"
+ },
+ "shirabiso": {
+  "file": "assets/images/creatures/shirabiso.jpg",
+  "title": "File:Abies_veitchii.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_veitchii.JPG",
+  "query": "Abies veitchii"
+ },
+ "nikkokisuge": {
+  "file": "assets/images/creatures/nikkokisuge.jpg",
+  "title": "File:Hemerocallis_dumortieri_var._esculenta_03.jpg",
+  "license": "CC BY 3.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Hemerocallis_dumortieri_var._esculenta_03.jpg",
+  "query": "Hemerocallis dumortieri"
+ },
+ "raicho": {
+  "file": "assets/images/creatures/raicho.jpg",
+  "title": "File:Rock_ptarmigan_(Lagopus_muta_islandorum)_female_breeding_Botnsvatn.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "page": "https://commons.wikimedia.org/wiki/File:Rock_ptarmigan_(Lagopus_muta_islandorum)_female_breeding_Botnsvatn.jpg",
+  "query": "Lagopus muta"
+ },
+ "hoshigarasu": {
+  "file": "assets/images/creatures/hoshigarasu.jpg",
+  "title": "File:Nucifraga_caryocatactes_Davos_1.jpg",
+  "license": "CC BY 2.0",
+  "author": "kuhnmi",
+  "page": "https://commons.wikimedia.org/wiki/File:Nucifraga_caryocatactes_Davos_1.jpg",
+  "query": "Nucifraga caryocatactes"
+ },
+ "iwahibari": {
+  "file": "assets/images/creatures/iwahibari.jpg",
+  "title": "File:Alpine_accentor_saganta.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Paco Gómez from Castellón, Spain",
+  "page": "https://commons.wikimedia.org/wiki/File:Alpine_accentor_saganta.jpg",
+  "query": "Prunella collaris"
+ },
+ "rurubitaki": {
+  "file": "assets/images/creatures/rurubitaki.jpg",
+  "title": "File:Tarsiger_cyanurus.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "M.Nishimura",
+  "page": "https://commons.wikimedia.org/wiki/File:Tarsiger_cyanurus.jpg",
+  "query": "Tarsiger cyanurus"
+ },
+ "iwana": {
+  "file": "assets/images/creatures/iwana.jpg",
+  "title": "File:Salvelinus_leucomaenis_01.jpg",
+  "license": "CC BY 4.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Salvelinus_leucomaenis_01.jpg",
+  "query": "Salvelinus leucomaenis"
+ },
+ "yamazakura": {
+  "file": "assets/images/creatures/yamazakura.jpg",
+  "title": "File:Branches_of_Cerasus_jamasakura_at_Mount_Obukuma_Saga.JPG",
+  "license": "CC BY-SA 4.0",
+  "author": "Pekachu",
+  "page": "https://commons.wikimedia.org/wiki/File:Branches_of_Cerasus_jamasakura_at_Mount_Obukuma_Saga.JPG",
+  "query": "Prunus jamasakura"
+ },
+ "keyaki": {
+  "file": "assets/images/creatures/keyaki.jpg",
+  "title": "File:Zelkova_serrata_Noma_keyaki01.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "ja:User:Miya",
+  "page": "https://commons.wikimedia.org/wiki/File:Zelkova_serrata_Noma_keyaki01.jpg",
+  "query": "Zelkova serrata"
+ },
+ "kunugi": {
+  "file": "assets/images/creatures/kunugi.jpg",
+  "title": "File:Lasdon_Arboretum_-_Quercus_acutissima_-_IMG_1516.jpg",
+  "license": "Public domain",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Lasdon_Arboretum_-_Quercus_acutissima_-_IMG_1516.jpg",
+  "query": "Quercus acutissima"
+ },
+ "shirakashi": {
+  "file": "assets/images/creatures/shirakashi.jpg",
+  "title": "File:Chinese_evergreen_oak_(Quercus_myrsinifolia)_(22245673008).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "harum.koh from Kobe city, Japan",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese_evergreen_oak_(Quercus_myrsinifolia)_(22245673008).jpg",
+  "query": "Quercus myrsinifolia"
+ },
+ "sudajii": {
+  "file": "assets/images/creatures/sudajii.jpg",
+  "title": "File:Castanopsis_sieboldii2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Castanopsis_sieboldii2.jpg",
+  "query": "Castanopsis sieboldii"
+ },
+ "tabunoki": {
+  "file": "assets/images/creatures/tabunoki.jpg",
+  "title": "File:Machilus_thunbergii_in_Hiroshima_Castle.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "そらみみ",
+  "page": "https://commons.wikimedia.org/wiki/File:Machilus_thunbergii_in_Hiroshima_Castle.jpg",
+  "query": "Machilus thunbergii"
+ },
+ "yamaboushi": {
+  "file": "assets/images/creatures/yamaboushi.jpg",
+  "title": "File:Cornus_kousa_img_2066.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Henryhartley at English Wikipedia",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornus_kousa_img_2066.jpg",
+  "query": "Cornus kousa"
+ },
+ "mizuki": {
+  "file": "assets/images/creatures/mizuki.jpg",
+  "title": "File:Cornus_controversa_'variegata'_-_NBGB_-_IMG_4246.JPG",
+  "license": "Public domain",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornus_controversa_%27variegata%27_-_NBGB_-_IMG_4246.JPG",
+  "query": "Cornus controversa"
+ },
+ "kobushi": {
+  "file": "assets/images/creatures/kobushi.jpg",
+  "title": "File:Magnolia_kobus_borealis.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Bruce Marlin",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnolia_kobus_borealis.jpg",
+  "query": "Magnolia kobus"
+ },
+ "hakumokuren": {
+  "file": "assets/images/creatures/hakumokuren.jpg",
+  "title": "File:Yulan_1.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "The original uploader was Yongxinge at English Wikipedia.",
+  "page": "https://commons.wikimedia.org/wiki/File:Yulan_1.JPG",
+  "query": "Magnolia denudata"
+ },
+ "sarusuberi": {
+  "file": "assets/images/creatures/sarusuberi.jpg",
+  "title": "File:Extremosa_(Lagerstroemia_indica)_em_um_fim_de_tarde_em_Bagé-RS_-_55013179934.jpg",
+  "license": "CC BY 4.0",
+  "author": "Gabriel Collares",
+  "page": "https://commons.wikimedia.org/wiki/File:Extremosa_(Lagerstroemia_indica)_em_um_fim_de_tarde_em_Bag%C3%A9-RS_-_55013179934.jpg",
+  "query": "Lagerstroemia indica"
+ },
+ "kinmokusei": {
+  "file": "assets/images/creatures/kinmokusei.jpg",
+  "title": "File:Osmanthus_fragrans_(orange_flowers).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Laitr Keiows",
+  "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_(orange_flowers).jpg",
+  "query": "Osmanthus fragrans"
+ },
+ "yamatsutsuji": {
+  "file": "assets/images/creatures/yamatsutsuji.jpg",
+  "title": "File:Rhododendron_kaempferi_(Torch_Azalea)_(26922724613).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Plant Image Library",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_(Torch_Azalea)_(26922724613).jpg",
+  "query": "Rhododendron kaempferi"
+ },
+ "mitsubatsutsuji": {
+  "file": "assets/images/creatures/mitsubatsutsuji.jpg",
+  "title": "File:Rhododendron_dilatatum_forma_leucanthum_(34123220456).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Plant Image Library from Boston, USA",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_dilatatum_forma_leucanthum_(34123220456).jpg",
+  "query": "Rhododendron dilatatum"
+ },
+ "yamabuki": {
+  "file": "assets/images/creatures/yamabuki.jpg",
+  "title": "File:Afbeelding-063-Kerria_japonica.tif",
+  "license": "Public domain",
+  "author": "Abraham Jacobus Wendel",
+  "page": "https://commons.wikimedia.org/wiki/File:Afbeelding-063-Kerria_japonica.tif",
+  "query": "Kerria japonica"
+ },
+ "yamahagi": {
+  "file": "assets/images/creatures/yamahagi.jpg",
+  "title": "File:Lespedeza_ja01.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "user:Miya.m",
+  "page": "https://commons.wikimedia.org/wiki/File:Lespedeza_ja01.jpg",
+  "query": "Lespedeza bicolor"
+ },
+ "enoki": {
+  "file": "assets/images/creatures/enoki.jpg",
+  "title": "File:Celtis_sinensis=Chinese_Hackberry.jpg",
+  "license": "CC BY 3.0",
+  "author": "Geographer (talk)",
+  "page": "https://commons.wikimedia.org/wiki/File:Celtis_sinensis%3DChinese_Hackberry.jpg",
+  "query": "Celtis sinensis"
+ },
+ "mukunoki": {
+  "file": "assets/images/creatures/mukunoki.jpg",
+  "title": "File:Aphananthe_aspera3.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Aphananthe_aspera3.jpg",
+  "query": "Aphananthe aspera"
+ },
+ "nanten": {
+  "file": "assets/images/creatures/nanten.jpg",
+  "title": "File:Nandina_domestica_cv_Otafukunante1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_cv_Otafukunante1.jpg",
+  "query": "Nandina domestica"
+ },
+ "aoki": {
+  "file": "assets/images/creatures/aoki.jpg",
+  "title": "File:Aucuba_japonica_Gold_Dust_NBG_LR.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "PumpkinSky",
+  "page": "https://commons.wikimedia.org/wiki/File:Aucuba_japonica_Gold_Dust_NBG_LR.jpg",
+  "query": "Aucuba japonica"
+ },
+ "hinoki": {
+  "file": "assets/images/creatures/hinoki.jpg",
+  "title": "File:大智寺_(岐阜市)-樹齢約700年の大ヒノキdaichiji008.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "杉山宣嗣",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%99%BA%E5%AF%BA_(%E5%B2%90%E9%98%9C%E5%B8%82)-%E6%A8%B9%E9%BD%A2%E7%B4%84700%E5%B9%B4%E3%81%AE%E5%A4%A7%E3%83%92%E3%83%8E%E3%82%ADdaichiji008.jpg",
+  "query": "Chamaecyparis obtusa"
+ },
+ "akamatsu": {
+  "file": "assets/images/creatures/akamatsu.jpg",
+  "title": "File:Pinus_densiflora_01.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Dalgial",
+  "page": "https://commons.wikimedia.org/wiki/File:Pinus_densiflora_01.JPG",
+  "query": "Pinus densiflora"
+ },
+ "karamatsu": {
+  "file": "assets/images/creatures/karamatsu.jpg",
+  "title": "File:Larix_kaempferi_Oze_NP.jpg",
+  "license": "CC BY 2.0",
+  "author": "Tanaka Juuyoh",
+  "page": "https://commons.wikimedia.org/wiki/File:Larix_kaempferi_Oze_NP.jpg",
+  "query": "Larix kaempferi"
+ },
+ "momi": {
+  "file": "assets/images/creatures/momi.jpg",
+  "title": "File:Abies_firma.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "No machine-readable author provided. Inti-sol~commonswiki assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_firma.JPG",
+  "query": "Abies firma"
+ },
+ "tsuga": {
+  "file": "assets/images/creatures/tsuga.jpg",
+  "title": "File:Abies_tsuja_SZ106.png",
+  "license": "Public domain",
+  "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_tsuja_SZ106.png",
+  "query": "Tsuga sieboldii"
+ },
+ "shirakanba": {
+  "file": "assets/images/creatures/shirakanba.jpg",
+  "title": "File:Betula_platyphylla_01-10-2005_14.55.52.JPG",
+  "license": "CC BY 2.5",
+  "author": "No machine-readable author provided. TeunSpaans assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Betula_platyphylla_01-10-2005_14.55.52.JPG",
+  "query": "Betula platyphylla"
+ },
+ "mizunara": {
+  "file": "assets/images/creatures/mizunara.jpg",
+  "title": "File:Japanese_Oak_18488959.jpg",
+  "license": "CC BY 4.0",
+  "author": "(c) belvedere04, some rights reserved (CC BY)",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Oak_18488959.jpg",
+  "query": "Quercus crispula"
+ },
+ "tochinoki": {
+  "file": "assets/images/creatures/tochinoki.jpg",
+  "title": "File:Aesculus_turbinata_7.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Qwert1234",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_turbinata_7.JPG",
+  "query": "Aesculus turbinata"
+ },
+ "ezomatsu": {
+  "file": "assets/images/creatures/ezomatsu.jpg",
+  "title": "File:Picea_jezoensis.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "No machine-readable author provided. Inti-sol~commonswiki assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Picea_jezoensis.JPG",
+  "query": "Picea jezoensis"
+ },
+ "todomatsu": {
+  "file": "assets/images/creatures/todomatsu.jpg",
+  "title": "File:Abies_sachalinensis1.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Inti-sol",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_sachalinensis1.JPG",
+  "query": "Abies sachalinensis"
+ },
+ "nanakamado": {
+  "file": "assets/images/creatures/nanakamado.jpg",
+  "title": "File:Sorbus_amabilis_-_Mount_Sanqing_2015.09.08_10-01-34.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Zhangzhugang",
+  "page": "https://commons.wikimedia.org/wiki/File:Sorbus_amabilis_-_Mount_Sanqing_2015.09.08_10-01-34.jpg",
+  "query": "Sorbus commixta"
+ },
+ "dakekanba": {
+  "file": "assets/images/creatures/dakekanba.jpg",
+  "title": "File:Betula_ermanii_(200612).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "E-190",
+  "page": "https://commons.wikimedia.org/wiki/File:Betula_ermanii_(200612).jpg",
+  "query": "Betula ermanii"
+ },
+ "shakunage": {
+  "file": "assets/images/creatures/shakunage.jpg",
+  "title": "File:Rhododendron_brachycarpum_ssp._brachycarpum_-_University_of_Copenhagen_Botanical_Garden_-_DSC08077.JPG",
+  "license": "CC0",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_brachycarpum_ssp._brachycarpum_-_University_of_Copenhagen_Botanical_Garden_-_DSC08077.JPG",
+  "query": "Rhododendron brachycarpum"
+ },
+ "katakuri": {
+  "file": "assets/images/creatures/katakuri.jpg",
+  "title": "File:Erythronium_japonicum_2006_005.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Kropsoq",
+  "page": "https://commons.wikimedia.org/wiki/File:Erythronium_japonicum_2006_005.jpg",
+  "query": "Erythronium japonicum"
+ },
+ "nirinsou": {
+  "file": "assets/images/creatures/nirinsou.jpg",
+  "title": "File:Anemone_flaccida_(Montage_s4).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Anemone_flaccida_(Montage_s4).jpg",
+  "query": "Anemone flaccida"
+ },
+ "sumire": {
+  "file": "assets/images/creatures/sumire.jpg",
+  "title": "File:Viola_mandshurica_(200704).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "E-190",
+  "page": "https://commons.wikimedia.org/wiki/File:Viola_mandshurica_(200704).jpg",
+  "query": "Viola mandshurica"
+ },
+ "renge": {
+  "file": "assets/images/creatures/renge.jpg",
+  "title": "File:Astragalus_sinicus_ja_Renge01.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Miya",
+  "page": "https://commons.wikimedia.org/wiki/File:Astragalus_sinicus_ja_Renge01.jpg",
+  "query": "Astragalus sinicus"
+ },
+ "hotarubukuro": {
+  "file": "assets/images/creatures/hotarubukuro.jpg",
+  "title": "File:Campanula_punctata_01.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Dalgial",
+  "page": "https://commons.wikimedia.org/wiki/File:Campanula_punctata_01.JPG",
+  "query": "Campanula punctata"
+ },
+ "yamayuri": {
+  "file": "assets/images/creatures/yamayuri.jpg",
+  "title": "File:Lilium_auratum1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Lilium_auratum1.jpg",
+  "query": "Lilium auratum"
+ },
+ "tsuyukusa": {
+  "file": "assets/images/creatures/tsuyukusa.jpg",
+  "title": "File:Tagblume_Commelina_communis_stack25_2019-08-05-RM-8050218-PSD.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Ermell",
+  "page": "https://commons.wikimedia.org/wiki/File:Tagblume_Commelina_communis_stack25_2019-08-05-RM-8050218-PSD.jpg",
+  "query": "Commelina communis"
+ },
+ "ominaeshi": {
+  "file": "assets/images/creatures/ominaeshi.jpg",
+  "title": "File:Patrinia_scabiosifolia_kz2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Krzysztof Ziarnek, Kenraiz",
+  "page": "https://commons.wikimedia.org/wiki/File:Patrinia_scabiosifolia_kz2.jpg",
+  "query": "Patrinia scabiosifolia"
+ },
+ "kikyo": {
+  "file": "assets/images/creatures/kikyo.jpg",
+  "title": "File:Platycodon_grandiflorum2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "www.biolib.de",
+  "page": "https://commons.wikimedia.org/wiki/File:Platycodon_grandiflorum2.jpg",
+  "query": "Platycodon grandiflorus"
+ },
+ "fujibakama": {
+  "file": "assets/images/creatures/fujibakama.jpg",
+  "title": "File:Eupatorium_japonicum_flower_leaf.jpg",
+  "license": "CC BY 2.5",
+  "author": "No machine-readable author provided. Koba-chan assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Eupatorium_japonicum_flower_leaf.jpg",
+  "query": "Eupatorium japonicum"
+ },
+ "nadeshiko": {
+  "file": "assets/images/creatures/nadeshiko.jpg",
+  "title": "File:Dianthus_superbus_140805a.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "Bernd Haynold",
+  "page": "https://commons.wikimedia.org/wiki/File:Dianthus_superbus_140805a.jpg",
+  "query": "Dianthus superbus"
+ },
+ "yomogi": {
+  "file": "assets/images/creatures/yomogi.jpg",
+  "title": "File:Mugwort_imported_from_iNaturalist_photo_180771010_on_26_August_2024.jpg",
+  "license": "CC BY 4.0",
+  "author": "(c) chiuluan, some rights reserved (CC BY)",
+  "page": "https://commons.wikimedia.org/wiki/File:Mugwort_imported_from_iNaturalist_photo_180771010_on_26_August_2024.jpg",
+  "query": "Artemisia indica"
+ },
+ "miyakozasa": {
+  "file": "assets/images/creatures/miyakozasa.jpg",
+  "title": "File:Sasa_nipponica1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Sasa_nipponica1.jpg",
+  "query": "Sasa nipponica"
+ },
+ "sakurasou": {
+  "file": "assets/images/creatures/sakurasou.jpg",
+  "title": "File:Primula_sieboldii_-_Berlin_Botanical_Garden_-_IMG_8646.JPG",
+  "license": "Public domain",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Primula_sieboldii_-_Berlin_Botanical_Garden_-_IMG_8646.JPG",
+  "query": "Primula sieboldii"
+ },
+ "rindo": {
+  "file": "assets/images/creatures/rindo.jpg",
+  "title": "File:Gentiana_scabra2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "~~",
+  "page": "https://commons.wikimedia.org/wiki/File:Gentiana_scabra2.jpg",
+  "query": "Gentiana scabra"
+ },
+ "kuzu": {
+  "file": "assets/images/creatures/kuzu.jpg",
+  "title": "File:Pueraria_montana_190929_05.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Schurdl",
+  "page": "https://commons.wikimedia.org/wiki/File:Pueraria_montana_190929_05.jpg",
+  "query": "Pueraria montana"
+ },
+ "hirugao": {
+  "file": "assets/images/creatures/hirugao.jpg",
+  "title": "File:Calystegia_pubescens1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Calystegia_pubescens1.jpg",
+  "query": "Calystegia pubescens"
+ },
+ "kakitsubata": {
+  "file": "assets/images/creatures/kakitsubata.jpg",
+  "title": "File:Kakitsubata1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Dennis L. Lindwall",
+  "page": "https://commons.wikimedia.org/wiki/File:Kakitsubata1.jpg",
+  "query": "Iris laevigata"
+ },
+ "mizubasho": {
+  "file": "assets/images/creatures/mizubasho.jpg",
+  "title": "File:Lysichite_blanc_à_Shiramine_(Hakusan)_-_08_-_2016-04-25.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "MathieuMD",
+  "page": "https://commons.wikimedia.org/wiki/File:Lysichite_blanc_%C3%A0_Shiramine_(Hakusan)_-_08_-_2016-04-25.jpg",
+  "query": "Lysichiton camtschatcensis"
+ },
+ "shidareyanagi": {
+  "file": "assets/images/creatures/shidareyanagi.jpg",
+  "title": "File:Château_de_Chenonceau_-_jardin_Russell-Page_(01).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Fab5669",
+  "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chenonceau_-_jardin_Russell-Page_(01).jpg",
+  "query": "Salix babylonica"
+ },
+ "nekoyanagi": {
+  "file": "assets/images/creatures/nekoyanagi.jpg",
+  "title": "File:Salix_gracilistyla.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "OpenCage.info",
+  "page": "https://commons.wikimedia.org/wiki/File:Salix_gracilistyla.jpg",
+  "query": "Salix gracilistyla"
+ },
+ "hamaboufu": {
+  "file": "assets/images/creatures/hamaboufu.jpg",
+  "title": "File:Glehnia_littoralis.jpg",
+  "license": "Public domain",
+  "author": "Pieria(Uploader and Photographer)",
+  "page": "https://commons.wikimedia.org/wiki/File:Glehnia_littoralis.jpg",
+  "query": "Glehnia littoralis"
+ },
+ "hamahirugao": {
+  "file": "assets/images/creatures/hamahirugao.jpg",
+  "title": "File:Calystegia_soldanella_060524wb.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "User:Strobilomyces",
+  "page": "https://commons.wikimedia.org/wiki/File:Calystegia_soldanella_060524wb.jpg",
+  "query": "Calystegia soldanella"
+ },
+ "hamanasu": {
+  "file": "assets/images/creatures/hamanasu.jpg",
+  "title": "File:Rosa_rugosa_Tokyo.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Qwert1234",
+  "page": "https://commons.wikimedia.org/wiki/File:Rosa_rugosa_Tokyo.JPG",
+  "query": "Rosa rugosa"
+ },
+ "hamayu": {
+  "file": "assets/images/creatures/hamayu.jpg",
+  "title": "File:Crinum_Lily.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Cody Hough",
+  "page": "https://commons.wikimedia.org/wiki/File:Crinum_Lily.JPG",
+  "query": "Crinum asiaticum"
+ },
+ "tsuwabuki": {
+  "file": "assets/images/creatures/tsuwabuki.jpg",
+  "title": "File:Farfugium_japonicum_cv._Aureo-maculata.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "J Brew",
+  "page": "https://commons.wikimedia.org/wiki/File:Farfugium_japonicum_cv._Aureo-maculata.jpg",
+  "query": "Farfugium japonicum"
+ },
+ "wakame": {
+  "file": "assets/images/creatures/wakame.jpg",
+  "title": "File:CSIRO_ScienceImage_952_Undaria_pinnatifida_Japanese_kelp.jpg",
+  "license": "CC BY 3.0",
+  "author": "division, CSIRO",
+  "page": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_952_Undaria_pinnatifida_Japanese_kelp.jpg",
+  "query": "Undaria pinnatifida"
+ },
+ "makonbu": {
+  "file": "assets/images/creatures/makonbu.jpg",
+  "title": "File:Dasima_2.jpg",
+  "license": "CC0",
+  "author": "freddy an",
+  "page": "https://commons.wikimedia.org/wiki/File:Dasima_2.jpg",
+  "query": "Saccharina japonica"
+ },
+ "hijiki": {
+  "file": "assets/images/creatures/hijiki.jpg",
+  "title": "File:Icones_of_Japanese_algae_(Pl._CXXVIII)_(8006311177).jpg",
+  "license": "Public domain",
+  "author": "Okamura, Kintaro",
+  "page": "https://commons.wikimedia.org/wiki/File:Icones_of_Japanese_algae_(Pl._CXXVIII)_(8006311177).jpg",
+  "query": "Sargassum fusiforme"
+ },
+ "kobaikeisou": {
+  "file": "assets/images/creatures/kobaikeisou.jpg",
+  "title": "File:Veratrum_stamineum_06.jpg",
+  "license": "CC BY 3.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Veratrum_stamineum_06.jpg",
+  "query": "Veratrum stamineum"
+ },
+ "hakusanichige": {
+  "file": "assets/images/creatures/hakusanichige.jpg",
+  "title": "File:Berghähnlein_(Anemone_narcissiflora)_Blüten_nah.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Heinz Staudacher",
+  "page": "https://commons.wikimedia.org/wiki/File:Bergh%C3%A4hnlein_(Anemone_narcissiflora)_Bl%C3%BCten_nah.jpg",
+  "query": "Anemone narcissiflora"
+ },
+ "kurumayuri": {
+  "file": "assets/images/creatures/kurumayuri.jpg",
+  "title": "File:Lilium_medeoloides_220708.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Dono (talk)",
+  "page": "https://commons.wikimedia.org/wiki/File:Lilium_medeoloides_220708.JPG",
+  "query": "Lilium medeoloides"
+ },
+ "enaga": {
+  "file": "assets/images/creatures/enaga.jpg",
+  "title": "File:Довгохвоста_2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Ігор Червоненко",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%B2%D0%B3%D0%BE%D1%85%D0%B2%D0%BE%D1%81%D1%82%D0%B0_2.jpg",
+  "query": "Aegithalos caudatus"
+ },
+ "ooruri": {
+  "file": "assets/images/creatures/ooruri.jpg",
+  "title": "File:Wiki-c-ooruri.jpg",
+  "license": "Public domain",
+  "author": "Tokumi Ohsaka",
+  "page": "https://commons.wikimedia.org/wiki/File:Wiki-c-ooruri.jpg",
+  "query": "Cyanoptila cyanomelana"
+ },
+ "kibitaki": {
+  "file": "assets/images/creatures/kibitaki.jpg",
+  "title": "File:Narcissus_Flycatcher-cropped.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Kuribo",
+  "page": "https://commons.wikimedia.org/wiki/File:Narcissus_Flycatcher-cropped.jpg",
+  "query": "Ficedula narcissina"
+ },
+ "hoojiro": {
+  "file": "assets/images/creatures/hoojiro.jpg",
+  "title": "File:Emberiza_cioides_male.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Emberiza_cioides_male.JPG",
+  "query": "Emberiza cioides"
+ },
+ "shime": {
+  "file": "assets/images/creatures/shime.jpg",
+  "title": "File:Hawfinch_(Coccothraustes_coccothraustes)_male_Drenthe.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "page": "https://commons.wikimedia.org/wiki/File:Hawfinch_(Coccothraustes_coccothraustes)_male_Drenthe.jpg",
+  "query": "Coccothraustes coccothraustes"
+ },
+ "kawarahiwa": {
+  "file": "assets/images/creatures/kawarahiwa.jpg",
+  "title": "File:Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_(23026479292).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Francesco Veronesi from Italy",
+  "page": "https://commons.wikimedia.org/wiki/File:Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_(23026479292).jpg",
+  "query": "Chloris sinica"
+ },
+ "tsugumi": {
+  "file": "assets/images/creatures/tsugumi.jpg",
+  "title": "File:Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_(cropped).jpeg",
+  "license": "CC BY 4.0",
+  "author": "Forest Botial-Jarvis",
+  "page": "https://commons.wikimedia.org/wiki/File:Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_(cropped).jpeg",
+  "query": "Turdus eunomus"
+ },
+ "shirohara": {
+  "file": "assets/images/creatures/shirohara.jpg",
+  "title": "File:Pale_Thrush_-_Taiwan_S4E8071_(17027483687).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Francesco Veronesi from Italy",
+  "page": "https://commons.wikimedia.org/wiki/File:Pale_Thrush_-_Taiwan_S4E8071_(17027483687).jpg",
+  "query": "Turdus pallidus"
+ },
+ "akahara": {
+  "file": "assets/images/creatures/akahara.jpg",
+  "title": "File:Akahara_08f2218.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "ISAKA Yoji ( cory )[ Recent works / Other works ]",
+  "page": "https://commons.wikimedia.org/wiki/File:Akahara_08f2218.jpg",
+  "query": "Turdus chrysolaus"
+ },
+ "kakesu": {
+  "file": "assets/images/creatures/kakesu.jpg",
+  "title": "File:Garrulus_glandarius_1_Luc_Viatour.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Luc Viatour",
+  "page": "https://commons.wikimedia.org/wiki/File:Garrulus_glandarius_1_Luc_Viatour.jpg",
+  "query": "Garrulus glandarius"
+ },
+ "ooakagera": {
+  "file": "assets/images/creatures/ooakagera.jpg",
+  "title": "File:Dendrocopos_leucotos_2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Alastair Rae",
+  "page": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucotos_2.jpg",
+  "query": "Dendrocopos leucotos"
+ },
+ "akagera": {
+  "file": "assets/images/creatures/akagera.jpg",
+  "title": "File:Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg",
+  "query": "Dendrocopos major"
+ },
+ "kogera": {
+  "file": "assets/images/creatures/kogera.jpg",
+  "title": "File:Japanese_pygmy_woodpecker_in_Sakai,_Osaka,_February_2016.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_pygmy_woodpecker_in_Sakai,_Osaka,_February_2016.jpg",
+  "query": "Yungipicus kizuki"
+ },
+ "fukurou": {
+  "file": "assets/images/creatures/fukurou.jpg",
+  "title": "File:Strix_uralensis,_Kotka,_Finland_1.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Jyrki Salmi from Finland",
+  "page": "https://commons.wikimedia.org/wiki/File:Strix_uralensis,_Kotka,_Finland_1.jpg",
+  "query": "Strix uralensis"
+ },
+ "ooshima_fukurou": {
+  "file": "assets/images/creatures/ooshima_fukurou.jpg",
+  "title": "File:Bubo_blakistoni.jpg",
+  "license": "Public domain",
+  "author": "Tokumi",
+  "page": "https://commons.wikimedia.org/wiki/File:Bubo_blakistoni.jpg",
+  "query": "Bubo blakistoni"
+ },
+ "ootaka": {
+  "file": "assets/images/creatures/ootaka.jpg",
+  "title": "File:Northern_Goshawk_ad_M2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Norbert Kenntner, Berlin",
+  "page": "https://commons.wikimedia.org/wiki/File:Northern_Goshawk_ad_M2.jpg",
+  "query": "Accipiter gentilis"
+ },
+ "inuwashi": {
+  "file": "assets/images/creatures/inuwashi.jpg",
+  "title": "File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Giles Laurent",
+  "page": "https://commons.wikimedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+  "query": "Aquila chrysaetos"
+ },
+ "hayabusa": {
+  "file": "assets/images/creatures/hayabusa.jpg",
+  "title": "File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Mykola Swarnyk",
+  "page": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
+  "query": "Falco peregrinus"
+ },
+ "kumataka": {
+  "file": "assets/images/creatures/kumataka.jpg",
+  "title": "File:Mountain_Hawk_Eagle_Mahananda_WLS_West_Bengal_India_07.12.2015.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Dibyendu Ash",
+  "page": "https://commons.wikimedia.org/wiki/File:Mountain_Hawk_Eagle_Mahananda_WLS_West_Bengal_India_07.12.2015.jpg",
+  "query": "Nisaetus nipalensis"
+ },
+ "yamadori": {
+  "file": "assets/images/creatures/yamadori.jpg",
+  "title": "File:Syrmaticus_soemmerringii_s1c.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Syrmaticus_soemmerringii_s1c.jpg",
+  "query": "Syrmaticus soemmerringii"
+ },
+ "kiji": {
+  "file": "assets/images/creatures/kiji.jpg",
+  "title": "File:Phasianus_versicolor_in_Japan.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Phasianus_versicolor_in_Japan.JPG",
+  "query": "Phasianus versicolor"
+ },
+ "hototogisu": {
+  "file": "assets/images/creatures/hototogisu.jpg",
+  "title": "File:Lesser_Cuckoo_by_Tisha_Mukherjee_16.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Tisha Mukherjee",
+  "page": "https://commons.wikimedia.org/wiki/File:Lesser_Cuckoo_by_Tisha_Mukherjee_16.jpg",
+  "query": "Cuculus poliocephalus"
+ },
+ "kakkou": {
+  "file": "assets/images/creatures/kakkou.jpg",
+  "title": "File:Cuckoo_(51169010335).jpg",
+  "license": "CC BY 2.0",
+  "author": "Andy  Morffew from Itchen Abbas, Hampshire, UK",
+  "page": "https://commons.wikimedia.org/wiki/File:Cuckoo_(51169010335).jpg",
+  "query": "Cuculus canorus"
+ },
+ "ooyoshikiri": {
+  "file": "assets/images/creatures/ooyoshikiri.jpg",
+  "title": "File:Oriental_Reed_Warbler_I_IMG_0246.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "J.M.Garg",
+  "page": "https://commons.wikimedia.org/wiki/File:Oriental_Reed_Warbler_I_IMG_0246.jpg",
+  "query": "Acrocephalus orientalis"
+ },
+ "kogamo": {
+  "file": "assets/images/creatures/kogamo.jpg",
+  "title": "File:Eurasian_teal_(Anas_crecca_crecca)_male_Qingshui.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "page": "https://commons.wikimedia.org/wiki/File:Eurasian_teal_(Anas_crecca_crecca)_male_Qingshui.jpg",
+  "query": "Anas crecca"
+ },
+ "hidorigamo": {
+  "file": "assets/images/creatures/hidorigamo.jpg",
+  "title": "File:Eurasian_wigeon_in_Sakai,_Osaka,_February_2016.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Eurasian_wigeon_in_Sakai,_Osaka,_February_2016.jpg",
+  "query": "Mareca penelope"
+ },
+ "kinkurohajiro": {
+  "file": "assets/images/creatures/kinkurohajiro.jpg",
+  "title": "File:Tufted_Duck_09_05_2025_02.jpg",
+  "license": "CC BY 4.0",
+  "author": "Alexis Lours",
+  "page": "https://commons.wikimedia.org/wiki/File:Tufted_Duck_09_05_2025_02.jpg",
+  "query": "Aythya fuligula"
+ },
+ "oomizunagidori": {
+  "file": "assets/images/creatures/oomizunagidori.jpg",
+  "title": "File:Streaked_shearwater_sitting.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Kanachoro",
+  "page": "https://commons.wikimedia.org/wiki/File:Streaked_shearwater_sitting.jpg",
+  "query": "Calonectris leucomelas"
+ },
+ "kamome": {
+  "file": "assets/images/creatures/kamome.jpg",
+  "title": "File:Chroicocephalus_ridibundus_(summer).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Hans Hillewaert",
+  "page": "https://commons.wikimedia.org/wiki/File:Chroicocephalus_ridibundus_(summer).jpg",
+  "query": "Chroicocephalus ridibundus"
+ },
+ "ooseguro": {
+  "file": "assets/images/creatures/ooseguro.jpg",
+  "title": "File:Ooseguro-kamome.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "E-190",
+  "page": "https://commons.wikimedia.org/wiki/File:Ooseguro-kamome.jpg",
+  "query": "Larus schistisagus"
+ },
+ "ibisu": {
+  "file": "assets/images/creatures/ibisu.jpg",
+  "title": "File:Nipponia_nippon_77371852.jpg",
+  "license": "CC BY 4.0",
+  "author": "belvedere04",
+  "page": "https://commons.wikimedia.org/wiki/File:Nipponia_nippon_77371852.jpg",
+  "query": "Nipponia nippon"
+ },
+ "kounotori": {
+  "file": "assets/images/creatures/kounotori.jpg",
+  "title": "File:Kounotori_06f4471sv.jpg",
+  "license": "CC BY 2.1 jp",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kounotori_06f4471sv.jpg",
+  "query": "Ciconia boyciana"
+ },
+ "tancho": {
+  "file": "assets/images/creatures/tancho.jpg",
+  "title": "File:Grus_japonensis_-Hokkaido,_Japan_-several-8_(1).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Alastair Rae from London, United Kingdom",
+  "page": "https://commons.wikimedia.org/wiki/File:Grus_japonensis_-Hokkaido,_Japan_-several-8_(1).jpg",
+  "query": "Grus japonensis"
+ },
+ "shigi": {
+  "file": "assets/images/creatures/shigi.jpg",
+  "title": "File:Common_snipe_(Gallinago_gallinago)_2022.jpg",
+  "license": "CC BY 4.0",
+  "author": "TRinaud",
+  "page": "https://commons.wikimedia.org/wiki/File:Common_snipe_(Gallinago_gallinago)_2022.jpg",
+  "query": "Gallinago gallinago"
+ },
+ "ban": {
+  "file": "assets/images/creatures/ban.jpg",
+  "title": "File:Common_moorhen_(Gallinula_chloropus)_France.jpg",
+  "license": "CC BY 4.0",
+  "author": "Alexis Lours",
+  "page": "https://commons.wikimedia.org/wiki/File:Common_moorhen_(Gallinula_chloropus)_France.jpg",
+  "query": "Gallinula chloropus"
+ },
+ "akashoubin": {
+  "file": "assets/images/creatures/akashoubin.jpg",
+  "title": "File:Ruddy_Kingfisher_0A2A7077.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "JJ Harrison",
+  "page": "https://commons.wikimedia.org/wiki/File:Ruddy_Kingfisher_0A2A7077.jpg",
+  "query": "Halcyon coromanda"
+ },
+ "karasu": {
+  "file": "assets/images/creatures/karasu.jpg",
+  "title": "File:Jungle_crow_(Close-up_of_the_head_area),_Tennōji_Park,_Osaka_II.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Jungle_crow_(Close-up_of_the_head_area),_Tenn%C5%8Dji_Park,_Osaka_II.jpg",
+  "query": "Corvus macrorhynchos"
+ },
+ "osansho": {
+  "file": "assets/images/creatures/osansho.jpg",
+  "title": "File:Japanese_giant_salamander_in_Tottori_Prefecture,_Japan.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Salamandra2021",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_giant_salamander_in_Tottori_Prefecture,_Japan.jpg",
+  "query": "Andrias japonicus"
+ },
+ "ishigame": {
+  "file": "assets/images/creatures/ishigame.jpg",
+  "title": "File:Mauremys_japonica_ishigame.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Totti",
+  "page": "https://commons.wikimedia.org/wiki/File:Mauremys_japonica_ishigame.jpg",
+  "query": "Mauremys japonica"
+ },
+ "kanahebi": {
+  "file": "assets/images/creatures/kanahebi.jpg",
+  "title": "File:Takydromus_tachydromoides1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Takydromus_tachydromoides1.jpg",
+  "query": "Takydromus tachydromoides"
+ },
+ "oomurasaki": {
+  "file": "assets/images/creatures/oomurasaki.jpg",
+  "title": "File:Sasakia_charonda_formosana_male_back_20140525.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Peellden",
+  "page": "https://commons.wikimedia.org/wiki/File:Sasakia_charonda_formosana_male_back_20140525.jpg",
+  "query": "Sasakia charonda"
+ },
+ "asagimadara": {
+  "file": "assets/images/creatures/asagimadara.jpg",
+  "title": "File:Chestnut_tiger_(Parantica_sita_niphonica)_on_Ageratum_conyzoides_Xindian.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "page": "https://commons.wikimedia.org/wiki/File:Chestnut_tiger_(Parantica_sita_niphonica)_on_Ageratum_conyzoides_Xindian.jpg",
+  "query": "Parantica sita"
+ },
+ "namiageha": {
+  "file": "assets/images/creatures/namiageha.jpg",
+  "title": "File:Papilio_xuthus_20130804.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Peellden",
+  "page": "https://commons.wikimedia.org/wiki/File:Papilio_xuthus_20130804.jpg",
+  "query": "Papilio xuthus"
+ },
+ "monshiro": {
+  "file": "assets/images/creatures/monshiro.jpg",
+  "title": "File:Pieris.rapae.mounted.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Sarefo",
+  "page": "https://commons.wikimedia.org/wiki/File:Pieris.rapae.mounted.jpg",
+  "query": "Pieris rapae"
+ },
+ "gifuchou": {
+  "file": "assets/images/creatures/gifuchou.jpg",
+  "title": "File:Luehdorfia_japonica_on_Rhododendron_farrerae.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Luehdorfia_japonica_on_Rhododendron_farrerae.jpg",
+  "query": "Luehdorfia japonica"
+ },
+ "genji_hotaru": {
+  "file": "assets/images/creatures/genji_hotaru.jpg",
+  "title": "File:Luciola_cruciata.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Luciola_cruciata.jpg",
+  "query": "Nipponoluciola cruciata"
+ },
+ "heike_hotaru": {
+  "file": "assets/images/creatures/heike_hotaru.jpg",
+  "title": "File:Japanese_Firefly_ヘイケボタル_Luciola_lateralis.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "yellow_bird_woodstock さん https://www.flickr.com/photos/yellow_bird_woodstock/",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Firefly_%E3%83%98%E3%82%A4%E3%82%B1%E3%83%9C%E3%82%BF%E3%83%AB_Luciola_lateralis.jpg",
+  "query": "Luciola lateralis"
+ },
+ "oniyanma": {
+  "file": "assets/images/creatures/oniyanma.jpg",
+  "title": "File:Anotogaster_sieboldii_on_wall.jpg",
+  "license": "Public domain",
+  "author": "Brian Adler 13:20, 28 June 2007 (UTC)",
+  "page": "https://commons.wikimedia.org/wiki/File:Anotogaster_sieboldii_on_wall.jpg",
+  "query": "Anotogaster sieboldii"
+ },
+ "ginyanma": {
+  "file": "assets/images/creatures/ginyanma.jpg",
+  "title": "File:2012.08.11.-18-Viernheimer_Heide_Viernheim-Kleine_Koenigslibelle-Maennchen.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Andreas Eichler",
+  "page": "https://commons.wikimedia.org/wiki/File:2012.08.11.-18-Viernheimer_Heide_Viernheim-Kleine_Koenigslibelle-Maennchen.jpg",
+  "query": "Anax parthenope"
+ },
+ "akiakane": {
+  "file": "assets/images/creatures/akiakane.jpg",
+  "title": "File:Sympetrum_frequens_female.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Sympetrum_frequens_female.JPG",
+  "query": "Sympetrum frequens"
+ },
+ "kabutomushi": {
+  "file": "assets/images/creatures/kabutomushi.jpg",
+  "title": "File:Kabutomushi-JapaneseBeetle-July2004.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Gombe at Japanese Wikipedia",
+  "page": "https://commons.wikimedia.org/wiki/File:Kabutomushi-JapaneseBeetle-July2004.jpg",
+  "query": "Trypoxylus dichotomus"
+ },
+ "nokogiri_kuwagata": {
+  "file": "assets/images/creatures/nokogiri_kuwagata.jpg",
+  "title": "File:Prosopocoilus_inclinatus_sjh.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "No machine-readable author provided. Kugamazog~commonswiki assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Prosopocoilus_inclinatus_sjh.jpg",
+  "query": "Prosopocoilus inclinatus"
+ },
+ "miyama_kuwagata": {
+  "file": "assets/images/creatures/miyama_kuwagata.jpg",
+  "title": "File:Lucanus_maculifemoratus_maculifemoratus_sjh.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "Shawn Hanrahan",
+  "page": "https://commons.wikimedia.org/wiki/File:Lucanus_maculifemoratus_maculifemoratus_sjh.jpg",
+  "query": "Lucanus maculifemoratus"
+ },
+ "ookuwagata": {
+  "file": "assets/images/creatures/ookuwagata.jpg",
+  "title": "File:Dorcus_parallelipipedus_MHNT_mâle_L'espicié.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Didier Descouens",
+  "page": "https://commons.wikimedia.org/wiki/File:Dorcus_parallelipipedus_MHNT_m%C3%A2le_L%27espici%C3%A9.jpg",
+  "query": "Dorcus hopei binodulosus"
+ },
+ "kashiwa": {
+  "file": "assets/images/creatures/kashiwa.jpg",
+  "title": "File:Quercus_dentata_(keisaraeik)_3.jpg",
+  "license": "Public domain",
+  "author": "User:Salvor",
+  "page": "https://commons.wikimedia.org/wiki/File:Quercus_dentata_(keisaraeik)_3.jpg",
+  "query": "Quercus dentata"
+ },
+ "kuri": {
+  "file": "assets/images/creatures/kuri.jpg",
+  "title": "File:Castanea_crenata3.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Castanea_crenata3.jpg",
+  "query": "Castanea crenata"
+ },
+ "kurumi": {
+  "file": "assets/images/creatures/kurumi.jpg",
+  "title": "File:Rendeux_AR3bJPG.jpg",
+  "license": "CC BY 2.5",
+  "author": "Jean-Pol GRANDMONT",
+  "page": "https://commons.wikimedia.org/wiki/File:Rendeux_AR3bJPG.jpg",
+  "query": "Juglans mandshurica"
+ },
+ "hannoki": {
+  "file": "assets/images/creatures/hannoki.jpg",
+  "title": "File:Alnus_japonica2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Alnus_japonica2.jpg",
+  "query": "Alnus japonica"
+ },
+ "yamanarashi": {
+  "file": "assets/images/creatures/yamanarashi.jpg",
+  "title": "File:PopulusTremula001.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Šarūnas Šimkus",
+  "page": "https://commons.wikimedia.org/wiki/File:PopulusTremula001.JPG",
+  "query": "Populus tremula"
+ },
+ "hoonoki": {
+  "file": "assets/images/creatures/hoonoki.jpg",
+  "title": "File:Magnolia_obovata_10.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Qwert1234",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnolia_obovata_10.JPG",
+  "query": "Magnolia obovata"
+ },
+ "akagashi": {
+  "file": "assets/images/creatures/akagashi.jpg",
+  "title": "File:Quercus_acuta3.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Quercus_acuta3.jpg",
+  "query": "Quercus acuta"
+ },
+ "tsuburajii": {
+  "file": "assets/images/creatures/tsuburajii.jpg",
+  "title": "File:Castanopsis_cuspidata_SZ2.png",
+  "license": "Public domain",
+  "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
+  "page": "https://commons.wikimedia.org/wiki/File:Castanopsis_cuspidata_SZ2.png",
+  "query": "Castanopsis cuspidata"
+ },
+ "inumaki": {
+  "file": "assets/images/creatures/inumaki.jpg",
+  "title": "File:Podocarpus_macrophyllus.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Greg Hume",
+  "page": "https://commons.wikimedia.org/wiki/File:Podocarpus_macrophyllus.jpg",
+  "query": "Podocarpus macrophyllus"
+ },
+ "sotetsu": {
+  "file": "assets/images/creatures/sotetsu.jpg",
+  "title": "File:Cycas_inflorescence.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cycas_inflorescence.jpg",
+  "query": "Cycas revoluta"
+ },
+ "gajumaru": {
+  "file": "assets/images/creatures/gajumaru.jpg",
+  "title": "File:Ficus_microcarpa_-_La_Gomera_01.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "H. Zell",
+  "page": "https://commons.wikimedia.org/wiki/File:Ficus_microcarpa_-_La_Gomera_01.jpg",
+  "query": "Ficus microcarpa"
+ },
+ "akou": {
+  "file": "assets/images/creatures/akou.jpg",
+  "title": "File:Ficus_superba_var._japonica_by_OpenCage.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ficus_superba_var._japonica_by_OpenCage.jpg",
+  "query": "Ficus superba"
+ },
+ "miyagino_hagi": {
+  "file": "assets/images/creatures/miyagino_hagi.jpg",
+  "title": "File:Lespedeza_thunbergiiDT2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "VoDeTan2",
+  "page": "https://commons.wikimedia.org/wiki/File:Lespedeza_thunbergiiDT2.jpg",
+  "query": "Lespedeza thunbergii"
+ },
+ "utsugi": {
+  "file": "assets/images/creatures/utsugi.jpg",
+  "title": "File:Deutzia_crenata.jpg",
+  "license": "Public domain",
+  "author": "Mason Brock (Masebrock)",
+  "page": "https://commons.wikimedia.org/wiki/File:Deutzia_crenata.jpg",
+  "query": "Deutzia crenata"
+ },
+ "gamazumi": {
+  "file": "assets/images/creatures/gamazumi.jpg",
+  "title": "File:Viburnum_dilatatum04.jpg",
+  "license": "CC BY 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Viburnum_dilatatum04.jpg",
+  "query": "Viburnum dilatatum"
+ },
+ "noibara": {
+  "file": "assets/images/creatures/noibara.jpg",
+  "title": "File:2020-05-20_08_05_42_Multiflora_Rose_flowers_along_a_walking_path_within_Horsepen_Run_Stream_Valley_Park_in_Oak_Hill,_Fairfax_County,_Virginia.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Famartin",
+  "page": "https://commons.wikimedia.org/wiki/File:2020-05-20_08_05_42_Multiflora_Rose_flowers_along_a_walking_path_within_Horsepen_Run_Stream_Valley_Park_in_Oak_Hill,_Fairfax_County,_Virginia.jpg",
+  "query": "Rosa multiflora"
+ },
+ "murasakishikibu": {
+  "file": "assets/images/creatures/murasakishikibu.jpg",
+  "title": "File:Callicarpa_japonica3.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Callicarpa_japonica3.jpg",
+  "query": "Callicarpa japonica"
+ },
+ "tsutsuji": {
+  "file": "assets/images/creatures/tsutsuji.jpg",
+  "title": "File:Chinese_Azalea_-_Flickr_-_treegrow.jpg",
+  "license": "CC BY 2.0",
+  "author": "Katja Schulz from Washington, D. C., USA",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese_Azalea_-_Flickr_-_treegrow.jpg",
+  "query": "Rhododendron molle"
+ },
+ "kuroyuri": {
+  "file": "assets/images/creatures/kuroyuri.jpg",
+  "title": "File:Fritillaria_camschatcensis_20010706.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Eco190",
+  "page": "https://commons.wikimedia.org/wiki/File:Fritillaria_camschatcensis_20010706.jpg",
+  "query": "Fritillaria camschatcensis"
+ },
+ "teikakazura": {
+  "file": "assets/images/creatures/teikakazura.jpg",
+  "title": "File:Trachelospermum_asiaticum_kz2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Krzysztof Ziarnek, Kenraiz",
+  "page": "https://commons.wikimedia.org/wiki/File:Trachelospermum_asiaticum_kz2.jpg",
+  "query": "Trachelospermum asiaticum"
+ },
+ "yamaimo": {
+  "file": "assets/images/creatures/yamaimo.jpg",
+  "title": "File:Dioscorea_Japonica_(Yamaimo)_3.JPG",
+  "license": "CC0",
+  "author": "Magalí Arcodía",
+  "page": "https://commons.wikimedia.org/wiki/File:Dioscorea_Japonica_(Yamaimo)_3.JPG",
+  "query": "Dioscorea japonica"
+ },
+ "hanashobu": {
+  "file": "assets/images/creatures/hanashobu.jpg",
+  "title": "File:Iris_ensata_Thunb.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Laitche",
+  "page": "https://commons.wikimedia.org/wiki/File:Iris_ensata_Thunb.jpg",
+  "query": "Iris ensata"
+ },
+ "kumazasa": {
+  "file": "assets/images/creatures/kumazasa.jpg",
+  "title": "File:Kumazasa.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Kumazasa.JPG",
+  "query": "Sasa veitchii"
+ },
+ "mousouchiku": {
+  "file": "assets/images/creatures/mousouchiku.jpg",
+  "title": "File:Bamboo_forest.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Kamakura",
+  "page": "https://commons.wikimedia.org/wiki/File:Bamboo_forest.jpg",
+  "query": "Phyllostachys edulis"
+ },
+ "chigaya": {
+  "file": "assets/images/creatures/chigaya.jpg",
+  "title": "File:Imperata_cylindrica_tigaya_colony.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "No machine-readable author provided. Keisotyo assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Imperata_cylindrica_tigaya_colony.jpg",
+  "query": "Imperata cylindrica"
+ },
+ "suisen": {
+  "file": "assets/images/creatures/suisen.jpg",
+  "title": "File:Narcissus-tazetta-0006a.jpg",
+  "license": "CC BY 2.0",
+  "author": "Zachi Evenor",
+  "page": "https://commons.wikimedia.org/wiki/File:Narcissus-tazetta-0006a.jpg",
+  "query": "Narcissus tazetta"
+ },
+ "hamaecho": {
+  "file": "assets/images/creatures/hamaecho.jpg",
+  "title": "File:Seaside_pea,_Pointe-Taillon,_Québec,_Canada_imported_from_iNaturalist_photo_33308085_(cropped).jpg",
+  "license": "CC BY 4.0",
+  "author": "(c) Louis Imbeau, some rights reserved (CC BY)",
+  "page": "https://commons.wikimedia.org/wiki/File:Seaside_pea,_Pointe-Taillon,_Qu%C3%A9bec,_Canada_imported_from_iNaturalist_photo_33308085_(cropped).jpg",
+  "query": "Lathyrus japonicus"
+ },
+ "hamasuge": {
+  "file": "assets/images/creatures/hamasuge.jpg",
+  "title": "File:Carex_kobomugi.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "self",
+  "page": "https://commons.wikimedia.org/wiki/File:Carex_kobomugi.jpg",
+  "query": "Carex kobomugi"
+ },
+ "ezorindo": {
+  "file": "assets/images/creatures/ezorindo.jpg",
+  "title": "File:Gentiana_triflora_var._montana.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "arudhio",
+  "page": "https://commons.wikimedia.org/wiki/File:Gentiana_triflora_var._montana.jpg",
+  "query": "Gentiana triflora"
+ },
+ "waremokou": {
+  "file": "assets/images/creatures/waremokou.jpg",
+  "title": "File:Sanguisorba_officinalis.jpg",
+  "license": "Public domain",
+  "author": "Carl Axel Magnus Lindman",
+  "page": "https://commons.wikimedia.org/wiki/File:Sanguisorba_officinalis.jpg",
+  "query": "Sanguisorba officinalis"
+ },
+ "sasayuri": {
+  "file": "assets/images/creatures/sasayuri.jpg",
+  "title": "File:Lilium_japonicum_(Montage_s2).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Lilium_japonicum_(Montage_s2).jpg",
+  "query": "Lilium japonicum"
+ },
+ "suminoe": {
+  "file": "assets/images/creatures/suminoe.jpg",
+  "title": "File:Lysimachia_vulgaris_(flowers)_2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Le.Loup.Gris",
+  "page": "https://commons.wikimedia.org/wiki/File:Lysimachia_vulgaris_(flowers)_2.jpg",
+  "query": "Lysimachia vulgaris"
+ },
+ "mizuaoi": {
+  "file": "assets/images/creatures/mizuaoi.jpg",
+  "title": "File:Monochoria_korsakowii_070830_Vladivostok.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Ruppia2000",
+  "page": "https://commons.wikimedia.org/wiki/File:Monochoria_korsakowii_070830_Vladivostok.jpg",
+  "query": "Monochoria korsakowii"
+ },
+ "jusai": {
+  "file": "assets/images/creatures/jusai.jpg",
+  "title": "File:BraseniaAlt.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "No machine-readable author provided. Dacrycarpus~commonswiki assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:BraseniaAlt.jpg",
+  "query": "Brasenia schreberi"
+ },
+ "kuromo": {
+  "file": "assets/images/creatures/kuromo.jpg",
+  "title": "File:Hydrilla_USGS.jpg",
+  "license": "Public domain",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hydrilla_USGS.jpg",
+  "query": "Hydrilla verticillata"
+ },
+ "himegama": {
+  "file": "assets/images/creatures/himegama.jpg",
+  "title": "File:Typha_domingensis_4.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Stan Shebs",
+  "page": "https://commons.wikimedia.org/wiki/File:Typha_domingensis_4.jpg",
+  "query": "Typha domingensis"
+ },
+ "makomo": {
+  "file": "assets/images/creatures/makomo.jpg",
+  "title": "File:Water_bamboo.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Water_bamboo.JPG",
+  "query": "Zizania latifolia"
+ },
+ "kawarahahako": {
+  "file": "assets/images/creatures/kawarahahako.jpg",
+  "title": "File:Anapahlis_margaritacea.jpg",
+  "license": "Public domain",
+  "author": "Pendragon39",
+  "page": "https://commons.wikimedia.org/wiki/File:Anapahlis_margaritacea.jpg",
+  "query": "Anaphalis margaritacea"
+ },
+ "sawagurumi": {
+  "file": "assets/images/creatures/sawagurumi.jpg",
+  "title": "File:Pterocarya_rhoifolia_SZ150.png",
+  "license": "Public domain",
+  "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
+  "page": "https://commons.wikimedia.org/wiki/File:Pterocarya_rhoifolia_SZ150.png",
+  "query": "Pterocarya rhoifolia"
+ },
+ "katsura": {
+  "file": "assets/images/creatures/katsura.jpg",
+  "title": "File:Great_katsura_of_wachi01s3000.jpg",
+  "license": "CC BY 2.5",
+  "author": "663highland",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_katsura_of_wachi01s3000.jpg",
+  "query": "Cercidiphyllum japonicum"
+ },
+ "urajiro": {
+  "file": "assets/images/creatures/urajiro.jpg",
+  "title": "File:Abies_homolepis_cones.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_homolepis_cones.jpg",
+  "query": "Abies homolepis"
+ },
+ "shirabe": {
+  "file": "assets/images/creatures/shirabe.jpg",
+  "title": "File:Abies_veitchii.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_veitchii.JPG",
+  "query": "Abies veitchii"
+ },
+ "okukanba": {
+  "file": "assets/images/creatures/okukanba.jpg",
+  "title": "File:Abies_mariesii.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_mariesii.JPG",
+  "query": "Abies mariesii"
+ },
+ "mineduo": {
+  "file": "assets/images/creatures/mineduo.jpg",
+  "title": "File:Kalmia_procumbens_bush_upernavik.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Kim Hansen",
+  "page": "https://commons.wikimedia.org/wiki/File:Kalmia_procumbens_bush_upernavik.jpg",
+  "query": "Loiseleuria procumbens"
+ },
+ "benibanaichiyakusou": {
+  "file": "assets/images/creatures/benibanaichiyakusou.jpg",
+  "title": "File:Pyrola_asarifolia_0488.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Walter Siegmund (talk)",
+  "page": "https://commons.wikimedia.org/wiki/File:Pyrola_asarifolia_0488.JPG",
+  "query": "Pyrola asarifolia"
+ },
+ "nigoi": {
+  "file": "assets/images/creatures/nigoi.jpg",
+  "title": "File:Hemibarbus_labeo.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "dalgial",
+  "page": "https://commons.wikimedia.org/wiki/File:Hemibarbus_labeo.JPG",
+  "query": "Hemibarbus barbus"
+ },
+ "kawamutsu": {
+  "file": "assets/images/creatures/kawamutsu.jpg",
+  "title": "File:Nipponocypris_temminckii.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nipponocypris_temminckii.jpg",
+  "query": "Nipponocypris temminckii"
+ },
+ "moroko": {
+  "file": "assets/images/creatures/moroko.jpg",
+  "title": "File:Gnathopogon_elongatus_by_OpenCage.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gnathopogon_elongatus_by_OpenCage.jpg",
+  "query": "Gnathopogon elongatus"
+ },
+ "motsugo": {
+  "file": "assets/images/creatures/motsugo.jpg",
+  "title": "File:Pseudorasbora_parva(edited_version).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Seotaro, (cleaned up and denoised by Estrilda, and edited by Laitche)",
+  "page": "https://commons.wikimedia.org/wiki/File:Pseudorasbora_parva(edited_version).jpg",
+  "query": "Pseudorasbora parva"
+ },
+ "zenitanago": {
+  "file": "assets/images/creatures/zenitanago.jpg",
+  "title": "File:Acheilognathus_typus.jpg",
+  "license": "CC BY 4.0",
+  "author": "Geekgecko",
+  "page": "https://commons.wikimedia.org/wiki/File:Acheilognathus_typus.jpg",
+  "query": "Acheilognathus typus"
+ },
+ "kajika": {
+  "file": "assets/images/creatures/kajika.jpg",
+  "title": "File:Cottus_reinii(Hamamatsu,Shizuoka,Japan).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Seotaro",
+  "page": "https://commons.wikimedia.org/wiki/File:Cottus_reinii(Hamamatsu,Shizuoka,Japan).jpg",
+  "query": "Cottus pollux"
+ },
+ "amago": {
+  "file": "assets/images/creatures/amago.jpg",
+  "title": "File:Oncorhynchus_masou_ishikawae_by_OpenCage.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oncorhynchus_masou_ishikawae_by_OpenCage.jpg",
+  "query": "Oncorhynchus masou ishikawae"
+ },
+ "sakura_masu": {
+  "file": "assets/images/creatures/sakura_masu.jpg",
+  "title": "File:Cherry_salmon.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Jony Cooper",
+  "page": "https://commons.wikimedia.org/wiki/File:Cherry_salmon.jpg",
+  "query": "Cherry Salmon"
+ },
+ "sake": {
+  "file": "assets/images/creatures/sake.jpg",
+  "title": "File:Dog_Salmon_Breeding_Male.jpg",
+  "license": "Public domain",
+  "author": "A. Hoen and Co.",
+  "page": "https://commons.wikimedia.org/wiki/File:Dog_Salmon_Breeding_Male.jpg",
+  "query": "Oncorhynchus keta"
+ },
+ "ayukake": {
+  "file": "assets/images/creatures/ayukake.jpg",
+  "title": "File:アユカケ（宮崎県）.jpg",
+  "license": "CC BY 4.0",
+  "author": "Ffish.asia",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%A2%E3%83%A6%E3%82%AB%E3%82%B1%EF%BC%88%E5%AE%AE%E5%B4%8E%E7%9C%8C%EF%BC%89.jpg",
+  "query": "Cottus kazika"
+ },
+ "shinai_motsugo": {
+  "file": "assets/images/creatures/shinai_motsugo.jpg",
+  "title": "File:Pseudorasbora_pumila_pumila_by_OpenCage.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "User:OpenCage",
+  "page": "https://commons.wikimedia.org/wiki/File:Pseudorasbora_pumila_pumila_by_OpenCage.jpg",
+  "query": "Pseudorasbora pumila"
+ },
+ "wataka": {
+  "file": "assets/images/creatures/wataka.jpg",
+  "title": "File:Wataka.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Show_ryu",
+  "page": "https://commons.wikimedia.org/wiki/File:Wataka.jpg",
+  "query": "Ischikauia steenackeri"
+ },
+ "madai": {
+  "file": "assets/images/creatures/madai.jpg",
+  "title": "File:Pagrus_major_Red_seabream_ja01.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Miya",
+  "page": "https://commons.wikimedia.org/wiki/File:Pagrus_major_Red_seabream_ja01.jpg",
+  "query": "Pagrus major"
+ },
+ "hirame": {
+  "file": "assets/images/creatures/hirame.jpg",
+  "title": "File:Paralichthys-olivaceus-Federal-Way-3583.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "User:Vmenkov",
+  "page": "https://commons.wikimedia.org/wiki/File:Paralichthys-olivaceus-Federal-Way-3583.jpg",
+  "query": "Paralichthys olivaceus"
+ },
+ "maiwashi": {
+  "file": "assets/images/creatures/maiwashi.jpg",
+  "title": "File:Japan_fish,_South_American_pilchard_(Sardinops_sagax)_(15579000828).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "harum.koh from Kobe city, Japan",
+  "page": "https://commons.wikimedia.org/wiki/File:Japan_fish,_South_American_pilchard_(Sardinops_sagax)_(15579000828).jpg",
+  "query": "Sardinops melanostictus"
+ },
+ "maaji": {
+  "file": "assets/images/creatures/maaji.jpg",
+  "title": "File:MaAji.jpg",
+  "license": "CC BY 2.5",
+  "author": "Izuzuki",
+  "page": "https://commons.wikimedia.org/wiki/File:MaAji.jpg",
+  "query": "Trachurus japonicus"
+ },
+ "masaba": {
+  "file": "assets/images/creatures/masaba.jpg",
+  "title": "File:Scomber_japonicus.png",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "page": "https://commons.wikimedia.org/wiki/File:Scomber_japonicus.png",
+  "query": "Scomber japonicus"
+ },
+ "katsuo": {
+  "file": "assets/images/creatures/katsuo.jpg",
+  "title": "File:Katsuwonus_pelamis.png",
+  "license": "Public domain",
+  "author": "Unknown authorUnknown author",
+  "page": "https://commons.wikimedia.org/wiki/File:Katsuwonus_pelamis.png",
+  "query": "Katsuwonus pelamis"
+ },
+ "buri": {
+  "file": "assets/images/creatures/buri.jpg",
+  "title": "File:Seriola_quinqueradiata_(200810).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "E-190's",
+  "page": "https://commons.wikimedia.org/wiki/File:Seriola_quinqueradiata_(200810).jpg",
+  "query": "Seriola quinqueradiata"
+ },
+ "kuromaguro": {
+  "file": "assets/images/creatures/kuromaguro.jpg",
+  "title": "File:Pacific_bluefin_tuna.jpg",
+  "license": "CC BY 2.1 jp",
+  "author": "aes256",
+  "page": "https://commons.wikimedia.org/wiki/File:Pacific_bluefin_tuna.jpg",
+  "query": "Thunnus orientalis"
+ },
+ "ishidai": {
+  "file": "assets/images/creatures/ishidai.jpg",
+  "title": "File:Shimadai.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "E-190",
+  "page": "https://commons.wikimedia.org/wiki/File:Shimadai.jpg",
+  "query": "Oplegnathus fasciatus"
+ },
+ "minokasago": {
+  "file": "assets/images/creatures/minokasago.jpg",
+  "title": "File:Pterois_lunulata.jpg",
+  "license": "CC BY-SA 2.1 jp",
+  "author": "syu-1",
+  "page": "https://commons.wikimedia.org/wiki/File:Pterois_lunulata.jpg",
+  "query": "Pterois lunulata"
+ },
+ "hakofugu": {
+  "file": "assets/images/creatures/hakofugu.jpg",
+  "title": "File:Ostracion_cubicum_400115646.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "portioid",
+  "page": "https://commons.wikimedia.org/wiki/File:Ostracion_cubicum_400115646.jpg",
+  "query": "Boxfish"
+ },
+ "umitanago": {
+  "file": "assets/images/creatures/umitanago.jpg",
+  "title": "File:Embiotoca_lateralis.jpg",
+  "license": "Public domain",
+  "author": "Chad King / NOAA MBNMS",
+  "page": "https://commons.wikimedia.org/wiki/File:Embiotoca_lateralis.jpg",
+  "query": "Surfperch"
+ },
+ "tachiuo": {
+  "file": "assets/images/creatures/tachiuo.jpg",
+  "title": "File:Trichiurus_lepturus_Umitamago.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Totti",
+  "page": "https://commons.wikimedia.org/wiki/File:Trichiurus_lepturus_Umitamago.jpg",
+  "query": "Largehead Hairtail"
+ },
+ "napoleon": {
+  "file": "assets/images/creatures/napoleon.jpg",
+  "title": "File:Cheilinus_undulatus_Maldives.JPG",
+  "license": "CC BY-SA 4.0",
+  "author": "Julien Bidet for MDC Seamarc",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheilinus_undulatus_Maldives.JPG",
+  "query": "Cheilinus undulatus"
+ },
+ "honsome": {
+  "file": "assets/images/creatures/honsome.jpg",
+  "title": "File:Lábrido_limpiador_común_(Labroides_dimidiatus),_mar_Rojo,_Egipto,_2023-04-17,_DD_90.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Diego Delso",
+  "page": "https://commons.wikimedia.org/wiki/File:L%C3%A1brido_limpiador_com%C3%BAn_(Labroides_dimidiatus),_mar_Rojo,_Egipto,_2023-04-17,_DD_90.jpg",
+  "query": "Labroides dimidiatus"
+ },
+ "nihonjika": {
+  "file": "assets/images/creatures/nihonjika.jpg",
+  "title": "File:Cervus_nippon_002.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Lilly M",
+  "page": "https://commons.wikimedia.org/wiki/File:Cervus_nippon_002.jpg",
+  "query": "Cervus nippon"
+ },
+ "ezoshika": {
+  "file": "assets/images/creatures/ezoshika.jpg",
+  "title": "File:Hokkaido_deers_(52357473714)_(cropped).jpg",
+  "license": "CC BY 2.0",
+  "author": "Raita Futo from Tokyo, Japan",
+  "page": "https://commons.wikimedia.org/wiki/File:Hokkaido_deers_(52357473714)_(cropped).jpg",
+  "query": "Cervus nippon yesoensis"
+ },
+ "inoshishi": {
+  "file": "assets/images/creatures/inoshishi.jpg",
+  "title": "File:Sus_scrofa_leucomystax.jpg",
+  "license": "CC BY 2.0",
+  "author": "urasimaru - [2]",
+  "page": "https://commons.wikimedia.org/wiki/File:Sus_scrofa_leucomystax.jpg",
+  "query": "Sus scrofa leucomystax"
+ },
+ "nihonzaru": {
+  "file": "assets/images/creatures/nihonzaru.jpg",
+  "title": "File:Japanese_Snow_Monkey_(Macaque)_Mother_Grooms_Her_Young.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Rocktendo & Adam Gman",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Snow_Monkey_(Macaque)_Mother_Grooms_Her_Young.jpg",
+  "query": "Macaca fuscata"
+ },
+ "kamoshika": {
+  "file": "assets/images/creatures/kamoshika.jpg",
+  "title": "File:Nihonkamoshika-akita.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Kei hashi",
+  "page": "https://commons.wikimedia.org/wiki/File:Nihonkamoshika-akita.JPG",
+  "query": "Capricornis crispus"
+ },
+ "nihonrisu": {
+  "file": "assets/images/creatures/nihonrisu.jpg",
+  "title": "File:Japanese_Squirrel_edit2.jpg",
+  "license": "Public domain",
+  "author": "Ma2bara",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Squirrel_edit2.jpg",
+  "query": "Sciurus lis"
+ },
+ "ezorisu": {
+  "file": "assets/images/creatures/ezorisu.jpg",
+  "title": "File:Squirrel_posing.jpg",
+  "license": "CC BY 2.0",
+  "author": "Peter Trimming",
+  "page": "https://commons.wikimedia.org/wiki/File:Squirrel_posing.jpg",
+  "query": "Eurasian Red Squirrel"
+ },
+ "kitsune": {
+  "file": "assets/images/creatures/kitsune.jpg",
+  "title": "File:Portrait_of_a_red_fox_in_Rautas_fjällurskog_(cropped).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "ClaudiaTen",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg",
+  "query": "Vulpes vulpes japonica"
+ },
+ "kitakitsune": {
+  "file": "assets/images/creatures/kitakitsune.jpg",
+  "title": "File:Portrait_of_a_red_fox_in_Rautas_fjällurskog_(cropped).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "ClaudiaTen",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg",
+  "query": "Hokkaido Fox"
+ },
+ "tanuki": {
+  "file": "assets/images/creatures/tanuki.jpg",
+  "title": "File:Tanuki_in_Higashiyama_Zoo_-_2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "KKPCW",
+  "page": "https://commons.wikimedia.org/wiki/File:Tanuki_in_Higashiyama_Zoo_-_2.jpg",
+  "query": "Nyctereutes procyonoides viverrinus"
+ },
+ "nousagi": {
+  "file": "assets/images/creatures/nousagi.jpg",
+  "title": "File:Lepus_brachyurus,_March,_Tsukuba,_Japan.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Materialscientist",
+  "page": "https://commons.wikimedia.org/wiki/File:Lepus_brachyurus,_March,_Tsukuba,_Japan.jpg",
+  "query": "Lepus brachyurus"
+ },
+ "tsukinowaguma": {
+  "file": "assets/images/creatures/tsukinowaguma.jpg",
+  "title": "File:Ursus_thibetanus_3_(Wroclaw_zoo).JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Guérin Nicolas (messages)",
+  "page": "https://commons.wikimedia.org/wiki/File:Ursus_thibetanus_3_(Wroclaw_zoo).JPG",
+  "query": "Ursus thibetanus"
+ },
+ "higuma": {
+  "file": "assets/images/creatures/higuma.jpg",
+  "title": "File:Ussuri_Brown_Bear_Noboribetsu_2019.png",
+  "license": "CC BY-SA 2.0",
+  "author": "bryan...",
+  "page": "https://commons.wikimedia.org/wiki/File:Ussuri_Brown_Bear_Noboribetsu_2019.png",
+  "query": "Ursus arctos yesoensis"
+ },
+ "anaguma": {
+  "file": "assets/images/creatures/anaguma.jpg",
+  "title": "File:Meles_meles_anakuma_at_Inokashira_Park_Zoo.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Nzrst1jx",
+  "page": "https://commons.wikimedia.org/wiki/File:Meles_meles_anakuma_at_Inokashira_Park_Zoo.jpg",
+  "query": "Meles anakuma"
+ },
+ "honden": {
+  "file": "assets/images/creatures/honden.jpg",
+  "title": "File:Inokashira_Park_Zoo_PC053197.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Kestrel",
+  "page": "https://commons.wikimedia.org/wiki/File:Inokashira_Park_Zoo_PC053197.jpg",
+  "query": "Martes melampus"
+ },
+ "itachi": {
+  "file": "assets/images/creatures/itachi.jpg",
+  "title": "File:Mustela_itatsi_on_tree.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Mustela_itatsi_on_tree.JPG",
+  "query": "Mustela itatsi"
+ },
+ "okojo": {
+  "file": "assets/images/creatures/okojo.jpg",
+  "title": "File:Røyskatt_(Mustela_erminea_erminea),_Lista,_Norway.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Marton Berntsen, crop by User:MPF",
+  "page": "https://commons.wikimedia.org/wiki/File:R%C3%B8yskatt_(Mustela_erminea_erminea),_Lista,_Norway.jpg",
+  "query": "Mustela erminea"
+ },
+ "musasabi": {
+  "file": "assets/images/creatures/musasabi.jpg",
+  "title": "File:Petaurista_leucogenys_by_OpenCage.jpg",
+  "license": "CC BY-SA 2.5",
+  "author": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Petaurista_leucogenys_by_OpenCage.jpg",
+  "query": "Petaurista leucogenys"
+ },
+ "momonga": {
+  "file": "assets/images/creatures/momonga.jpg",
+  "title": "File:Japanese_dwarf_flying_squirrel.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Takashi Hososhima from Tokyo, Japan",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_dwarf_flying_squirrel.jpg",
+  "query": "Pteromys momonga"
+ },
+ "yamane": {
+  "file": "assets/images/creatures/yamane.jpg",
+  "title": "File:ヤマネGlirulus_japonicus.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Yamaneseisokubunpuiki",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%A4%E3%83%9E%E3%83%8DGlirulus_japonicus.jpg",
+  "query": "Glirulus japonicus"
+ },
+ "akanezumi": {
+  "file": "assets/images/creatures/akanezumi.jpg",
+  "title": "File:Apodemus_speciosus1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "NOZO",
+  "page": "https://commons.wikimedia.org/wiki/File:Apodemus_speciosus1.jpg",
+  "query": "Apodemus speciosus"
+ },
+ "abura_koumori": {
+  "file": "assets/images/creatures/abura_koumori.jpg",
+  "title": "File:Pipistrellus_abramus.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Original uploader was OAS at ja.wikipedia",
+  "page": "https://commons.wikimedia.org/wiki/File:Pipistrellus_abramus.jpg",
+  "query": "Pipistrellus abramus"
+ },
+ "iriomote": {
+  "file": "assets/images/creatures/iriomote.jpg",
+  "title": "File:Iriomote_cat_1_(cropped).jpg",
+  "license": "CC BY 4.0",
+  "author": "Iriomote Wildlife Conservation Center (IWCC)",
+  "page": "https://commons.wikimedia.org/wiki/File:Iriomote_cat_1_(cropped).jpg",
+  "query": "Prionailurus bengalensis iriomotensis"
+ },
+ "amami_kurousagi": {
+  "file": "assets/images/creatures/amami_kurousagi.jpg",
+  "title": "File:Pentalagus_furnessi_387708672.jpg",
+  "license": "CC BY 4.0",
+  "author": "Wich’yanan (Jay) Limparungpatthanakij",
+  "page": "https://commons.wikimedia.org/wiki/File:Pentalagus_furnessi_387708672.jpg",
+  "query": "Pentalagus furnessi"
+ },
+ "tsushima_yamaneko": {
+  "file": "assets/images/creatures/tsushima_yamaneko.jpg",
+  "title": "File:Prionailurus_bengalensis_bengalensis_2-Découpe.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Abujoy",
+  "page": "https://commons.wikimedia.org/wiki/File:Prionailurus_bengalensis_bengalensis_2-D%C3%A9coupe.JPG",
+  "query": "Prionailurus bengalensis euptilurus"
+ },
+ "zenigata": {
+  "file": "assets/images/creatures/zenigata.jpg",
+  "title": "File:Common_seal_(Phoca_vitulina)_2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "page": "https://commons.wikimedia.org/wiki/File:Common_seal_(Phoca_vitulina)_2.jpg",
+  "query": "Phoca vitulina stejnegeri"
+ },
+ "amagaeru": {
+  "file": "assets/images/creatures/amagaeru.jpg",
+  "title": "File:Tree_frog2.jpg",
+  "license": "Public domain",
+  "author": "池田正樹 (talk)masaki ikeda",
+  "page": "https://commons.wikimedia.org/wiki/File:Tree_frog2.jpg",
+  "query": "Dryophytes japonicus"
+ },
+ "tonosama": {
+  "file": "assets/images/creatures/tonosama.jpg",
+  "title": "File:Pelophylax_nigromaculatus_s1.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Pelophylax_nigromaculatus_s1.JPG",
+  "query": "Pelophylax nigromaculatus"
+ },
+ "hikigaeru": {
+  "file": "assets/images/creatures/hikigaeru.jpg",
+  "title": "File:Bufo_japonicus_DSCN9873.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Yasunori Koide",
+  "page": "https://commons.wikimedia.org/wiki/File:Bufo_japonicus_DSCN9873.jpg",
+  "query": "Bufo japonicus"
+ },
+ "moriao": {
+  "file": "assets/images/creatures/moriao.jpg",
+  "title": "File:Rhacophorus_arboreus_01s.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhacophorus_arboreus_01s.JPG",
+  "query": "Zhangixalus arboreus"
+ },
+ "akahara_imori": {
+  "file": "assets/images/creatures/akahara_imori.jpg",
+  "title": "File:Cynops_pyrrhogaster_sasayamae_female.jpg",
+  "license": "Public domain",
+  "author": "Wuchthans",
+  "page": "https://commons.wikimedia.org/wiki/File:Cynops_pyrrhogaster_sasayamae_female.jpg",
+  "query": "Cynops pyrrhogaster"
+ },
+ "hishi": {
+  "file": "assets/images/creatures/hishi.jpg",
+  "title": "File:Trapa japonica community.JPG",
+  "license": "CC BY 3.0",
+  "author": "Show_ryu",
+  "page": "https://commons.wikimedia.org/wiki/File:Trapa_japonica_community.JPG",
+  "query": "Trapa japonica"
+ },
+ "ukigusa": {
+  "file": "assets/images/creatures/ukigusa.jpg",
+  "title": "File:Spirodela polyrhiza sl2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Stefan.lefnaer",
+  "page": "https://commons.wikimedia.org/wiki/File:Spirodela_polyrhiza_sl2.jpg",
+  "query": "Spirodela polyrhiza"
+ },
+ "mizosoba": {
+  "file": "assets/images/creatures/mizosoba.jpg",
+  "title": "File:Persicaria thunbergii 06.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Dalgial",
+  "page": "https://commons.wikimedia.org/wiki/File:Persicaria_thunbergii_06.JPG",
+  "query": "Persicaria thunbergii"
+ },
+ "ooyoshi": {
+  "file": "assets/images/creatures/ooyoshi.jpg",
+  "title": "File:Phragmites japonica turuys01.jpg",
+  "license": "CC BY 3.0",
+  "author": "No machine-readable author provided. Keisotyo assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Phragmites_japonica_turuys01.jpg",
+  "query": "Phragmites japonica"
+ },
+ "chingruma": {
+  "file": "assets/images/creatures/chingruma.jpg",
+  "title": "File:Geum pentapetalum 10.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Σ64 (talk)",
+  "page": "https://commons.wikimedia.org/wiki/File:Geum_pentapetalum_10.jpg",
+  "query": "Geum pentapetalum"
+ },
+ "reba": {
+  "file": "assets/images/creatures/reba.jpg",
+  "title": "File:Miyamakinbai.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Miyamakinbai.JPG",
+  "query": "Potentilla matsumurae"
+ },
+ "toneriko": {
+  "file": "assets/images/creatures/toneriko.jpg",
+  "title": "File:Fraxinus japonica3.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Fraxinus_japonica3.jpg",
+  "query": "Fraxinus japonica"
+ },
+ "yabunikkei": {
+  "file": "assets/images/creatures/yabunikkei.jpg",
+  "title": "File:Cinnamomum tenuifolium2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "KENPEI",
+  "page": "https://commons.wikimedia.org/wiki/File:Cinnamomum_tenuifolium2.jpg",
+  "query": "File:Cinnamomum tenuifolium2.jpg"
+ },
+ "yamabukisou": {
+  "file": "assets/images/creatures/yamabukisou.jpg",
+  "title": "File:荷青花 Chelidonium japonicum (Hylomecon japonica) -日本大阪鮮花競放館 Osaka Sakuya Konohana Kan, Japan- (42277025261).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "阿橋 HQ",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%8D%B7%E9%9D%92%E8%8A%B1_Chelidonium_japonicum_(Hylomecon_japonica)_-%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%98%AA%E9%AE%AE%E8%8A%B1%E7%AB%B6%E6%94%BE%E9%A4%A8_Osaka_Sakuya_Konohana_Kan,_Japan-_(42277025261).jpg",
+  "query": "Hylomecon japonicum"
+ },
+ "urupposou": {
+  "file": "assets/images/creatures/urupposou.jpg",
+  "title": "File:Lagotis glauca.JPG",
+  "license": "CC BY-SA 4.0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Lagotis_glauca.JPG",
+  "query": "Lagotis glauca"
+ },
+ "yukiwari": {
+  "file": "assets/images/creatures/yukiwari.jpg",
+  "title": "File:Primula modesta var. fauriei.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Primula_modesta_var._fauriei.JPG",
+  "query": "Primula modesta"
+ },
+ "iwakagami": {
+  "file": "assets/images/creatures/iwakagami.jpg",
+  "title": "File:Schizocodon soldanelloides 0906.JPG",
+  "license": "Public domain",
+  "author": "Qwert1234",
+  "page": "https://commons.wikimedia.org/wiki/File:Schizocodon_soldanelloides_0906.JPG",
+  "query": "Schizocodon soldanelloides"
+ },
+ "kawaraketsumei": {
+  "file": "assets/images/creatures/kawaraketsumei.jpg",
+  "title": "File:Chamaecrista nomame flower4 (10738038516).jpg",
+  "license": "CC BY 2.0",
+  "author": "Harry Rose from South West Rocks, Australia",
+  "page": "https://commons.wikimedia.org/wiki/File:Chamaecrista_nomame_flower4_(10738038516).jpg",
+  "query": "Chamaecrista nomame"
+ },
+ "kitadake_kusa": {
+  "file": "assets/images/creatures/kitadake_kusa.jpg",
+  "title": "File:Kitadake-sansou.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Kitadake-sansou.jpg",
+  "query": "Kitadake-so"
+ },
+ "miyamadaikonsou": {
+  "file": "assets/images/creatures/miyamadaikonsou.jpg",
+  "title": "File:Geum calthaefolium var nipponicum in Mount Ontake 1 2010-08-27.jpg",
+  "license": "CC0",
+  "author": "Alpsdake",
+  "page": "https://commons.wikimedia.org/wiki/File:Geum_calthaefolium_var_nipponicum_in_Mount_Ontake_1_2010-08-27.jpg",
+  "query": "Geum calthifolium"
+ },
+ "shinanokinbai": {
+  "file": "assets/images/creatures/shinanokinbai.jpg",
+  "title": "File:Trollius riederianus.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "No machine-readable author provided. Almandine assumed (based on copyright claims).",
+  "page": "https://commons.wikimedia.org/wiki/File:Trollius_riederianus.jpg",
+  "query": "Trollius riederianus"
+ },
+ "shimaenaga": {
+  "file": "assets/images/creatures/shimaenaga.jpg",
+  "title": "File:Aegithalos caudatus japonicus - National Museum of Nature and Science, Tokyo - DSC07062.JPG",
+  "license": "CC0",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Aegithalos_caudatus_japonicus_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07062.JPG",
+  "query": "Aegithalos caudatus japonicus"
+ },
+ "yamasemi": {
+  "file": "assets/images/creatures/yamasemi.jpg",
+  "title": "File:Megaceryle lugubris lugubris (Ceryle lugubris lugubris) - National Museum of Nature and Science, Tokyo - DSC07059.JPG",
+  "license": "CC0",
+  "author": "Daderot",
+  "page": "https://commons.wikimedia.org/wiki/File:Megaceryle_lugubris_lugubris_(Ceryle_lugubris_lugubris)_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07059.JPG",
+  "query": "Megaceryle lugubris"
+ },
+ "abura_haya": {
+  "file": "assets/images/creatures/abura_haya.jpg",
+  "title": "File:Rhynchocypris lagowskii steindachneri 01.jpg",
+  "license": "CC BY 4.0",
+  "author": "Σ64",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhynchocypris_lagowskii_steindachneri_01.jpg",
+  "query": "Rhynchocypris lagowskii steindachneri"
+ },
+ "hotokedojo": {
+  "file": "assets/images/creatures/hotokedojo.jpg",
+  "title": "File:Lefua echigonia (Shizuoka,Japan).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Seotaro",
+  "page": "https://commons.wikimedia.org/wiki/File:Lefua_echigonia_(Shizuoka,Japan).jpg",
+  "query": "Lefua echigonia"
+ },
+ "yoshinobori": {
+  "file": "assets/images/creatures/yoshinobori.jpg",
+  "title": "File:Rhinogobius sp. CO (Shizuoka,Japan).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Seotaro",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhinogobius_sp._CO_(Shizuoka,Japan).jpg",
+  "query": "Rhinogobius sp."
+ },
+ "nikkoiwana": {
+  "file": "assets/images/creatures/nikkoiwana.jpg",
+  "title": "File:Salvelinus leucomaenis pluvius, -14 Aug. 2011 a.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Apple2000",
+  "page": "https://commons.wikimedia.org/wiki/File:Salvelinus_leucomaenis_pluvius,_-14_Aug._2011_a.jpg",
+  "query": "Salvelinus leucomaenis pluvius"
+ },
+ "ainame": {
+  "file": "assets/images/creatures/ainame.jpg",
+  "title": "File:Hexagrammos otakii Sunpiazza2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Totti",
+  "page": "https://commons.wikimedia.org/wiki/File:Hexagrammos_otakii_Sunpiazza2.jpg",
+  "query": "Hexagrammos otakii"
+ },
+ "tobiuo": {
+  "file": "assets/images/creatures/tobiuo.jpg",
+  "title": "File:Pink-wing flying fish.jpg",
+  "license": "Public domain",
+  "author": "http://www.moc.noaa.gov/mt/las/photos2.htm",
+  "page": "https://commons.wikimedia.org/wiki/File:Pink-wing_flying_fish.jpg",
+  "query": "File:Pink-wing flying fish.jpg"
+ },
+ "hakone_sansho": {
+  "file": "assets/images/creatures/hakone_sansho.jpg",
+  "title": "File:Onychodactylus japonicus Gifu.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Totti",
+  "page": "https://commons.wikimedia.org/wiki/File:Onychodactylus_japonicus_Gifu.jpg",
+  "query": "Onychodactylus japonicus"
+ }
 }

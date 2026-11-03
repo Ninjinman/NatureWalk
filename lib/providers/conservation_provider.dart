@@ -321,7 +321,7 @@ class ConservationNotifier extends Notifier<ConservationState> {
       population: pop,
       log: [
         if (info.isNotEmpty) '現実の天気・環境とリンク',
-        '環境を整えて、できるだけ多くの動植物が育つ自然を作ろう。',
+        '天気と場所に合わせて、生きものが現れる。探して図鑑を埋めよう。',
       ],
       startSeason: r.season,
       weatherShifts: r.shifts,
@@ -335,7 +335,7 @@ class ConservationNotifier extends Notifier<ConservationState> {
       memos: {..._memosAll},
     );
     final pl = _lastPlaces;
-    return pl == null ? st : _applyPlacesTo(st, pl);
+    return pl == null ? _autoPopulate(st) : _applyPlacesTo(st, pl);
   }
 
   Map<Habitat, Place>? _lastPlaces;
@@ -355,8 +355,11 @@ class ConservationNotifier extends Notifier<ConservationState> {
 
   /// 姿を見かけた種を図鑑に登録する
   void markDiscovered(Iterable<String> ids) {
-    final add = ids.where((id) => !state.discovered.contains(id)).toSet();
-    if (add.isEmpty) return;
+    // 今回のプレイで初めて出会った種（図鑑に載っていても数える）
+    final now = ids.where((id) => !state.foundNow.contains(id)).toSet();
+    if (now.isEmpty) return;
+    // 図鑑に初めて載る種だけ、新発見のボーナス
+    final add = now.where((id) => !state.discovered.contains(id)).toSet();
     _discoveredAll.addAll(add);
     // 絶滅危惧種などを見つけたら、ボーナスの予算
     var bonus = 0;
@@ -370,7 +373,7 @@ class ConservationNotifier extends Notifier<ConservationState> {
     }
     state = state.copyWith(
       discovered: {...state.discovered, ...add},
-      foundNow: {...state.foundNow, ...add},
+      foundNow: {...state.foundNow, ...now},
       budget: state.budget + bonus,
       log: [...logs, ...state.log].take(30).toList(),
     );
@@ -402,7 +405,22 @@ class ConservationNotifier extends Notifier<ConservationState> {
     for (final c in _creatures) {
       pop[c.id] = absent.contains(c.id) ? 0 : (st.turn == 0 ? (c.rarity <= 1 ? 8 : 0) : (pop[c.id] ?? 0));
     }
-    return tmp.copyWith(absent: absent, population: pop);
+    return _autoPopulate(tmp.copyWith(absent: absent, population: pop));
+  }
+
+  /// 場所・標高・季節・天気に合う種が、自然に生息する（個体数は「合うか／合わないか」だけで決まる）
+  ConservationState _autoPopulate(ConservationState st) {
+    final pop = <String, int>{};
+    for (final c in _creatures) {
+      var here = false;
+      if (!st.absent.contains(c.id)) {
+        final seasons = speciesSeasons[c.id];
+        final seasonOk = seasons == null || seasons.contains(st.season);
+        here = seasonOk && best(c, s: st).$2 >= 0.6;
+      }
+      pop[c.id] = here ? 20 : 0;
+    }
+    return st.copyWith(population: pop);
   }
 
   /// 参考にする現実の場所を設定する。分布（どの種がいるか）は、開始前にだけ決まる
@@ -441,6 +459,7 @@ class ConservationNotifier extends Notifier<ConservationState> {
     } else {
       state = state.copyWith(weatherShifts: r.shifts, flowTargets: r.flows);
     }
+    state = _autoPopulate(state);
   }
 
   /// 山のステージの標高を設定する（開始前だけ。ステージごとの範囲内。気温は標高で決まる）
@@ -451,6 +470,7 @@ class ConservationNotifier extends Notifier<ConservationState> {
     final a = state.areas[h]!;
     final area = a.with_(EnvParam.elevation, v).with_(EnvParam.temperature, AreaEnv.tempForElevation(v));
     _log('${h.label}の標高を ${v.round()}m に設定した', areas: {...state.areas, h: area});
+    state = _autoPopulate(state);
   }
 
   void restart() => state = _initial();
@@ -490,6 +510,14 @@ class ConservationNotifier extends Notifier<ConservationState> {
       if (prey.isNotEmpty) {
         final alive = prey.where((o) => (st.population[o.id] ?? 0) > 0).length;
         score *= 0.5 + 0.5 * alive / prey.length;
+      }
+    }
+    // 動物は植物（餌・すみか）の豊富さに依存
+    if (c.type == CreatureType.animal) {
+      final food = _creatures.where((o) => o.type == CreatureType.plant && o.habitats.contains(h));
+      if (food.isNotEmpty) {
+        final alive = food.where((o) => (st.population[o.id] ?? 0) > 0).length;
+        score *= 0.5 + 0.5 * alive / food.length;
       }
     }
     // 外来種ブルーギルが増えると在来魚が圧迫される
@@ -855,6 +883,7 @@ class ConservationNotifier extends Notifier<ConservationState> {
       var pc = const [0.0, 0.5, 0.3, 0.18, 0.1, 0.05][c.rarity.clamp(1, 5)];
       if (c.endangered) pc *= 0.5;
       if (c.type == CreatureType.bird) pc *= 1.3;
+      if (c.type == CreatureType.animal) pc *= 0.9;
       if (c.type == CreatureType.plant) pc *= 0.8;
       pc *= 0.5 + 0.5 * fit;
       if (_rand.nextDouble() < pc) {
