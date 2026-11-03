@@ -1,6 +1,7 @@
 #!/bin/sh
 # 使い方: sh deploy.sh   （Webをビルドして GitHub Pages に公開。ソースの更新は別途 git push）
 set -e
+export MSYS_NO_PATHCONV=1
 flutter build web --release --base-href /NatureWalk/
 D=$(mktemp -d)
 cp -r build/web/. "$D"
