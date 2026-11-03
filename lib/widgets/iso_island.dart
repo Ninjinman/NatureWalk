@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import '../data/species_activity.dart';
 import '../models/creature.dart';
 import '../models/env_param.dart';
 import '../providers/conservation_provider.dart';
@@ -1446,28 +1447,10 @@ class IsoIslandPainter extends CustomPainter {
     CreatureType.animal: 3,
   };
 
-  /// このエリアに生息している（個体数>0）種のうち、いまの環境に最も適するものを種類ごとに上限まで
+  /// いま姿を見せる種。このエリアに暮らす種のうち、時間帯・雨・エリア間のつながりから決めた出現率で選び、種類ごとに上限まで
   static List<Creature> habitatSpecies(Habitat h, ConservationState state,
-      ConservationNotifier notifier, List<Creature> creatures) {
-    final scored = <(Creature, double)>[
-      for (final c in creatures)
-        if (notifier.lives(c, h, s: state)) (c, notifier.suitability(c, h, s: state)),
-    ];
-    // 適合度が高い順。同点は id で固定して、再描画のたびに入れ替わらないようにする
-    scored.sort((a, b) {
-      final d = b.$2.compareTo(a.$2);
-      return d != 0 ? d : a.$1.id.compareTo(b.$1.id);
-    });
-    final count = <CreatureType, int>{};
-    final out = <Creature>[];
-    for (final (c, _) in scored) {
-      final n = count[c.type] ?? 0;
-      if (n >= (_showLimit[c.type] ?? 3)) continue;
-      count[c.type] = n + 1;
-      out.add(c);
-    }
-    return out;
-  }
+          ConservationNotifier notifier, List<Creature> creatures) =>
+      ActivityEngine.visible(h, state, notifier, creatures, _showLimit);
 
   /// 絶滅危惧種のしるし：金色のオーラと、またたく星
   void _rareAura(Offset ground, double lift) {

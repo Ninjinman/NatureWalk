@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../data/species_activity.dart';
 import '../data/species_database.dart';
 import '../models/creature.dart';
 import '../providers/conservation_provider.dart';
@@ -102,6 +103,7 @@ class _AreaZoomScreenState extends ConsumerState<AreaZoomScreen>
     final all = ref.watch(allCreaturesProvider);
     listenSeasonEvents(context, ref);
     listenDiscoveries(context, ref);
+    ref.watch(activityProvider); // 時間帯・天気が変わったら表示を更新
 
     return Scaffold(
       backgroundColor: kInk,
@@ -148,6 +150,7 @@ class _AreaZoomScreenState extends ConsumerState<AreaZoomScreen>
                 onSelectionChanged: (v) => setState(() => _listMode = v.first),
               ),
             ),
+            _ConditionBar(habitat: h),
             if (_listMode) ...[
               Expanded(flex: 5, child: _SpeciesGrid(habitat: h)),
               Expanded(flex: 4, child: AreaPanel(habitat: h, showSpecies: false)),
@@ -248,16 +251,19 @@ class _SpeciesGrid extends ConsumerWidget {
     final s = ref.watch(conservationProvider);
     final n = ref.read(conservationProvider.notifier);
     final all = ref.watch(allCreaturesProvider);
-    // 3D表示と同じ数だけ出す。加えて、絶滅した発見済みの種は再導入できるように残す
-    final shown = IsoIslandPainter.habitatSpecies(habitat, s, n, all).map((c) => c.id).toSet();
+    ref.watch(activityProvider);
+    // 今日の条件で「出やすい順」に並べる。加えて、絶滅した発見済みの種は再導入できるように残す
+    final ap = ActivityEngine.appearances(habitat, s, n, all);
+    final ranked = ap.keys.toList()..sort((a, b) => ap[b]!.p.compareTo(ap[a]!.p));
+    final top = ranked.take(24).toSet();
     final species = all
         .where((c) =>
-            shown.contains(c.id) ||
+            top.contains(c.id) ||
             (c.habitats.contains(habitat) &&
                 s.discovered.contains(c.id) &&
                 (s.population[c.id] ?? 0) <= 0))
         .toList()
-      ..sort((a, b) => a.type.index.compareTo(b.type.index));
+      ..sort((a, b) => (ap[b.id]?.p ?? -1).compareTo(ap[a.id]?.p ?? -1));
 
     return GridView.builder(
       padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
@@ -265,7 +271,7 @@ class _SpeciesGrid extends ConsumerWidget {
         crossAxisCount: 3,
         mainAxisSpacing: 8,
         crossAxisSpacing: 8,
-        childAspectRatio: 0.82,
+        childAspectRatio: 0.72,
       ),
       itemCount: species.length,
       itemBuilder: (_, i) {
@@ -348,14 +354,78 @@ class _SpeciesGrid extends ConsumerWidget {
                           style: const TextStyle(fontSize: 10)),
                     ),
                   )
-                else
-                  Text('個体数 $pop ・ ${(fit * 100).round()}%',
+                else ...[
+                  Text('個体数 $pop ・ 適合${(fit * 100).round()}%',
                       style: TextStyle(fontSize: 9, color: ring)),
+                  if (ap[c.id] != null) ...[
+                    Text('出やすさ ${ap[c.id]!.label}',
+                        style: TextStyle(
+                            fontSize: 10,
+                            color: ap[c.id]!.p >= 0.75
+                                ? kGold
+                                : ap[c.id]!.p >= 0.45
+                                    ? Colors.white70
+                                    : Colors.white38)),
+                    if (ap[c.id]!.why.isNotEmpty)
+                      Text(ap[c.id]!.why.first,
+                          maxLines: 2,
+                          textAlign: TextAlign.center,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 8, color: Colors.white38)),
+                  ],
+                ],
               ],
             ),
           ),
         );
       },
+    );
+  }
+}
+
+
+/// 今日の条件（時間帯・雨・エリア間のつながり）と、時間帯の切り替え
+class _ConditionBar extends ConsumerWidget {
+  final Habitat habitat;
+  const _ConditionBar({required this.habitat});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final x = ref.watch(activityProvider);
+    final manual = ref.watch(timeOverrideProvider);
+    Widget chip(String label, DayPart? v) => Padding(
+          padding: const EdgeInsets.only(right: 6),
+          child: ChoiceChip(
+            label: Text(label, style: const TextStyle(fontSize: 11)),
+            visualDensity: VisualDensity.compact,
+            selected: manual == v,
+            selectedColor: const Color(0xFF3A2F18),
+            backgroundColor: const Color(0xFF14110C),
+            side: BorderSide(color: kGold.withValues(alpha: 0.4)),
+            labelStyle: TextStyle(color: manual == v ? kGold : Colors.white60),
+            onSelected: (_) => ref.read(timeOverrideProvider.notifier).state = v,
+          ),
+        );
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 0, 16, 2),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: [
+              const Text('時間帯 ', style: TextStyle(fontSize: 11, color: Colors.white54)),
+              chip('いま', null),
+              for (final p in DayPart.values) chip(p.label, p),
+            ]),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 2, bottom: 2),
+            child: Text('今日の条件：${x.summary(habitat)}',
+                style: const TextStyle(fontSize: 11, color: kGold)),
+          ),
+        ],
+      ),
     );
   }
 }

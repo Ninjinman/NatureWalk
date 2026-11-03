@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../data/season_events.dart';
+import '../data/species_activity.dart';
 import '../data/species_database.dart';
 import '../models/creature.dart';
 import '../models/env_param.dart';
@@ -107,6 +108,7 @@ class _HakoniwaScreenState extends ConsumerState<HakoniwaScreen>
       if (done) _showResult();
     });
     listenDiscoveries(context, ref);
+    ref.watch(activityProvider); // 時間帯・天気が変わったら表示を更新
 
     final aliveRatio = all.isEmpty ? 0.0 : s.aliveCount / all.length;
 
